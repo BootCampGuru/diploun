@@ -307,10 +307,6 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     return sum + parseInt(tax.Amount);
 }, 0);
  
-  //console.log(multi_total)
-    let key = 'Bi-Lateral';
-    let key2 = 'Multi-Lateral';
-
 
     this.setState({bilateral_amount: total});
     this.setState({multilateral_amount: multi_total});
@@ -367,7 +363,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     <div className="App">
   <Header>
     </Header>
-      <h3><img src="/images/logo.png" /></h3>
+      <h3><img src="./images/logo.png" /></h3>
             <Form className="form"  onSubmit={this.formSubmitted}> 
                 <Input className="input"  onChange={this.onChanged} type="text" name="search" id="search" placeholder="Type your Country..." />
                 <Button onClick={this.searchSubmit} color="info" disabled={!this.state.haveUsersLocation}>Search</Button>       

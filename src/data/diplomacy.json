@@ -4,32 +4,32 @@
             "Event": "Department of State founded; (soon after) Thomas Jefferson appointed First Secretary of State",
             "Video": "https://www.youtube.com/watch?v=TnQbVNLTs6A",
             "Asset": "0:38-0:45",
-            "Images": "/images/ThomasJefferson.jpg"
+            "Images": "./images/ThomasJefferson.jpg"
         },
         {
             "Date": "May 10, 1801",
             "Event": "First Barbary War fought against Tripolitania (Libya) and Morocco ",
             "Video": "https://www.youtube.com/watch?v=TnQbVNLTs6A",
             "Asset": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fd%2Fda%2FNH_65536-KN.jpg&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ANH_65536-KN.jpg&tbnid=o8AN0M6QDapsKM&vet=12ahUKEwipms2JiuHoAhVJZ98KHcpYCxcQMygBegUIARDoAQ..i&docid=URLuyWCfFz_JeM&w=7021&h=3680&q=first%20barbary%20war&hl=en&safe=active&ved=2ahUKEwipms2JiuHoAhVJZ98KHcpYCxcQMygBegUIARDoAQ",
-            "Images": "/images/Barbary.jpg"
+            "Images": "./images/Barbary.jpg"
         },
         {
             "Date": "July 4, 1803",
             "Event": "Louisiana Purchase from France",
             "Video": "https://www.youtube.com/watch?v=TnQbVNLTs6A",
-            "Images": "/images/louisiana.jpg"
+            "Images": "./images/louisiana.jpg"
         },
         {
             "Date": "August 24, 1814",
             "Event": "War of  1812: Secretary of State James Monroe lead U.S. forces against the invasion of Washington D.C., clerks saved the Declaration of Independence from the soon to be burned city. ",
             "Video": "https://www.youtube.com/watch?v=TnQbVNLTs6A",
-            "Images": "/images/ThomasJefferson.jpg"
+            "Images": "./images/ThomasJefferson.jpg"
         },
         {
             "Date": "April 25, 1846 – February 3, 1848",
             "Event": "Mexican-American War, Texas Becomes a US state",
             "Video": "https://www.youtube.com/watch?v=TnQbVNLTs6A",
-            "Images": "/images/ThomasJefferson.jpg"
+            "Images": "./images/ThomasJefferson.jpg"
         },
         {
             "Date": "March 31, 1854",
