@@ -706,7 +706,8 @@
             "Languages": "[English, German]", 
             "Funding": 20000,
             "Hours" : "8:30 A.M. to 4:00 PM",
-            "Travel_Advisory" : "Do Not Travel"
+            "Travel_Advisory" : "Do Not Travel",
+            "Notes" : "The U.S. Embassy in Berlin is proud to have a chancery in the city center, on Pariser Platz, next to the iconic Brandenburg Gate."
         },
         {
             "Status": "Active",
@@ -1654,7 +1655,8 @@
             "Staff_Name" : "Patricia Lacina",
             "Languages": "[English, German]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
-            "Travel_Advisory" : "Do Not Travel"
+            "Travel_Advisory" : "Do Not Travel",
+            "Notes" : "The Consul General and her principal officers direct the activities of the United States Consulate General in Frankfurt. The Frankfurt Consulate is the largest U.S. consular post and one of the largest diplomatic missions in the world. The Consulate serves the American resident community – including members of the Armed Forces and their families, business people and retirees – and assists many other visitors to Frankfurt."
         },
         {
             "Status": "Active",

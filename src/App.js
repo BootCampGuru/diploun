@@ -512,7 +512,9 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
      
       </Row>
    <Row>
-   <Col sm={{ size: 7, offset: 1}}>
+   <Col sm={{ size: 8, offset: 1}}>
+   {
+  this.state.missions !== '' ?
    <Tabs defaultActiveKey="home" id="tab-mission">
    
 <Tab eventKey="home" title="Mission">
@@ -521,13 +523,13 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
  this.state.missions.map((each, index) => 
      
      <Row className="embassy">
-     <Col sm={{ size: 3}}>
+     <Col sm={{ size: 2}}>
      <img alt={'staff'} style={{width:"150px"}} src={each.Staff_Image} /><br/>
      {each.Staff_Name}<br/>
      <hr/>
      </Col>
      
-     <Col sm={{ size: 4}}>
+     <Col sm={{ size: 3}}>
      <div style={{color:'Black', background:'White', border:'1px', borderRadius: '5px', borderColor: 'Brown', fontSize: '16px', textAlign: 'center'}}>
        <span style={{color:'Brown'}}>{each.Property_Name}</span><br/>
        <img alt={'Chancery'} style={{width:"150px"}} src={each.Image} /><br/>
@@ -540,6 +542,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
      </div>
      
      </Col>
+
+     <Col sm={{ size: 4}}>
+      {each.Notes}
+       </Col>
+     
      </Row>
 
    ) : ''
@@ -557,6 +564,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
    <br/>Multilateral Dollars:<b>${this.state.multilateral_amount}</b>
 </Tab>
 </Tabs>
+: ''}
    </Col>
    <Col xs="2"  className="twitter-sizing">
        <TwitterTimelineEmbed
