@@ -10,12 +10,14 @@
 }
 .embassy{
   padding:10px;
-  background: #07648d;
-  color:white;
+  /*background: #07648d;*/
+  background:white;
+  color:brown;
   border-color:white;
   border-radius: 15px;
   border-width: 2px;
   border-style: solid;
+  margin:20px;
 }
 .map_history
 {

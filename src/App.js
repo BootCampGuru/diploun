@@ -1,14 +1,12 @@
-import React,{Component, useState} from 'react';
-import RubberSlider from "@shwilliam/react-rubber-slider";
-import "@shwilliam/react-rubber-slider/dist/styles.css";
+import React,{Component} from 'react';
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { BarChart } from "reaviz";
-import { Slide, Zoom } from 'react-slideshow-image';
+import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import {Form, FormGroup, Label, Input, FormText, Card, Button, CardTitle, CardText, Modal, ModalHeader, ModalBody, ModalFooter, Row, Col} from 'reactstrap'
+import {Form, Input, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row, Col} from 'reactstrap'
 import { Map, TileLayer, Marker, Popup,GeoJSON,Circle } from 'react-leaflet'
 import './App.css';
 import data from './data/diplomacy.json'
@@ -18,7 +16,7 @@ import worldmap from './data/world_map.json'
 import embassyhistorydata from './data/embassy_history.json'
 import embassyfinancedata from './data/afghanistan_funds.json'
 import ReactPlayer from 'react-player/youtube'
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
+import { TwitterTimelineEmbed} from 'react-twitter-embed';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
@@ -170,13 +168,13 @@ class App extends Component {
 searchLanguageSubmit = (event) => {
   event.preventDefault();
   var language = this.state.languagesearch;
-  console.log(language);
+  //console.log(language);
   var filter_countries = embassies.filter(function (pilot) {
     return pilot.Languages.indexOf(language) !== -1;
     
   });
 
-  console.log(filter_countries)
+  //console.log(filter_countries)
 
   this.setState({embassy_data: filter_countries});
 
@@ -363,7 +361,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     <div className="App">
   <Header>
     </Header>
-      <h3><img src="./images/logo.png" /></h3>
+      <h3><img alt='state logo' src="./images/logo.png" /></h3>
             <Form className="form"  onSubmit={this.formSubmitted}> 
                 <Input className="input"  onChange={this.onChanged} type="text" name="search" id="search" placeholder="Type your Country..." />
                 <Button onClick={this.searchSubmit} color="info" disabled={!this.state.haveUsersLocation}>Search</Button>       
@@ -377,6 +375,9 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
                 <label for="aid">Aid</label></span> 
                  <span style={{textAlign: 'center'}}><b><i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
+     <Row>
+     <Col sm={{ size: 8, offset: 1 }}>
+     
       <Map id="map" className="map" center={position} zoom={this.state.zoom}>
         <TileLayer noWrap="true"
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -428,141 +429,142 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         : ''}
   
       </Map>
-     
-   <Row>
-   <Col sm={{ size: 7, offset: 1 }}>
+      </Col>
+      <Col sm={{ size: 3}}>
 
-   <div>
-   {
-     this.state.embassy_details == '' ?
+<div>
 
-     <Tabs defaultActiveKey={this.state.time_line ? 'timeline' : 'slideshow' } id="main-page">
-  <Tab eventKey="slideshow" title="Slide Show">
-  <div className="slide-container">
-        <Zoom scale={0.4}>
-          {
-            items.map((each, index) => 
-            (
-            <div key={index} className="each-slide">
-            <span  className="text-padding">{each.Event} - <b>{each.Date}</b></span>
-              <a href="#"  onClick={() => this.setState({showLogOut: true, videoURL: each.Video})}>
+  <Tabs defaultActiveKey={'timeline'} id="main-page">
+<Tab eventKey="slideshow" title="Slide Show">
+<div className="slide-container">
+     <Zoom scale={0.4}>
+       {
+         items.map((each, index) => 
+         (
+         <div key={index} className="each-slide">
+         <span  className="text-padding">{each.Event} - <b>{each.Date}</b></span>
+           <a href="#"  onClick={() => this.setState({showLogOut: true, videoURL: each.Video})}>
             <img alt={index} key={index} style={{width: "100%", height: "300px", padding: "20px", alignContent: "center"}} src={each.Images} />
-            </a>
-            </div>
-         
-            )
-            )
-          }
-        </Zoom>
-      </div>
-  </Tab>
-  <Tab eventKey="timeline" title="Timeline">
-  <Row>
-  <Map id="map_history" className="map_history" center={position} zoom={this.state.zoom}>
-        <TileLayer 
-          attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> devs'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        {        
-          
-          this.state.embassyhistory.map((each, index) => {
-              
-        if (isNaN(each.lon) === false && isNaN(each.lat) === false) {
-        var position=[each.lat, each.lon]
-        return <Marker key={index} position={position} icon={myIcon}>
-          <Popup><br /> 
-             {each.event} in {each.country}<br />  
-                   
-          </Popup>
-            <Circle 
-                  center={{lat:each.lat, lng: each.lon}}
-                  fillColor="black" 
-                  radius={parseInt(each.funding)}/>
-        </Marker> 
-        }
-      })
-    }
-
-
-      </Map>
-      </Row>
-      <Row>
-      <br/>
-      <RangeSlider min={1777} max={2020}
-      value={this.state.value} step={1}
-      onChange={this.onValueChanged}
-    />
-      <br/>
-      <span><b><i>{this.state.value} - Number of Embassies {this.state.embassyhistorynotclosure.length}</i></b></span>
-      </Row>
-  </Tab>
-  </Tabs>
-          : 
-  <Tabs defaultActiveKey="home" id="tab-mission">
-  <Tab eventKey="home" title="Mission">
-  {
-
-    this.state.missions.map((each, index) => {
-
-      return (
-        <Row className="embassy">
-        <Col sm={{ size: 4}}>
-        <img alt={'staff'} style={{width:"150px"}} src={each.Staff_Image} /><br/>
-        {each.Staff_Name}<br/>
-        </Col>
-        
-        <Col sm={{ size: 4}}>
-        <div style={{color:'Black', background:'White', border:'1px', borderRadius: '5px', borderColor: 'Brown', fontSize: '16px', textAlign: 'center'}}>
-          <span style={{color:'Brown'}}>{each.Property_Name}</span><br/>
-          <img alt={'Chancery'} style={{width:"150px"}} src={each.Image} /><br/>
-          {each.Street_Address_1} <br/>
-          {each.Street_Address_3} <br/>
-          {each.Post},  {each.Country} <br/>
-          {each.Hours}
-          <br/>
-          <hr/>
-        </div>
-        </Col>
-        </Row>
-      )
-      }) 
-  }
-  </Tab>
-
-  <Tab eventKey="usaid" title="Diplomacy">
-  <BarChart width={350} height={250} data={this.state.diplomacy_data} />
-  <br/>
-      <RangeSlider min={2010} max={2020}
-      value={this.state.rangevalue} step={1}
-      onChange={this.onRangeValueChanged}/>
-      <br/><b>{this.state.rangevalue}</b>
-      <br/>Bi-lateral Dollars:<b>${this.state.bilateral_amount}</b>
-      <br/>Multilateral Dollars:<b>${this.state.multilateral_amount}</b>
-  </Tab>
-</Tabs>
+         </a>
+         </div>
       
-}
+         )
+         )
+       }
+     </Zoom>
+   </div>
+</Tab>
+<Tab eventKey="timeline" title="Timeline">
+<Row>
+<Map id="map_history" className="map_history" center={position} zoom={2}>
+     <TileLayer 
+       attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> devs'
+       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+     />
+     {        
+       
+       this.state.embassyhistory.map((each, index) =>  {
+           
+     if (isNaN(each.lon) === false && isNaN(each.lat) === false) {
+     var position=[each.lat, each.lon]
+     return <Marker key={index} position={position} icon={myIcon}>
+          <Popup><br /> 
+          {each.event} in {each.country}<br />  
+                
+          </Popup>
+         <Circle 
+               center={{lat:each.lat, lng: each.lon}}
+               fillColor="black" 
+               radius={parseInt(each.funding)}/>
+        </Marker> 
+     }
+   })
+ }
+
+   </Map>
+   </Row>
+   <Row>
+   <br/>
+   <RangeSlider min={1777} max={2020}
+   value={this.state.value} step={1}
+   onChange={this.onValueChanged}
+ />
+   <br/>
+   <span><b><i>{this.state.value} - Number of Embassies {this.state.embassyhistorynotclosure.length}</i></b></span>
+   </Row>
+</Tab>
+</Tabs>
+ 
+   
 <Modal isOpen={this.state.showLogOut}  toggle={() => this.setState({showLogOut: false})}>
 <ModalHeader toggle={() => this.setState({showLogOut: false})}>Play Video</ModalHeader>
-    <ModalBody >    
-        <ReactPlayer width="400px"  url={this.state.videoURL} />                  
-    </ModalBody>
+ <ModalBody >    
+     <ReactPlayer width="400px"  url={this.state.videoURL} />                  
+ </ModalBody>
 <ModalFooter>
 
-    <Button onClick={() => this.setState({showLogOut: false})}>Close</Button>
-  
+ <Button onClick={() => this.setState({showLogOut: false})}>Close</Button>
+
 </ModalFooter>
 </Modal>
-   </div>
-   </Col>
-          <Col xs="3"  className="twitter-sizing">
-          <TwitterTimelineEmbed
-  sourceType="profile"
-  screenName="statedept"
-  options={{height: 400}}
-/>
-          </Col>
+</div>
+</Col>
+     
+      </Row>
+   <Row>
+   <Col sm={{ size: 7, offset: 1}}>
+   <Tabs defaultActiveKey="home" id="tab-mission">
+   
+<Tab eventKey="home" title="Mission">
+{
+  this.state.missions !== '' ? 
+ this.state.missions.map((each, index) => 
+     
+     <Row className="embassy">
+     <Col sm={{ size: 3}}>
+     <img alt={'staff'} style={{width:"150px"}} src={each.Staff_Image} /><br/>
+     {each.Staff_Name}<br/>
+     <hr/>
+     </Col>
+     
+     <Col sm={{ size: 4}}>
+     <div style={{color:'Black', background:'White', border:'1px', borderRadius: '5px', borderColor: 'Brown', fontSize: '16px', textAlign: 'center'}}>
+       <span style={{color:'Brown'}}>{each.Property_Name}</span><br/>
+       <img alt={'Chancery'} style={{width:"150px"}} src={each.Image} /><br/>
+       {each.Street_Address_1} <br/>
+       {each.Street_Address_3} <br/>
+       {each.Post},  {each.Country} <br/>
+       {each.Hours}
+       <br/>
+       <hr/>
+     </div>
+     
+     </Col>
+     </Row>
 
+   ) : ''
+}
+</Tab>
+
+<Tab eventKey="usaid" title="Diplomacy">
+<BarChart width={350} height={250} data={this.state.diplomacy_data} />
+<br/>
+   <RangeSlider min={2010} max={2020}
+   value={this.state.rangevalue} step={1}
+   onChange={this.onRangeValueChanged}/>
+   <br/><b>{this.state.rangevalue}</b>
+   <br/>Bi-lateral Dollars:<b>${this.state.bilateral_amount}</b>
+   <br/>Multilateral Dollars:<b>${this.state.multilateral_amount}</b>
+</Tab>
+</Tabs>
+   </Col>
+   <Col xs="2"  className="twitter-sizing">
+       <TwitterTimelineEmbed
+sourceType="profile"
+screenName="statedept"
+options={{height: 400}}
+/>
+       </Col>
    </Row>
    <Footer>
     </Footer>
