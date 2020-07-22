@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Diploun/static/css/main.58e8cb2a.chunk.css",
-    "main.js": "/Diploun/static/js/main.8e2ce237.chunk.js",
-    "main.js.map": "/Diploun/static/js/main.8e2ce237.chunk.js.map",
-    "runtime-main.js": "/Diploun/static/js/runtime-main.33392f57.js",
-    "runtime-main.js.map": "/Diploun/static/js/runtime-main.33392f57.js.map",
-    "static/css/2.8e6c8c35.chunk.css": "/Diploun/static/css/2.8e6c8c35.chunk.css",
-    "static/js/2.6bc71be3.chunk.js": "/Diploun/static/js/2.6bc71be3.chunk.js",
-    "static/js/2.6bc71be3.chunk.js.map": "/Diploun/static/js/2.6bc71be3.chunk.js.map",
-    "index.html": "/Diploun/index.html",
-    "precache-manifest.94a290b56b2636fa584376db224c07f0.js": "/Diploun/precache-manifest.94a290b56b2636fa584376db224c07f0.js",
-    "service-worker.js": "/Diploun/service-worker.js",
-    "static/css/2.8e6c8c35.chunk.css.map": "/Diploun/static/css/2.8e6c8c35.chunk.css.map",
-    "static/css/main.58e8cb2a.chunk.css.map": "/Diploun/static/css/main.58e8cb2a.chunk.css.map",
-    "static/js/2.6bc71be3.chunk.js.LICENSE.txt": "/Diploun/static/js/2.6bc71be3.chunk.js.LICENSE.txt"
+    "main.css": "/diploun/static/css/main.58e8cb2a.chunk.css",
+    "main.js": "/diploun/static/js/main.d15d89e3.chunk.js",
+    "main.js.map": "/diploun/static/js/main.d15d89e3.chunk.js.map",
+    "runtime-main.js": "/diploun/static/js/runtime-main.5f3dfea0.js",
+    "runtime-main.js.map": "/diploun/static/js/runtime-main.5f3dfea0.js.map",
+    "static/css/2.8e6c8c35.chunk.css": "/diploun/static/css/2.8e6c8c35.chunk.css",
+    "static/js/2.ba9c5dc6.chunk.js": "/diploun/static/js/2.ba9c5dc6.chunk.js",
+    "static/js/2.ba9c5dc6.chunk.js.map": "/diploun/static/js/2.ba9c5dc6.chunk.js.map",
+    "index.html": "/diploun/index.html",
+    "precache-manifest.60a7406af28e2fa45e22f5b9ad1b4ea5.js": "/diploun/precache-manifest.60a7406af28e2fa45e22f5b9ad1b4ea5.js",
+    "service-worker.js": "/diploun/service-worker.js",
+    "static/css/2.8e6c8c35.chunk.css.map": "/diploun/static/css/2.8e6c8c35.chunk.css.map",
+    "static/css/main.58e8cb2a.chunk.css.map": "/diploun/static/css/main.58e8cb2a.chunk.css.map",
+    "static/js/2.ba9c5dc6.chunk.js.LICENSE.txt": "/diploun/static/js/2.ba9c5dc6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.33392f57.js",
+    "static/js/runtime-main.5f3dfea0.js",
     "static/css/2.8e6c8c35.chunk.css",
-    "static/js/2.6bc71be3.chunk.js",
+    "static/js/2.ba9c5dc6.chunk.js",
     "static/css/main.58e8cb2a.chunk.css",
-    "static/js/main.8e2ce237.chunk.js"
+    "static/js/main.d15d89e3.chunk.js"
   ]
 }
