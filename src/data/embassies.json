@@ -1578,7 +1578,8 @@
             "Staff_Name" : "Fiona Evans",
             "Languages": "[English, German]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
-            "Travel_Advisory" : "Do Not Travel"
+            "Travel_Advisory" : "Do Not Travel",
+            "Notes" : "Welcome to the U.S. Consulate General in Düsseldorf, Germany. Our Consulate is responsible for the state of North Rhine-Westphalia (NRW). In this section of our website you will find information about the Consul General, the Consulate, the German-American Clubs and Sister City Partnerships in our region, as well as important political and economic information about NRW."
         },
         {
             "Status": "Active",
@@ -1864,7 +1865,8 @@
             "Staff_Name" : "Constance M. Dierman",
             "Languages": "[English, German]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
-            "Travel_Advisory" : "Do Not Travel"
+            "Travel_Advisory" : "Do Not Travel",
+            "Notes" : "The American Consulate in Hamburg was established as one of the first U.S. Consulates on June 17, 1790, with the naming of John Parish, a naturalized Hamburg citizen of Scottish birth, as Vice Consul. In 1793, Parish was promoted to the rank of Consul for another three years; he is the only non-American to have served in this post. In 1904, Hugh Pitcairn was appointed the first Consul General.The Consulate was closed from October 3, 1917 until 1922, with the United States’ participation in World War I. On July 8, 1941, all U.S. Consulates in Germany were closed for the duration of the war, and American interests were handled by the Swiss Legation.The Consulate General reopened on March 1, 1946, and the U.S. Government purchased the present facilities in 1950."
         },
         {
             "Status": "Active",
@@ -2547,7 +2549,8 @@
             "Staff_Name" : "Timothy Eydelnant",
             "Languages": "[English, German]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
-            "Travel_Advisory" : "Do Not Travel"
+            "Travel_Advisory" : "Do Not Travel",
+            "Notes" : "Welcome to the Consulate General in Leipzig, Germany. In this section of our website you will find information on the Consul General, the consulate and our consular district, our internship program, and a current list of holidays."
         },
         {
             "Status": "Active",
@@ -3231,7 +3234,8 @@
             "Staff_Name" : "Meghan Gregonis",
             "Languages": "[English, French]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
-            "Travel_Advisory" : "Do Not Travel"
+            "Travel_Advisory" : "Do Not Travel",
+            "Notes" : "“We are the face of America, bringing the people of the USA and Bavaria together to build a safer and more prosperous world.  With a commitment to service, innovation, building goodwill, and ‘going green’ we work to expand our strong economic partnership, deepen our cooperation to make Europe, America and the world more secure, and facilitate the millions of people-to-people connections that unite us in all fields.”"
         },
         {
             "Status": "Active",
