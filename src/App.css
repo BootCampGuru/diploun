@@ -17,7 +17,8 @@
   border-radius: 15px;
   border-width: 2px;
   border-style: solid;
-  margin:20px;
+  margin:5px;
+  text-align: left;
 }
 .map_history
 {

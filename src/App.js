@@ -142,8 +142,7 @@ class App extends Component {
   resetSubmit = (event) => {
     event.preventDefault();
     var country = "USA";
-
-
+    this.setState({missions: ''});
     this.setState({time_line: true});
     this.setState({embassy_details: ''});
     googleMapsClient.geocode({address: country})
