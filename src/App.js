@@ -145,6 +145,7 @@ class App extends Component {
     this.setState({missions: ''});
     this.setState({time_line: true});
     this.setState({embassy_details: ''});
+    this.setState({embassy_data: embassies});
     googleMapsClient.geocode({address: country})
   .asPromise()
   .then((response) => {
@@ -370,7 +371,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
      
            </Form><br/>
              <span className="boxes"><Input  onChange={this.onTravelChanged} id="travel" value="Travel" type="checkbox" />
-                <label for="travel">Travel Advisory</label> </span>
+                <label htmlFor="travel">Travel Advisory</label> </span>
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
                 <label for="aid">Aid</label></span> 
                  <span style={{textAlign: 'center'}}><b><i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
