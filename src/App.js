@@ -21,6 +21,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import RangeSlider from 'react-bootstrap-range-slider';
+import allcountries from './data/all_countries.json'
 
 const googleMapsClient = require('@google/maps').createClient({
   key: 'AIzaSyAbOXMF2QD78gnzLRhd-XS-51Q_UIWR4h4',
@@ -59,6 +60,9 @@ class App extends Component {
       { key: 'Bi-Lateral', data: 20000 },
       { key: 'Multi-Lateral', data: 1000 }
     ],
+    all_diplomacy_data:[
+      
+    ],
     zoom: 2,
     data:data,
     show_advisory: false,
@@ -82,6 +86,7 @@ class App extends Component {
     missions: '',
     value:1779,
     rangevalue:2009,
+    financerangevalue: 2000,
     setValue: 1779,
     userMessage: {
       message: ''
@@ -90,6 +95,18 @@ class App extends Component {
 
 
   componentDidMount(){
+
+    var filter_history = allcountries.filter(function (pilot) {
+      return parseInt(pilot.fiscal_year) === 2000;
+    });
+   
+    var rows = [];
+      for (var i = 0; i < filter_history.length; i++) {
+        rows.push({"key": filter_history[i].country_name,
+          "data" : parseInt(filter_history[i].current_amount)/100000});
+      };
+      console.log(rows);
+      this.setState({all_diplomacy_data: rows});
 
     navigator.geolocation.getCurrentPosition((position) => {
       this.setState({
@@ -280,16 +297,33 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
       }))
   }
 
+  onFinanceValueChanged= (event) => {
+    
+    this.setState({financerangevalue: event.target.value});
+
+    var filter_history = allcountries.filter(function (pilot) {
+      return parseInt(pilot.fiscal_year) === parseInt(event.target.value);
+    });
+
+    var rows = [];
+      for (var i = 0; i < filter_history.length; i++) {
+        rows.push({"key": filter_history[i].country_name,
+          "data" : parseInt(filter_history[i].current_amount)/100000});
+      };
+
+         this.setState({all_diplomacy_data: rows});
+  }
+
   onRangeValueChanged= (event) => {
     
     this.setState({rangevalue: event.target.value});
 
     var filter_history = embassyfinancedata.filter(function (pilot) {
-      return parseInt(pilot.Fiscal_Year) == parseInt(event.target.value) && pilot.Collaboration_Type == "Bilateral";
+      return parseInt(pilot.Fiscal_Year) === parseInt(event.target.value) && pilot.Collaboration_Type == "Bilateral";
     });
 
     var filter_multi_history = embassyfinancedata.filter(function (pilot) {
-      return parseInt(pilot.Fiscal_Year) == parseInt(event.target.value) && pilot.Collaboration_Type == "Multilateral";
+      return parseInt(pilot.Fiscal_Year) === parseInt(event.target.value) && pilot.Collaboration_Type == "Multilateral";
     });
 
     //console.log(filter_multi_history.length);
@@ -319,8 +353,6 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
          this.setState({diplomacy_data: diplo_data});
 
  
-
-
   }
 
   onValueChanged = (event) => {
@@ -404,13 +436,13 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         var position=[each.Latitude, each.Longitude]
         return <Marker key={index} position={position} icon={myIcon}>
           <Popup><br /> 
-            <img style={{width:"150px"}} src={each.Staff_Image} /><br/>
+            <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
             <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
             {each.Street_Address_1}<br /> 
             {each.Property_Name}<br /> 
             {each.Post}<br /> 
             {each.Country} <br/>
-            <img style={{width:"150px"}} src={each.Image} /><br/>
+            <img alt="mission" style={{width:"150px"}} src={each.Image} /><br/>
             Travel Advisory: <b>{each.Travel_Advisory}</b> <br/>
             Funding:${each.Funding != null ? parseInt(each.Funding) : 'N/A'}
            
@@ -513,11 +545,19 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
       </Row>
    <Row>
    <Col sm={{ size: 8, offset: 1}}>
-   {
-  this.state.missions !== '' ?
-   <Tabs defaultActiveKey="home" id="tab-mission">
-   
-<Tab eventKey="home" title="Mission">
+
+   <Tabs defaultActiveKey="allcountries" id="tab-mission">
+   <Tab eventKey="allcountries" title="U.S. Aid by Countries">
+<BarChart width={1000} height={250} data={this.state.all_diplomacy_data} />
+<br/>
+<br/>
+   <RangeSlider min={2000} max={2020}
+   value={this.state.financerangevalue} step={1}
+   onChange={this.onFinanceValueChanged}/>
+   <br/><b>{this.state.financerangevalue}</b>
+
+</Tab>
+<Tab disabled={this.state.missions === '' } eventKey="home" title="Mission">
 {
   this.state.missions !== '' ? 
  this.state.missions.map((each, index) => 
@@ -553,7 +593,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 }
 </Tab>
 
-<Tab eventKey="usaid" title="Diplomacy">
+<Tab disabled={this.state.missions === '' } eventKey="usaid" title="Diplomacy">
 <BarChart width={350} height={250} data={this.state.diplomacy_data} />
 <br/>
    <RangeSlider min={2010} max={2020}
@@ -564,7 +604,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
    <br/>Multilateral Dollars:<b>${this.state.multilateral_amount}</b>
 </Tab>
 </Tabs>
-: ''}
+
    </Col>
    <Col xs="2"  className="twitter-sizing">
        <TwitterTimelineEmbed
