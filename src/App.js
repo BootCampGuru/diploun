@@ -405,7 +405,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
              <span className="boxes"><Input  onChange={this.onTravelChanged} id="travel" value="Travel" type="checkbox" />
                 <label htmlFor="travel">Travel Advisory</label> </span>
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
-                <label for="aid">Aid</label></span> 
+                <label for="aid">U.S. Aid</label></span> 
                  <span style={{textAlign: 'center'}}><b><i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
      <Row>
      <Col sm={{ size: 8, offset: 1 }}>
