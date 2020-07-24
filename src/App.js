@@ -272,8 +272,8 @@ searchLanguageSubmit = (event) => {
   onWeatherChanged = (lat,lon) => {
      //Get weather at a particular geolocation
      var weatherURL = "http://api.openweathermap.org/data/2.5/weather?lat=44.651572&lon=-63.575482&appid=d3242b32f1fb46174a7a8d02030c4cd7";
-     var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-     fetch(proxyUrl + weatherURL)
+     //var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+     fetch(weatherURL)
      .then(blob => blob.json())
      .then(data => {
        console.log(data)
@@ -495,7 +495,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
         return <Marker key={index} position={position} icon={myIcon}>
-          <Popup onClick={this.onAirChanged(each.latitute, each.Longitude)}><br /> 
+          <Popup onClick={this.onWeatherChanged(each.Latitude, each.Longitude)}><br /> 
             <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
             <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
             {each.Street_Address_1}<br /> 
