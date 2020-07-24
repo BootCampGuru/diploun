@@ -271,7 +271,7 @@ searchLanguageSubmit = (event) => {
 
   onWeatherChanged = (lat,lon) => {
      //Get weather at a particular geolocation
-     var weatherURL = "http://api.openweathermap.org/data/2.5/weather?lat=44.651572&lon=-63.575482&appid=d3242b32f1fb46174a7a8d02030c4cd7";
+     var weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=44.651572&lon=-63.575482&appid=d3242b32f1fb46174a7a8d02030c4cd7";
      //var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
      fetch(weatherURL)
      .then(blob => blob.json())
