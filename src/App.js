@@ -505,8 +505,8 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
             <img alt="mission" style={{width:"150px"}} src={each.Image} /><br/>
             Travel Advisory: <b>{each.Travel_Advisory}</b> <br/>
             Funding:${each.Funding != null ? parseInt(each.Funding) : 'N/A'}<br/>
-            Current Weather: {() => this.onWeatherChanged(each.latitute, each.Longitude)} - {this.state.current_weather}<br/>
-            Current Air: {() => this.onAirChanged(each.latitute, each.Longitude)}
+            Current Weather:  {this.state.current_weather}<br/>
+            Current Air:
           </Popup>
 {
   this.state.show_aid ?
