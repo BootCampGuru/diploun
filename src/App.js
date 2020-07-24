@@ -272,11 +272,11 @@ searchLanguageSubmit = (event) => {
   onWeatherChanged = (lat,lon) => {
      //Get weather at a particular geolocation
      //var weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=44.651572&lon=-63.575482&appid=d3242b32f1fb46174a7a8d02030c4cd7";
-     //var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+     var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
     var weatherURL = 'https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=439d4b804bc8187953eb36d2a8c26a02'
 
-     fetch(weatherURL)
+     fetch(proxyUrl + weatherURL)
      .then(blob => blob.json())
      .then(data => {
        console.log(data)
