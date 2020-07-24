@@ -253,8 +253,8 @@ searchLanguageSubmit = (event) => {
 
   onAirChanged  = (lat,lon) => {
     //Get weather at a particular geolocation
-    var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    var targetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=' + lat + '&longitude=' + lon + '&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1';
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
+     targetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=' + lat + '&longitude=' + lon + '&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1';
     fetch(proxyUrl + targetUrl)
     .then(blob => blob.json())
     .then(data => {
