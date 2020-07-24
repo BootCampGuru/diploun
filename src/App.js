@@ -64,6 +64,8 @@ class App extends Component {
       
     ],
     zoom: 2,
+    current_weather: 50,
+    current_air:45,
     data:data,
     show_advisory: false,
     defaultActiveKey: 'home',
@@ -79,6 +81,7 @@ class App extends Component {
     travel_advisory: '',
     showLogOut: false,
     videoURL : '',
+    aqi : '',
     haveUsersLocation: false,
     languagesearch: '',
     search: '',
@@ -96,6 +99,7 @@ class App extends Component {
 
   componentDidMount(){
 
+
     var filter_history = allcountries.filter(function (pilot) {
       return parseInt(pilot.fiscal_year) === 2000;
     });
@@ -105,7 +109,7 @@ class App extends Component {
         rows.push({"key": filter_history[i].country_name,
           "data" : parseInt(filter_history[i].current_amount)/100000});
       };
-      console.log(rows);
+      //console.log(rows);
       this.setState({all_diplomacy_data: rows});
 
     navigator.geolocation.getCurrentPosition((position) => {
@@ -224,6 +228,62 @@ searchLanguageSubmit = (event) => {
       .catch((err) => {
         console.log(err);
       });
+      console.log(this.state.location.lat);
+
+
+      
+      var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
+      targetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=' + this.state.location.lat + '&longitude=' + this.state.location.lng + '&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1'
+  
+
+      //Get air condition at a particular geolocation
+      /*
+      fetch(proxyUrl + targetUrl)
+    .then(blob => blob.json())
+    .then(data => {
+      console.log(data)
+    })
+    .catch(e => {
+      console.log(e);
+      
+    });
+      */
+
+  }
+
+  onAirChanged  = (lat,lon) => {
+    //Get weather at a particular geolocation
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    var targetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=' + lat + '&longitude=' + lon + '&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1';
+    fetch(proxyUrl + targetUrl)
+    .then(blob => blob.json())
+    .then(data => {
+      console.log(data)
+    })
+    .catch(e => {
+      console.log(e);
+      
+    });
+   this.setState({current_air: data});
+    return data;
+ }
+
+
+  onWeatherChanged = (lat,lon) => {
+     //Get weather at a particular geolocation
+     var weatherURL = "http://api.openweathermap.org/data/2.5/weather?lat=44.651572&lon=-63.575482&appid=d3242b32f1fb46174a7a8d02030c4cd7";
+     var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+     fetch(proxyUrl + weatherURL)
+     .then(blob => blob.json())
+     .then(data => {
+       console.log(data)
+     })
+     .catch(e => {
+       console.log(e);
+       
+     });
+    this.setState({current_weather: data});
+    return data;
   }
 
   onChanged = (event) => {
@@ -432,7 +492,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
            this.state.embassy_data.map((each, index) => {
         //console.log(each.Longitude)
-        if (isNaN(each.Longitude) == false && isNaN(each.Latitude) == false) {
+        if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
         return <Marker key={index} position={position} icon={myIcon}>
           <Popup><br /> 
@@ -445,7 +505,8 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
             <img alt="mission" style={{width:"150px"}} src={each.Image} /><br/>
             Travel Advisory: <b>{each.Travel_Advisory}</b> <br/>
             Funding:${each.Funding != null ? parseInt(each.Funding) : 'N/A'}
-           
+            Current Weather: {() => this.onWeatherChanged(each.latitute, each.Longitude)}
+            Current Air: {() => this.onAirChanged(each.latitute, each.Longitude)}
           </Popup>
 {
   this.state.show_aid ?
