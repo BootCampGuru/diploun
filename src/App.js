@@ -99,8 +99,7 @@ class App extends Component {
 
   componentDidMount(){
 
-
-    var filter_history = allcountries.filter(function (pilot) {
+     var filter_history = allcountries.filter(function (pilot) {
       return parseInt(pilot.fiscal_year) === 2000;
     });
    
@@ -228,14 +227,23 @@ searchLanguageSubmit = (event) => {
       .catch((err) => {
         console.log(err);
       });
-      console.log(this.state.location.lat);
+      //console.log(this.state.location.lat);
 
 
-      
       var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-      targetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=' + this.state.location.lat + '&longitude=' + this.state.location.lng + '&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1'
+      weatherURL = 'https://samples.openweathermap.org/data/2.5/weather?q=Kabul,Afghanistan&appid=439d4b804bc8187953eb36d2a8c26a02'
   
-
+      fetch(proxyUrl + weatherURL)
+      .then(blob => blob.json())
+      .then(data => {
+        this.setState({ current_weather: data.weather.main});
+      })
+      .catch(e => {
+        console.log(e);
+        
+      });
+      
+ 
       //Get air condition at a particular geolocation
       /*
       fetch(proxyUrl + targetUrl)
@@ -278,7 +286,7 @@ searchLanguageSubmit = (event) => {
      fetch(proxyUrl + weatherURL)
      .then(blob => blob.json())
      .then(data => {
-       console.log(data)
+      this.setState({ current_weather: data.weather.main});
      })
      .catch(e => {
        console.log(e);

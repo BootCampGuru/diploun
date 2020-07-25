@@ -2209,7 +2209,9 @@
             "Languages": "[English, Pashto, Persian]", "Funding": 2242759043,
             "Travel_Advisory":"Do Not Travel",
             "Hours" :"8:30 A.M. to 4:00 PM",
-            "Notes" : "The mission of the U.S. Embassy in Kabul is to promote bilateral ties between the United States and Afghanistan. Embassy activities focus on strengthening democratic institutions, enhancing security and regional stability, fighting international terrorism, combating narcotics production and trafficking, and fostering expanded trade and investment."
+            "Notes" : "The mission of the U.S. Embassy in Kabul is to promote bilateral ties between the United States and Afghanistan. Embassy activities focus on strengthening democratic institutions, enhancing security and regional stability, fighting international terrorism, combating narcotics production and trafficking, and fostering expanded trade and investment.",
+            "Weather" : 100,
+            "Air" : 70
         },
         {
             "Status": "Active",
