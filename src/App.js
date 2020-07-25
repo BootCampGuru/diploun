@@ -278,14 +278,14 @@ searchLanguageSubmit = (event) => {
      fetch(proxyUrl + weatherURL)
      .then(blob => blob.json())
      .then(data => {
-       console.log(each)
+       console.log(data)
      })
      .catch(e => {
        console.log(e);
        
      });
     this.setState({current_weather: data});
-     return(  <div><br /> 
+     return(  <Popup><br /> 
                   <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
                   <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
                   {each.Street_Address_1}<br /> 
@@ -297,7 +297,7 @@ searchLanguageSubmit = (event) => {
                   Funding:${each.Funding != null ? parseInt(each.Funding) : 'N/A'}<br/>
                   Current Weather:  {this.state.current_weather}<br/>
                   Current Air:
-                </div>)
+                </Popup>)
 
   }
 
@@ -509,8 +509,20 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         //console.log(each.Longitude)
         if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
-        return <Marker onClick={this.onWeatherChanged(each)} key={index} position={position} icon={myIcon}>
-      
+        return <Marker key={index} position={position} icon={myIcon}>
+              <Popup><br /> 
+                  <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
+                  <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
+                  {each.Street_Address_1}<br /> 
+                  {each.Property_Name}<br /> 
+                  {each.Post}<br /> 
+                  {each.Country} <br/>
+                  <img alt="mission" style={{width:"150px"}} src={each.Image} /><br/>
+                  Travel Advisory: <b>{each.Travel_Advisory}</b> <br/>
+                  Funding:${each.Funding != null ? parseInt(each.Funding) : 'N/A'}<br/>
+                  Current Weather:  {this.state.current_weather} F<br/>
+                  Current Air: {this.state.current_air} 
+                </Popup>
 {
   this.state.show_aid ?
         <Circle 
