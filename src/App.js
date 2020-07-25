@@ -269,7 +269,7 @@ searchLanguageSubmit = (event) => {
  }
 
 
-  onWeatherChanged = (lat,lon) => {
+  onWeatherChanged = (each) => {
      //Get weather at a particular geolocation
      //var weatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=44.651572&lon=-63.575482&appid=d3242b32f1fb46174a7a8d02030c4cd7";
      var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
@@ -285,7 +285,19 @@ searchLanguageSubmit = (event) => {
        
      });
     this.setState({current_weather: data});
-     return(<div>test</div>)
+     return(  <Popup><br /> 
+                  <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
+                  <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
+                  {each.Street_Address_1}<br /> 
+                  {each.Property_Name}<br /> 
+                  {each.Post}<br /> 
+                  {each.Country} <br/>
+                  <img alt="mission" style={{width:"150px"}} src={each.Image} /><br/>
+                  Travel Advisory: <b>{each.Travel_Advisory}</b> <br/>
+                  Funding:${each.Funding != null ? parseInt(each.Funding) : 'N/A'}<br/>
+                  Current Weather:  {this.state.current_weather}<br/>
+                  Current Air:
+                </Popup>)
 
   }
 
@@ -497,7 +509,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         //console.log(each.Longitude)
         if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
-        return <Marker onClick={this.onWeatherChanged} key={index} position={position} icon={myIcon}>
+        return <Marker onClick={this.onWeatherChanged(each)} key={index} position={position} icon={myIcon}>
       
 {
   this.state.show_aid ?
