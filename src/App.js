@@ -285,7 +285,7 @@ searchLanguageSubmit = (event) => {
        
      });
     this.setState({current_weather: data});
-   
+     alert(data);
   }
 
   onChanged = (event) => {
@@ -497,19 +497,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
         return <Marker onClick={this.onWeatherChanged} key={index} position={position} icon={myIcon}>
-          <Popup><br /> 
-            <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
-            <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
-            {each.Street_Address_1}<br /> 
-            {each.Property_Name}<br /> 
-            {each.Post}<br /> 
-            {each.Country} <br/>
-            <img alt="mission" style={{width:"150px"}} src={each.Image} /><br/>
-            Travel Advisory: <b>{each.Travel_Advisory}</b> <br/>
-            Funding:${each.Funding != null ? parseInt(each.Funding) : 'N/A'}<br/>
-            Current Weather:  {this.state.current_weather}<br/>
-            Current Air:
-          </Popup>
+      
 {
   this.state.show_aid ?
         <Circle 
