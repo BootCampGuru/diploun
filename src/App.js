@@ -278,14 +278,14 @@ searchLanguageSubmit = (event) => {
      fetch(proxyUrl + weatherURL)
      .then(blob => blob.json())
      .then(data => {
-       console.log(data)
+       console.log(each)
      })
      .catch(e => {
        console.log(e);
        
      });
     this.setState({current_weather: data});
-     return(  <Popup><br /> 
+     return(  <div><br /> 
                   <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
                   <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
                   {each.Street_Address_1}<br /> 
@@ -297,7 +297,7 @@ searchLanguageSubmit = (event) => {
                   Funding:${each.Funding != null ? parseInt(each.Funding) : 'N/A'}<br/>
                   Current Weather:  {this.state.current_weather}<br/>
                   Current Air:
-                </Popup>)
+                </div>)
 
   }
 
