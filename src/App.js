@@ -285,7 +285,8 @@ searchLanguageSubmit = (event) => {
        
      });
     this.setState({current_weather: data});
-     alert(data);
+     return(<div>test</div>)
+
   }
 
   onChanged = (event) => {
