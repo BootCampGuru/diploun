@@ -223,7 +223,7 @@ searchLanguageSubmit = (event) => {
           zoom: 5,
         });
 
-        var weatherURL = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude='+ response.json.results[0].geometry.location.lat +'&longitude=' + response.json.results[0].geometry.location.lng + '&distance=25&API_KEY=d3242b32f1fb46174a7a8d02030c4cd7'
+        var weatherURL = 'api.openweathermap.org/data/2.5/weather?lat='+ response.json.results[0].geometry.location.lat +'&lon=' + response.json.results[0].geometry.location.lng + '&appid=d3242b32f1fb46174a7a8d02030c4cd7'
         var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         //weatherURL = 'https://samples.openweathermap.org/data/2.5/weather?q=Kabul,Afghanistan&appid=439d4b804bc8187953eb36d2a8c26a02'
         console.log(weatherURL);
