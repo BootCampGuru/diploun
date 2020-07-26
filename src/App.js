@@ -223,6 +223,23 @@ searchLanguageSubmit = (event) => {
           zoom: 5,
         });
 
+        var weatherURL = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude='+ response.json.results[0].geometry.location.lat +'&longitude=' + response.json.results[0].geometry.location.lng + '&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1'
+        var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+        //weatherURL = 'https://samples.openweathermap.org/data/2.5/weather?q=Kabul,Afghanistan&appid=439d4b804bc8187953eb36d2a8c26a02'
+        console.log(weatherURL);
+        fetch(proxyUrl + weatherURL)
+        .then(blob => blob.json())
+        .then(data => {
+          this.setState({ current_weather: data.weather[0].main});
+          //console.log(data.weather[0].main);
+        })
+        .catch(e => {
+          console.log(e);
+          
+        });
+
+
+
       })
       .catch((err) => {
         console.log(err);
@@ -230,19 +247,7 @@ searchLanguageSubmit = (event) => {
       //console.log(this.state.location.lat);
 
 
-      var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-      weatherURL = 'https://samples.openweathermap.org/data/2.5/weather?q=Kabul,Afghanistan&appid=439d4b804bc8187953eb36d2a8c26a02'
-  
-      fetch(proxyUrl + weatherURL)
-      .then(blob => blob.json())
-      .then(data => {
-        this.setState({ current_weather: data.weather[0].main});
-        console.log(data.weather[0].main);
-      })
-      .catch(e => {
-        console.log(e);
-        
-      });
+     
       
  
       //Get air condition at a particular geolocation
@@ -529,7 +534,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                   <img alt="mission" style={{width:"150px"}} src={each.Image} /><br/>
                   Travel Advisory: <b>{each.Travel_Advisory}</b> <br/>
                   Funding:${each.Funding != null ? parseInt(each.Funding) : 'N/A'}<br/>
-                  Current Weather:  {this.state.current_weather} F<br/>
+                  Current Weather:  {this.state.current_weather}<br/>
                   Current Air: {this.state.current_air} 
                 </Popup>
 {
