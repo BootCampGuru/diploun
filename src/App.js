@@ -236,8 +236,8 @@ searchLanguageSubmit = (event) => {
       fetch(proxyUrl + weatherURL)
       .then(blob => blob.json())
       .then(data => {
-        this.setState({ current_weather: data.weather.main});
-        console.log(data);
+        this.setState({ current_weather: data.weather[0].main});
+        console.log(data.weather[0].main);
       })
       .catch(e => {
         console.log(e);
