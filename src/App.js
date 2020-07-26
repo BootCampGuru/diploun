@@ -245,7 +245,7 @@ searchLanguageSubmit = (event) => {
         .then(blob => blob.json())
         .then(data => {
           console.log(data);
-          this.setState({ current_air: data[0].aqi});
+          this.setState({ current_air: data[0].AQI});
           
         })
         .catch(e => {
