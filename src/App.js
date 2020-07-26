@@ -237,6 +237,7 @@ searchLanguageSubmit = (event) => {
       .then(blob => blob.json())
       .then(data => {
         this.setState({ current_weather: data.weather.main});
+        console.log(data);
       })
       .catch(e => {
         console.log(e);
