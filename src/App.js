@@ -227,7 +227,7 @@ searchLanguageSubmit = (event) => {
         var airTargetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=' + response.json.results[0].geometry.location.lat + '&longitude=' + response.json.results[0].geometry.location.lng + '&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1';
         var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         //weatherURL = 'https://samples.openweathermap.org/data/2.5/weather?q=Kabul,Afghanistan&appid=439d4b804bc8187953eb36d2a8c26a02'
-        console.log(weatherURL);
+        console.log(airTargetUrl);
         fetch(proxyUrl + weatherURL)
         .then(blob => blob.json())
         .then(data => {
@@ -243,8 +243,8 @@ searchLanguageSubmit = (event) => {
         fetch(proxyUrl + airTargetUrl)
         .then(blob => blob.json())
         .then(data => {
-          this.setState({ current_air: data[0].AQI});
-          console.log(data[0]);
+          this.setState({ current_air: data[0]});
+          console.log(data);
         })
         .catch(e => {
           console.log(e);
