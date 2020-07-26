@@ -244,7 +244,6 @@ searchLanguageSubmit = (event) => {
         fetch(proxyUrl + airTargetUrl)
         .then(blob => blob.json())
         .then(data => {
-          console.log(data[0]);
           this.setState({ current_air: data[0].AQI});
           
         })
