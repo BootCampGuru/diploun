@@ -225,10 +225,10 @@ searchLanguageSubmit = (event) => {
 
         var weatherURL = 'api.openweathermap.org/data/2.5/weather?lat='+ response.json.results[0].geometry.location.lat +'&lon=' + response.json.results[0].geometry.location.lng + '&appid=d3242b32f1fb46174a7a8d02030c4cd7'
         //var airTargetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=' + response.json.results[0].geometry.location.lat + '&longitude=' + response.json.results[0].geometry.location.lng + '&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1';
-        var airTargetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=39.0509&longitude=-121.4453&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1';
+        //var airTargetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=39.0509&longitude=-121.4453&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1';
+        var airTargetUrl = 'https://api.waqi.info/feed/' + country + '/?token=15e1bd345dd701c91b0b608289d134794cb0199c';
         var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-        //weatherURL = 'https://samples.openweathermap.org/data/2.5/weather?q=Kabul,Afghanistan&appid=439d4b804bc8187953eb36d2a8c26a02'
-        console.log(airTargetUrl);
+        //weatherURL = 'https://samples.openweathermap.org/data/2.5/weather?q=Kabul,Afghanistan&appid=439d4b804bc8187953eb36d2a8c26a02';
         fetch(proxyUrl + weatherURL)
         .then(blob => blob.json())
         .then(data => {
@@ -244,7 +244,7 @@ searchLanguageSubmit = (event) => {
         fetch(proxyUrl + airTargetUrl)
         .then(blob => blob.json())
         .then(data => {
-          this.setState({ current_air: data[0].AQI});
+          this.setState({ current_air: data.data.aqi});
           
         })
         .catch(e => {
