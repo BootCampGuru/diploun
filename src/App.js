@@ -43,7 +43,7 @@ popupAnchor: [0, -41]
 });
 
 var mySecondIcon = L.icon({
-  iconUrl: './images/background_star.png',
+  iconUrl: './images/background_gold_star.png',
   iconSize: [25,41],
   iconAnchor: [12.5, 41],
   popupAnchor: [0, -41]
