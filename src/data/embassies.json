@@ -281,7 +281,8 @@
             "Image": "./images/Embassy_Madagascar.jpg",
             "Staff_Image":"./images/madagascar_comoros.jpg",
             "Staff_Name" : "Michael Peter Pelletier",
-            "Staff_Url" : "https://mg.usembassy.gov/embassy-consulate/embassy/our-ambassador/"
+            "Staff_Url" : "https://mg.usembassy.gov/embassy-consulate/embassy/our-ambassador/",
+            "Notes" : "The United States Embassy is investing in the next generation in Madagascar.  As the largest bilateral donor through the United States Agency for International Development (USAID), our programs help to improve the lives of millions of Malagasy.  These national programs are helping to eradicate malaria, improve maternal and child health, and assisting communities in disaster preparation. Yet, we also believe in promoting peace and friendship through cultural and professional exchanges.  That is why, on average each year, 150 Peace Corps Volunteers live and work in rural villages across the country. We are making investments for the future.  The Department of State spent over $100 million to build a state of the art embassy that will serve as a platform for diplomacy and exchanges for the next 100 years.  The Public Affairs Section provides Madagascar with the latest technology, information, and resources through its educational and cultural programs. The Embassy continues to work through its Political and Economic Section to strengthen our bilateral relation and address human rights, trafficking in persons, and the rule of the law.  Together, the American mission to Madagascar has over 450 staff who work every day to build a better future for the country."
         },
         {
             "Status": "Active",
