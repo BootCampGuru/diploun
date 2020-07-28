@@ -276,7 +276,12 @@
             "Longitude": "47.516667",
             "Date First Acq": "3/25/10",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding": 20000
+            "Languages": "[English, French]", 
+            "Funding": 20000,
+            "Image": "./images/Embassy_Madagascar.jpg",
+            "Staff_Image":"./images/madagascar_comoros.jpg",
+            "Staff_Name" : "Michael Peter Pelletier",
+            "Staff_Url" : "https://mg.usembassy.gov/embassy-consulate/embassy/our-ambassador/"
         },
         {
             "Status": "Active",
@@ -2751,7 +2756,8 @@
             "Longitude": "4.837939",
             "Date First Acq": "5/1/03",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", 
+            "Funding" : 10000
         },
         {
             "Status": "Active",
