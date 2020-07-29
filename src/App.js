@@ -116,8 +116,21 @@ class App extends Component {
     }
 
     let filesPromise = Promise.resolve([]);
-    filesPromise = Promise.all(promises).then((results) => {
-      console.log(results);
+    filesPromise = Promise.all(this.state.embassy_data.map(data =>
+
+      fetch(proxyUrl + 'https://api.waqi.info/feed/' + data.Country + '/?token=15e1bd345dd701c91b0b608289d134794cb0199c')
+      .then(blob => blob.json())
+      .then(data => {
+        //this.setState({ current_air: data.data.aqi});
+        console.log(data.data.aqi)
+      })
+      .catch(e => {
+        console.log(e);
+        
+      })
+
+    )).then((results) => {
+      //console.log(results);
     });
 
 
