@@ -106,6 +106,21 @@ class App extends Component {
 
   componentDidMount(){
 
+    let promises=[];
+
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+
+    for(var j = 0; j < this.state.embassy_data.length; j++)
+    {
+      promises.push('https://api.waqi.info/feed/' + this.state.embassy_data[j].Country + '/?token=15e1bd345dd701c91b0b608289d134794cb0199c')
+    }
+
+    let filesPromise = Promise.resolve([]);
+    filesPromise = Promise.all(promises).then((results) => {
+      console.log(results);
+    });
+
+
      var filter_history = allcountries.filter(function (pilot) {
       return parseInt(pilot.fiscal_year) === 2000;
     });
@@ -516,7 +531,10 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label htmlFor="travel">Travel Advisory</label> </span>
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
                 <label for="aid">U.S. Aid</label></span> 
-                 <span style={{textAlign: 'center'}}><b><i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
+                 <span className="boxes"><Input onChange={this.onAidChanged} id="air" value="air" type="checkbox"/> 
+                 <label for="aid">Air Quality</label></span> 
+                 <span style={{textAlign: 'center'}}><b>
+                 <i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
      <Row>
      <Col sm={{ size: 8, offset: 1 }}>
      
@@ -564,6 +582,14 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   fillColor="green" 
                   radius={each.Funding > 100000000 ? 500000 : 1000}/> : ''
+}
+
+{
+  this.state.show_aid ?
+        <Circle 
+                  center={{lat:each.Latitude, lng: each.Longitude}}
+                  fillColor="red" 
+                  radius={each.Air > 50 ? 500000 : 10000}/> : ''
 }
         </Marker> 
         }
