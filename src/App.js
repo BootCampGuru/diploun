@@ -318,7 +318,7 @@ searchLanguageSubmit = (event) => {
 
   }
 
-  onAirChanged  = (lat,lon) => {
+  onAirChanged1  = (lat,lon) => {
     //Get weather at a particular geolocation
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
      targetUrl = 'http://www.airnowapi.org/aq/forecast/latLong/?format=json&latitude=' + lat + '&longitude=' + lon + '&distance=25&API_KEY=B2767498-59EE-4F9C-822F-EF64B6F09DC1';
@@ -553,7 +553,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label htmlFor="travel">Travel Advisory</label> </span>
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
                 <label for="aid">U.S. Aid</label></span> 
-                 <span className="boxes"><Input onChange={this.onAidChanged} id="air" value="air" type="checkbox"/> 
+                 <span className="boxes"><Input onChange={this.onAirChanged} id="air" value="air" type="checkbox"/> 
                  <label for="aid">Air Quality</label></span> 
                  <span style={{textAlign: 'center'}}><b>
                  <i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
