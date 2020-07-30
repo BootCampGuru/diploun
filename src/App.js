@@ -23,6 +23,7 @@ import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import RangeSlider from 'react-bootstrap-range-slider';
 import allcountries from './data/all_countries.json'
 import wildlife from './data/wildlife.json'
+import worldGeoJSON from 'geojson-world-map';
 
 const googleMapsClient = require('@google/maps').createClient({
   key: 'AIzaSyAbOXMF2QD78gnzLRhd-XS-51Q_UIWR4h4',
@@ -591,9 +592,15 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         {
 
           this.state.show_advisory ? 
-            map_wildlifedata.map((data,idx) =>{
-           return <GeoJSON key={idx} data={data} style={this.getColor(data.score)} />
-            })
+          <GeoJSON
+          data={worldGeoJSON}
+          style={() => ({
+            color: '#4a83ec',
+            weight: 0.5,
+            fillColor: "#1a1d62",
+            fillOpacity: 1,
+          })}
+        />
           : ''
         }
   
