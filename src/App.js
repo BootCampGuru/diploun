@@ -78,6 +78,8 @@ class App extends Component {
     data:data,
     wildlifedata: wildlife,
     show_advisory: false,
+    show_wildlife: false,
+    show_person: false,
     defaultActiveKey: 'home',
     show_aid: false,
     show_air: true,
@@ -541,6 +543,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     this.setState({show_advisory: event.target.checked});
   }
 
+  onWildLifeChanged= (event) => {
+   
+    this.setState({show_wildlife: event.target.checked});
+  }
+
   onAidChanged = (event) => {
    
     this.setState({show_aid: event.target.checked});
@@ -578,7 +585,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
                 <label for="aid">U.S. Aid</label></span> 
                  <span className="boxes"><Input onChange={this.onAirChanged} id="air" value="air" checked={this.state.show_air} type="checkbox"/> 
-                 <label for="air">Air Quality</label></span> <br/>
+                 <label for="air">Air Quality</label></span> 
+                 <span className="boxes"><Input  onChange={this.onWildLifeChanged} id="wildlife" value="Wild Life" type="checkbox" />
+                <label htmlFor="wildlife">Wild Life</label> </span>
+
+                 <br/>
                  <span style={{textAlign: 'center', padding: '5px'}}><b>
                  <i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a rel="noopener noreferrer" target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
      <Row>
@@ -591,16 +602,12 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         />
         {
 
-          this.state.show_advisory ? 
-          <GeoJSON
-          data={worldGeoJSON}
-          style={() => ({
-            color: '#4a83ec',
-            weight: 0.5,
-            fillColor: "#1a1d62",
-            fillOpacity: 1,
-          })}
-        />
+          this.state.show_wildlife ? 
+      
+          map_wildlifedata.map((each, index) => {
+
+        return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} />
+          }) 
           : ''
         }
   
