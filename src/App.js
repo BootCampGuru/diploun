@@ -605,7 +605,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                  <span className="boxes"><Input onChange={this.onAirChanged} id="air" value="air" checked={this.state.show_air} type="checkbox"/> 
                  <label for="air">Air Quality</label></span> 
                  <span className="boxes"><Input  onChange={this.onWildLifeChanged} id="wildlife" value="Wild Life" type="checkbox" />
-                <label htmlFor="wildlife">Wild Life</label> </span>
+                <label htmlFor="wildlife">Trafficking in Wild Life</label> </span>
                 <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" type="checkbox" />
                 <label htmlFor="tiplife">Trafficking in Person</label> </span>
                  <br/>
@@ -646,7 +646,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
           
         this.state.tip_data.map((each, index) => {
 
-         return <GeoJSON  key={index} data={each} style={this.getTipColor(parseInt(each.score))} />
+         return <GeoJSON  key={index} data={each} style={this.getTipColor(each.score)} />
         }) 
 
         : ''
