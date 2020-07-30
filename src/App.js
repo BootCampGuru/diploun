@@ -610,7 +610,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   this.state.show_air ?
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
-                  fillColor="red" 
+                  label={each.Air} fillColor="red" 
                   radius={each.Air > 50 ? 500000 : 10000}/> : ''
 }
         </Marker> 
