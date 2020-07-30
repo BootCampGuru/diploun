@@ -8,7 +8,8 @@
     "geometry": {
         "type": "Point",
         "coordinates": [6.440532, 3.406701]
-    }
+    },
+    "score" : 1
 }, {
     "type": "Feature",
     "properties": {
@@ -18,6 +19,7 @@
     "geometry": {
         "type": "Point",
         "coordinates": [22.604774, 120.30133]
-    }
+    },
+    "score" : 5
 }
 ]

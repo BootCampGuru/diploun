@@ -591,9 +591,9 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         {
 
           this.state.show_advisory ? 
-
+          console.log(map_wildlifedata);
           map_wildlifedata.map((each,index) => {
-            return <GeoJSON  key={index} data={each} />
+            return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} />
           })
           : ''
         }
