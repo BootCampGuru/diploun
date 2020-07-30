@@ -633,7 +633,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   //fillColor={each.Air > -1 ? 'green' : 'red'}
                   fillColor = {this.getAirColor(each.Air)}
-                  radius={each.Air != null ? parseInt(each.Air) * 50000 : 100000}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
+                  radius={each.Air != null ? parseInt(each.Air) * 5000 : 10000}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
 }
         </Marker> 
         }
