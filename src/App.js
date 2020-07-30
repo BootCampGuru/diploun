@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React,{Component,SVGComponent} from 'react';
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import L from 'leaflet';
@@ -7,7 +7,7 @@ import { BarChart } from "reaviz";
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import {Form, Input, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row, Col} from 'reactstrap'
-import { Map, TileLayer, Marker, Popup,GeoJSON,Circle,SVGComponent } from 'react-leaflet'
+import { Map, TileLayer, Marker, Popup,GeoJSON,Circle } from 'react-leaflet'
 import './App.css';
 import data from './data/diplomacy.json'
 import embassies from './data/embassies.json'
