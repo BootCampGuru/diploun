@@ -17,7 +17,7 @@
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
             "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -38,7 +38,7 @@
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Arabic]", 
             "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -58,7 +58,7 @@
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
             "Funding": 852000000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -78,7 +78,7 @@
             "Date First Acq": "6/11/07",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 189000000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -97,7 +97,7 @@
             "Date First Acq": "4/3/03",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -117,7 +117,7 @@
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French, Arabic]", 
             "Funding": 447000000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -138,7 +138,7 @@
             "Funding Agency": "AIT",
             "Languages": "[English, Taiwanese]", 
             "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -157,7 +157,7 @@
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Taiwanese]", 
             "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -175,7 +175,7 @@
             "Date First Acq": "9/10/07",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French, Arabic]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -195,7 +195,7 @@
             "Date First Acq": "9/21/01",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, Kazakh]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -214,7 +214,7 @@
             "Date First Acq": "7/4/92",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French, Arabic]", "Funding": 477000000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -232,7 +232,7 @@
             "Date First Acq": "5/8/49",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French, German]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -252,7 +252,7 @@
             "Date First Acq": "1/1/54",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Turkish]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -272,7 +272,7 @@
             "Date First Acq": "5/14/14",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, Turkish]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -298,7 +298,7 @@
             "Staff_Name" : "Michael Peter Pelletier",
             "Staff_Url" : "https://mg.usembassy.gov/embassy-consulate/embassy/our-ambassador/",
             "Notes" : "The United States Embassy is investing in the next generation in Madagascar.  As the largest bilateral donor through the United States Agency for International Development (USAID), our programs help to improve the lives of millions of Malagasy.  These national programs are helping to eradicate malaria, improve maternal and child health, and assisting communities in disaster preparation. Yet, we also believe in promoting peace and friendship through cultural and professional exchanges.  That is why, on average each year, 150 Peace Corps Volunteers live and work in rural villages across the country. We are making investments for the future.  The Department of State spent over $100 million to build a state of the art embassy that will serve as a platform for diplomacy and exchanges for the next 100 years.  The Public Affairs Section provides Madagascar with the latest technology, information, and resources through its educational and cultural programs. The Embassy continues to work through its Political and Economic Section to strengthen our bilateral relation and address human rights, trafficking in persons, and the rule of the law.  Together, the American mission to Madagascar has over 450 staff who work every day to build a better future for the country.",
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -318,7 +318,7 @@
             "Date First Acq": "8/1/02",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -338,7 +338,7 @@
             "Date First Acq": "3/30/95",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Russian]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -358,7 +358,7 @@
             "Date First Acq": "5/23/50",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -376,7 +376,7 @@
             "Date First Acq": "8/17/17",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Spanish]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -395,7 +395,7 @@
             "Date First Acq": "7/4/61",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Greek]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -414,7 +414,7 @@
             "Date First Acq": "5/1/07",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -434,7 +434,7 @@
             "Date First Acq": "4/1/99",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -454,7 +454,7 @@
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Arabic]", 
             "Funding": 240000000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -472,7 +472,7 @@
             "Date First Acq": "8/15/92",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -491,7 +491,7 @@
             "Date First Acq": "9/10/06",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -511,7 +511,7 @@
             "Date First Acq": "9/23/10",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -531,7 +531,7 @@
             "Date First Acq": "10/10/95",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Thai]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -549,7 +549,7 @@
             "Date First Acq": "9/30/78",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -567,7 +567,7 @@
             "Date First Acq": "12/24/96",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, Russian]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -587,7 +587,7 @@
             "Date First Acq": "5/1/82",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -607,7 +607,7 @@
             "Date First Acq": "1/1/90",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -628,7 +628,7 @@
             "Date First Acq": "12/31/11",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -647,7 +647,7 @@
             "Date First Acq": "10/27/08",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -667,7 +667,7 @@
             "Date First Acq": "4/30/85",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, French, Arabic]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -688,7 +688,7 @@
             "Date First Acq": "10/14/02",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -707,7 +707,7 @@
             "Date First Acq": "3/29/13",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -726,7 +726,7 @@
             "Date First Acq": "10/27/06",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -771,7 +771,7 @@
             "Date First Acq": "1/1/06",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -789,7 +789,7 @@
             "Date First Acq": "10/27/15",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -809,7 +809,7 @@
             "Date First Acq": "3/15/93",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Spanish]", "Funding": 181000000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -829,7 +829,7 @@
             "Date First Acq": "9/30/09",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -849,7 +849,7 @@
             "Date First Acq": "2/23/76",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -869,7 +869,7 @@
             "Date First Acq": "1/1/48",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -889,7 +889,7 @@
             "Date First Acq": "1/20/09",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 131000000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -908,7 +908,7 @@
             "Date First Acq": "12/15/06",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -928,7 +928,7 @@
             "Date First Acq": "1/1/50",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -948,7 +948,7 @@
             "Date First Acq": "2/1/91",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -968,7 +968,7 @@
             "Date First Acq": "7/1/99",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -987,7 +987,7 @@
             "Date First Acq": "5/31/18",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1006,7 +1006,7 @@
             "Date First Acq": "8/12/11",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1026,7 +1026,7 @@
             "Date First Acq": "2/15/47",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1046,7 +1046,7 @@
             "Date First Acq": "1/1/70",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Spanish]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1064,7 +1064,7 @@
             "Date First Acq": "9/26/12",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1084,7 +1084,7 @@
             "Date First Acq": "8/1/07",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1103,7 +1103,7 @@
             "Date First Acq": "9/1/89",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French, Arabic]", "Funding" : 1678710000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1124,7 +1124,7 @@
             "Date First Acq": "1/1/74",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1144,7 +1144,7 @@
             "Date First Acq": "9/5/46",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1164,7 +1164,7 @@
             "Date First Acq": "10/15/05",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1183,7 +1183,7 @@
             "Date First Acq": "8/2/95",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1202,7 +1202,7 @@
             "Date First Acq": "7/29/47",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French, Arabic]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1220,7 +1220,7 @@
             "Date First Acq": "11/1/93",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1239,7 +1239,7 @@
             "Date First Acq": "12/29/68",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Hindi]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1258,7 +1258,7 @@
             "Date First Acq": "9/1/50",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1276,7 +1276,7 @@
             "Date First Acq": "7/23/92",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1296,7 +1296,7 @@
             "Date First Acq": "11/5/08",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Spanish]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1315,7 +1315,7 @@
             "Date First Acq": "7/1/65",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1334,7 +1334,7 @@
             "Date First Acq": "6/1/06",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1352,7 +1352,7 @@
             "Date First Acq": "6/1/54",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding": 20000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1371,7 +1371,7 @@
             "Date First Acq": "5/19/15",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1390,7 +1390,7 @@
             "Date First Acq": "3/15/50",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1409,7 +1409,7 @@
             "Date First Acq": "1/11/13",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "InActive",
@@ -1428,7 +1428,7 @@
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Arabic]", 
             "Funding" : 2678710000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1449,7 +1449,7 @@
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
             "Funding": 212000000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1467,7 +1467,7 @@
             "Date First Acq": "1/1/53",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1487,7 +1487,7 @@
             "Date First Acq": "5/1/86",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Bengali]", "Funding" : 183000000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1506,7 +1506,7 @@
             "Date First Acq": "5/1/03",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Portueguese]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1525,7 +1525,7 @@
             "Date First Acq": "8/7/11",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1546,7 +1546,7 @@
             "Date First Acq": "1/8/99",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, Arabic]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1566,7 +1566,7 @@
             "Date First Acq": "5/1/06",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1586,7 +1586,7 @@
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Arabic]", 
             "Funding" : 10000,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1624,7 +1624,8 @@
             "Longitude": "31.02184",
             "Date First Acq": "9/30/01",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1641,7 +1642,8 @@
             "Longitude": "68.715237",
             "Date First Acq": "4/4/06",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1666,7 +1668,8 @@
             "Languages": "[English, German]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
             "Travel_Advisory" : "Do Not Travel",
-            "Notes" : "Welcome to the U.S. Consulate General in Düsseldorf, Germany. Our Consulate is responsible for the state of North Rhine-Westphalia (NRW). In this section of our website you will find information about the Consul General, the Consulate, the German-American Clubs and Sister City Partnerships in our region, as well as important political and economic information about NRW."
+            "Notes" : "Welcome to the U.S. Consulate General in Düsseldorf, Germany. Our Consulate is responsible for the state of North Rhine-Westphalia (NRW). In this section of our website you will find information about the Consul General, the Consulate, the German-American Clubs and Sister City Partnerships in our region, as well as important political and economic information about NRW.",
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1685,7 +1688,8 @@
             "Longitude": "-3.176987",
             "Date First Acq": "5/16/50",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1703,7 +1707,8 @@
             "Longitude": "43.989718",
             "Date First Acq": "7/1/10",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1720,7 +1725,8 @@
             "Longitude": "11.240657",
             "Date First Acq": "12/30/47",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1744,7 +1750,8 @@
             "Languages": "[English, German]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
             "Travel_Advisory" : "Do Not Travel",
-            "Notes" : "The Consul General and her principal officers direct the activities of the United States Consulate General in Frankfurt. The Frankfurt Consulate is the largest U.S. consular post and one of the largest diplomatic missions in the world. The Consulate serves the American resident community – including members of the Armed Forces and their families, business people and retirees – and assists many other visitors to Frankfurt."
+            "Notes" : "The Consul General and her principal officers direct the activities of the United States Consulate General in Frankfurt. The Frankfurt Consulate is the largest U.S. consular post and one of the largest diplomatic missions in the world. The Consulate serves the American resident community – including members of the Armed Forces and their families, business people and retirees – and assists many other visitors to Frankfurt.",
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1763,7 +1770,8 @@
             "Longitude": "-13.229636",
             "Date First Acq": "10/31/06",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1780,7 +1788,8 @@
             "Longitude": "130.372972",
             "Date First Acq": "1/1/60",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1798,7 +1807,8 @@
             "Longitude": "25.908739",
             "Date First Acq": "3/1/89",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1817,7 +1827,8 @@
             "Longitude": "-58.161085",
             "Date First Acq": "11/7/90",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1836,7 +1847,8 @@
             "Longitude": "-103.36701",
             "Date First Acq": "7/26/66",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, Spanish]", "Funding" : 10000
+            "Languages": "[English, Spanish]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1855,7 +1867,8 @@
             "Longitude": "113.32031",
             "Date First Acq": "4/15/13",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Chinese]", "Funding" : 10000
+            "Languages": "[English, Chinese]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1873,7 +1886,8 @@
             "Date First Acq": "8/21/74",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
-            "Funding" : 215000000
+            "Funding" : 215000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1892,7 +1906,8 @@
             "Longitude": "-79.939617",
             "Date First Acq": "11/22/13",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1909,7 +1924,8 @@
             "Longitude": "4.343627",
             "Date First Acq": "11/24/17",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1928,7 +1944,8 @@
             "Longitude": "-63.575482",
             "Date First Acq": "11/1/00",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1953,7 +1970,8 @@
             "Languages": "[English, German]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
             "Travel_Advisory" : "Do Not Travel",
-            "Notes" : "The American Consulate in Hamburg was established as one of the first U.S. Consulates on June 17, 1790, with the naming of John Parish, a naturalized Hamburg citizen of Scottish birth, as Vice Consul. In 1793, Parish was promoted to the rank of Consul for another three years; he is the only non-American to have served in this post. In 1904, Hugh Pitcairn was appointed the first Consul General.The Consulate was closed from October 3, 1917 until 1922, with the United States’ participation in World War I. On July 8, 1941, all U.S. Consulates in Germany were closed for the duration of the war, and American interests were handled by the Swiss Legation.The Consulate General reopened on March 1, 1946, and the U.S. Government purchased the present facilities in 1950."
+            "Notes" : "The American Consulate in Hamburg was established as one of the first U.S. Consulates on June 17, 1790, with the naming of John Parish, a naturalized Hamburg citizen of Scottish birth, as Vice Consul. In 1793, Parish was promoted to the rank of Consul for another three years; he is the only non-American to have served in this post. In 1904, Hugh Pitcairn was appointed the first Consul General.The Consulate was closed from October 3, 1917 until 1922, with the United States’ participation in World War I. On July 8, 1941, all U.S. Consulates in Germany were closed for the duration of the war, and American interests were handled by the Swiss Legation.The Consulate General reopened on March 1, 1946, and the U.S. Government purchased the present facilities in 1950.",
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1975,7 +1993,8 @@
             "Staff_Image": "./images/Bermuda_1.jpg",
             "Staff_Name" : "Constance M. Dierman",
             "Languages": "[English, French]", "Funding" : 0,
-            "Travel_Advisory" : "Do Not Travel"
+            "Travel_Advisory" : "Do Not Travel",
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -1994,7 +2013,8 @@
             "Longitude": "105.81907",
             "Date First Acq": "1/28/95",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2013,7 +2033,8 @@
             "Longitude": "31.045219",
             "Date First Acq": "9/10/84",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2032,7 +2053,8 @@
             "Longitude": "30.978226",
             "Date First Acq": "10/11/18",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2049,7 +2071,8 @@
             "Longitude": "-82.406867",
             "Date First Acq": "5/1/53",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2067,7 +2090,8 @@
             "Longitude": "24.960728",
             "Date First Acq": "1/1/40",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2085,7 +2109,8 @@
             "Longitude": "-110.958963",
             "Date First Acq": "2/21/86",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2103,7 +2128,8 @@
             "Longitude": "106.6999",
             "Date First Acq": "7/8/99",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2121,7 +2147,8 @@
             "Longitude": "114.158744",
             "Date First Acq": "6/15/57",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2141,7 +2168,8 @@
             "Date First Acq": "10/18/07",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, Hindi]", 
-            "Funding": 183
+            "Funding": 183,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2160,7 +2188,8 @@
             "Date First Acq": "9/1/14",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Image":"./images/pakistan_islamabad.jpg",
-            "Languages": "[English, Urdu]", "Funding": 972000000
+            "Languages": "[English, Urdu]", "Funding": 972000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2179,7 +2208,8 @@
             "Longitude": "29.046735",
             "Date First Acq": "7/15/03",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2196,7 +2226,8 @@
             "Longitude": "106.830826",
             "Date First Acq": "8/30/18",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Indonesian]", "Funding" : 171212222
+            "Languages": "[English, Indonesian]", "Funding" : 171212222,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2213,7 +2244,8 @@
             "Longitude": "39.166478",
             "Date First Acq": "8/8/19",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Arabic]", "Funding" : 10000
+            "Languages": "[English, Arabic]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2231,7 +2263,8 @@
             "Longitude": "35.224614",
             "Date First Acq": "3/15/10",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Hewbrew, Arabic]", "Funding": 197000000
+            "Languages": "[English, Hewbrew, Arabic]", "Funding": 197000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2250,7 +2283,8 @@
             "Longitude": "28.051649",
             "Date First Acq": "4/1/09",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Afrikaans]", "Funding" : 10000
+            "Languages": "[English, Afrikaans]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2271,7 +2305,8 @@
             "Date First Acq": "12/29/05",
             "Funding Agency": "AID",
             "undefined": "Although the Consulate Because it is Owned by USAID RPA will not permit Use Code of OFFCOB so it appears as OFFOBX",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2298,7 +2333,7 @@
             "Hours" :"8:30 A.M. to 4:00 PM",
             "Notes" : "The mission of the U.S. Embassy in Kabul is to promote bilateral ties between the United States and Afghanistan. Embassy activities focus on strengthening democratic institutions, enhancing security and regional stability, fighting international terrorism, combating narcotics production and trafficking, and fostering expanded trade and investment.",
             "Weather" : 100,
-            "Air" : 70
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2318,7 +2353,8 @@
             "Date First Acq": "4/25/01",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
-            "Funding": 221000000
+            "Funding": 221000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2336,7 +2372,8 @@
             "Longitude": "67.009866",
             "Date First Acq": "10/1/10",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2354,7 +2391,8 @@
             "Longitude": "85.336322",
             "Date First Acq": "8/17/07",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2371,7 +2409,8 @@
             "Longitude": "32.608695",
             "Date First Acq": "3/2/10",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2391,7 +2430,8 @@
             "Date First Acq": "1/1/08",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
-            "Funding" : 171000000
+            "Funding" : 171000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2410,7 +2450,8 @@
             "Longitude": "-76.764635",
             "Date First Acq": "4/15/04",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2427,7 +2468,8 @@
             "Longitude": "15.313732",
             "Date First Acq": "5/3/50",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding": 131000000
+            "Languages": "[English, French]", "Funding": 131000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2445,7 +2487,8 @@
             "Longitude": "88.35153",
             "Date First Acq": "1/19/75",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Hindi, Bengali]", "Funding" : 10000
+            "Languages": "[English, Hindi, Bengali]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2465,7 +2508,8 @@
             "Date First Acq": "5/12/09",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, French]", 
-            "Funding" : 125000000
+            "Funding" : 125000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2484,7 +2528,8 @@
             "Longitude": "134.55113",
             "Date First Acq": "3/2/09",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2502,7 +2547,8 @@
             "Longitude": "19.938887",
             "Date First Acq": "11/1/05",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2521,7 +2567,8 @@
             "Longitude": "101.722804",
             "Date First Acq": "9/30/83",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2540,7 +2587,8 @@
             "Longitude": "48.045951",
             "Date First Acq": "8/3/92",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2558,7 +2606,8 @@
             "Date First Acq": "9/1/11",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
-            "Funding" : 507000000
+            "Funding" : 507000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2577,7 +2626,8 @@
             "Longitude": "-68.121585",
             "Date First Acq": "3/31/94",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2596,7 +2646,8 @@
             "Longitude": "3.406701",
             "Date First Acq": "1/1/79",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2615,7 +2666,8 @@
             "Longitude": "74.335459",
             "Date First Acq": "1/1/86",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2640,7 +2692,8 @@
             "Languages": "[English, German]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
             "Travel_Advisory" : "Do Not Travel",
-            "Notes" : "Welcome to the Consulate General in Leipzig, Germany. In this section of our website you will find information on the Consul General, the consulate and our consular district, our internship program, and a current list of holidays."
+            "Notes" : "Welcome to the Consulate General in Leipzig, Germany. In this section of our website you will find information on the Consul General, the consulate and our consular district, our internship program, and a current list of holidays.",
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2657,7 +2710,8 @@
             "Longitude": "9.394791",
             "Date First Acq": "8/2/12",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French, Bantu]", "Funding" : 10000
+            "Languages": "[English, French, Bantu]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2676,7 +2730,8 @@
             "Longitude": "33.786824",
             "Date First Acq": "2/6/76",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2693,7 +2748,8 @@
             "Longitude": "-76.968993",
             "Date First Acq": "6/12/95",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2712,7 +2768,8 @@
             "Longitude": "-9.162532",
             "Date First Acq": "6/1/83",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2729,7 +2786,8 @@
             "Longitude": "14.498646",
             "Date First Acq": "7/7/94",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2747,7 +2805,8 @@
             "Longitude": "1.21399",
             "Date First Acq": "1/1/05",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2765,7 +2824,8 @@
             "Longitude": "-0.132241",
             "Date First Acq": "12/22/17",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2782,7 +2842,8 @@
             "Longitude": "13.245634",
             "Date First Acq": "9/1/05",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2801,7 +2862,8 @@
             "Date First Acq": "10/23/10",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
-            "Funding" : 412000000
+            "Funding" : 412000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2819,7 +2881,8 @@
             "Longitude": "6.128965",
             "Date First Acq": "6/24/48",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2839,7 +2902,8 @@
             "Date First Acq": "5/1/03",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
-            "Funding" : 10000
+            "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2858,7 +2922,8 @@
             "Longitude": "-3.686892",
             "Date First Acq": "4/1/55",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2878,7 +2943,8 @@
             "Longitude": "171.318484",
             "Date First Acq": "2/1/87",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2895,7 +2961,8 @@
             "Longitude": "8.45",
             "Date First Acq": "7/25/13",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2914,7 +2981,8 @@
             "Longitude": "-86.309475",
             "Date First Acq": "7/18/07",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2934,7 +3002,8 @@
             "Date First Acq": "12/8/90",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Arabic]", 
-            "Funding" : 10000000
+            "Funding" : 10000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2952,7 +3021,8 @@
             "Longitude": "120.977364",
             "Date First Acq": "1/1/40",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2969,7 +3039,8 @@
             "Longitude": "32.595661",
             "Date First Acq": "1/6/92",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 152710000
+            "Languages": "[English, French]", "Funding" : 152710000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -2988,7 +3059,8 @@
             "Longitude": "5.379031",
             "Date First Acq": "3/9/55",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3005,7 +3077,8 @@
             "Longitude": "27.47891",
             "Date First Acq": "6/1/70",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3022,7 +3095,8 @@
             "Longitude": "0",
             "Date First Acq": "4/24/19",
             "Funding Agency": "STATE-OBO PROJECT",
-            "Languages": "[English, French]", "Funding" : 267871000
+            "Languages": "[English, French]", "Funding" : 267871000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3040,7 +3114,8 @@
             "Longitude": "31.133333",
             "Date First Acq": "5/10/16",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3059,7 +3134,8 @@
             "Longitude": "98.682411",
             "Date First Acq": "9/15/06",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 171000000
+            "Languages": "[English, French]", "Funding" : 171000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3079,7 +3155,8 @@
             "Date First Acq": "4/7/90",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
-            "Funding" : 38000000
+            "Funding" : 38000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3099,7 +3176,8 @@
             "Longitude": "-99.553773",
             "Date First Acq": "9/15/06",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3118,7 +3196,8 @@
             "Longitude": "-99.166418",
             "Date First Acq": "6/10/64",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3137,7 +3216,8 @@
             "Longitude": "9.194112",
             "Date First Acq": "8/1/85",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 33807
+            "Languages": "[English, French]", "Funding" : 33807,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3154,7 +3234,8 @@
             "Longitude": "27.566667",
             "Date First Acq": "4/13/92",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3173,7 +3254,8 @@
             "Longitude": "45.31099",
             "Date First Acq": "11/14/16",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding": 32950993
+            "Languages": "[English, French]", "Funding": 32950993,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3191,7 +3273,8 @@
             "Date First Acq": "11/7/11",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]",
-            "Funding": 158710000
+            "Funding": 158710000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3210,7 +3293,8 @@
             "Longitude": "-100.313789",
             "Date First Acq": "5/22/14",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3229,7 +3313,8 @@
             "Longitude": "-56.176748",
             "Date First Acq": "10/25/69",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3248,7 +3333,8 @@
             "Date First Acq": "9/28/12",
             "Funding Agency": "STATE-ICASS",
             "Languages": "[English, French]", 
-            "Funding" : 35000000
+            "Funding" : 35000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3266,7 +3352,8 @@
             "Longitude": "37.579502",
             "Date First Acq": "5/5/00",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3283,7 +3370,8 @@
             "Longitude": "17.81093",
             "Date First Acq": "5/1/08",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3302,7 +3390,8 @@
             "Date First Acq": "10/6/11",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Hindi]", 
-            "Funding" : 10000
+            "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3327,7 +3416,8 @@
             "Languages": "[English, French]", "Funding" : 10000,
             "Hours" : "8:30 A.M. to 4:00 PM",
             "Travel_Advisory" : "Do Not Travel",
-            "Notes" : "We are the face of America, bringing the people of the USA and Bavaria together to build a safer and more prosperous world.  With a commitment to service, innovation, building goodwill, and ‘going green’ we work to expand our strong economic partnership, deepen our cooperation to make Europe, America and the world more secure, and facilitate the millions of people-to-people connections that unite us in all fields."
+            "Notes" : "We are the face of America, bringing the people of the USA and Bavaria together to build a safer and more prosperous world.  With a commitment to service, innovation, building goodwill, and ‘going green’ we work to expand our strong economic partnership, deepen our cooperation to make Europe, America and the world more secure, and facilitate the millions of people-to-people connections that unite us in all fields.",
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3346,7 +3436,8 @@
             "Date First Acq": "6/1/89",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Arabic]", 
-            "Funding" : 10000
+            "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3366,7 +3457,8 @@
             "Longitude": "136.890271",
             "Date First Acq": "1/1/85",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3384,7 +3476,8 @@
             "Longitude": "127.737511",
             "Date First Acq": "1/10/87",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3404,7 +3497,8 @@
             "Date First Acq": "3/2/03",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Swahili]", 
-            "Funding": 280000000
+            "Funding": 280000000,
+            "Air" : 0
 
         },
         {
@@ -3422,7 +3516,8 @@
             "Longitude": "14.225871",
             "Date First Acq": "1/1/53",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Italian]", "Funding" : 10000
+            "Languages": "[English, Italian]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3442,7 +3537,8 @@
             "Date First Acq": "6/27/73",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Image" : "./images/Embassy_Nassau.jpg",
-            "Languages": "[English, French, Creole]", "Funding" : 10000
+            "Languages": "[English, French, Creole]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3459,7 +3555,8 @@
             "Longitude": "96.171907",
             "Date First Acq": "1/1/15",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French, Burmese]", "Funding" : 10000
+            "Languages": "[English, French, Burmese]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3477,7 +3574,8 @@
             "Longitude": "15.044506",
             "Date First Acq": "4/27/17",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French, Arabic]", "Funding" : 10000
+            "Languages": "[English, French, Arabic]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3497,7 +3595,8 @@
             "Date First Acq": "12/1/58",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Hindi]", 
-            "Funding" : 10000
+            "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3516,7 +3615,8 @@
             "Longitude": "2.073581",
             "Date First Acq": "7/8/70",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3535,7 +3635,8 @@
             "Longitude": "33.345354",
             "Date First Acq": "12/1/92",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3554,7 +3655,8 @@
             "Longitude": "-110.940034",
             "Date First Acq": "5/1/98",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3573,7 +3675,8 @@
             "Longitude": "-15.97842",
             "Date First Acq": "2/9/18",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3591,7 +3694,8 @@
             "Longitude": "-99.50204",
             "Date First Acq": "6/17/13",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3610,7 +3714,8 @@
             "Longitude": "71.469561",
             "Date First Acq": "9/28/06",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3627,7 +3732,8 @@
             "Longitude": "135.501917",
             "Date First Acq": "11/30/87",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3645,7 +3751,8 @@
             "Longitude": "10.670129",
             "Date First Acq": "3/8/17",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3664,7 +3771,8 @@
             "Longitude": "-75.695838",
             "Date First Acq": "11/1/99",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3683,7 +3791,8 @@
             "Longitude": "-1.497124",
             "Date First Acq": "10/30/09",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3701,7 +3810,8 @@
             "Longitude": "-79.562182",
             "Date First Acq": "5/1/05",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3718,7 +3828,8 @@
             "Longitude": "-55.130489",
             "Date First Acq": "7/18/16",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3737,7 +3848,8 @@
             "Longitude": "2.320493",
             "Date First Acq": "9/1/33",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3756,7 +3868,8 @@
             "Longitude": "2.267585",
             "Date First Acq": "11/1/02",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3776,7 +3889,8 @@
             "Longitude": "115.864312",
             "Date First Acq": "10/1/87",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3794,7 +3908,8 @@
             "Longitude": "71.53709",
             "Date First Acq": "3/5/64",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3812,7 +3927,8 @@
             "Longitude": "104.921473",
             "Date First Acq": "9/26/05",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3829,7 +3945,8 @@
             "Longitude": "19.251098",
             "Date First Acq": "9/28/01",
             "Funding Agency": "AID",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3848,7 +3965,8 @@
             "Longitude": "-25.682268",
             "Date First Acq": "7/1/03",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3866,7 +3984,8 @@
             "Longitude": "-72.249376",
             "Date First Acq": "3/31/08",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding": 310000000
+            "Languages": "[English, French]", "Funding": 310000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3885,7 +4004,8 @@
             "Longitude": "57.500463",
             "Date First Acq": "1/1/79",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3904,7 +4024,8 @@
             "Longitude": "147.190242",
             "Date First Acq": "9/7/92",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3923,7 +4044,8 @@
             "Longitude": "-61.516796",
             "Date First Acq": "7/19/55",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3941,7 +4063,8 @@
             "Longitude": "-51.228734",
             "Date First Acq": "2/1/13",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Portueguese]", "Funding" : 10000
+            "Languages": "[English, Portueguese]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3960,7 +4083,8 @@
             "Longitude": "14.401272",
             "Date First Acq": "6/2/25",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3979,7 +4103,8 @@
             "Longitude": "-23.506429",
             "Date First Acq": "1/1/78",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -3997,7 +4122,8 @@
             "Longitude": "28.223374",
             "Date First Acq": "2/5/93",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4014,7 +4140,8 @@
             "Longitude": "21.141171",
             "Date First Acq": "7/29/19",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4032,7 +4159,8 @@
             "Longitude": "-73.809585",
             "Date First Acq": "4/27/49",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4050,7 +4178,8 @@
             "Longitude": "-78.467747",
             "Date First Acq": "9/12/08",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4067,7 +4196,8 @@
             "Longitude": "-6.827964",
             "Date First Acq": "9/26/14",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4086,7 +4216,8 @@
             "Longitude": "96.144838",
             "Date First Acq": "9/24/07",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4104,7 +4235,8 @@
             "Longitude": "-34.89282",
             "Date First Acq": "9/23/64",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4123,7 +4255,8 @@
             "Longitude": "-1.68434",
             "Date First Acq": "11/1/99",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4141,7 +4274,8 @@
             "Longitude": "-21.88971",
             "Date First Acq": "6/14/19",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4158,7 +4292,8 @@
             "Longitude": "24.02909",
             "Date First Acq": "1/21/11",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4177,7 +4312,8 @@
             "Longitude": "-43.173827",
             "Date First Acq": "4/1/53",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4196,7 +4332,8 @@
             "Longitude": "46.620376",
             "Date First Acq": "5/1/86",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4215,7 +4352,8 @@
             "Longitude": "12.490196",
             "Date First Acq": "8/3/46",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4234,7 +4372,8 @@
             "Longitude": "12.491436",
             "Date First Acq": "3/19/31",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4254,7 +4393,8 @@
             "Longitude": "12.492069",
             "Date First Acq": "9/23/03",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4273,7 +4413,8 @@
             "Longitude": "-84.083333",
             "Date First Acq": "1/1/88",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4293,7 +4434,8 @@
             "Date First Acq": "6/1/92",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, Spanish]", 
-            "Funding" : 118000000
+            "Funding" : 118000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4312,7 +4454,8 @@
             "Longitude": "44.228989",
             "Date First Acq": "1/1/89",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Arabic]", "Funding": 159710000
+            "Languages": "[English, Arabic]", "Funding": 159710000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4331,7 +4474,8 @@
             "Longitude": "-70.667666",
             "Date First Acq": "7/4/94",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Spanish]", "Funding" : 10000
+            "Languages": "[English, Spanish]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4349,7 +4493,8 @@
             "Longitude": "-69.963997",
             "Date First Acq": "5/14/14",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4366,7 +4511,8 @@
             "Longitude": "-46.697951",
             "Date First Acq": "6/4/01",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4385,7 +4531,8 @@
             "Longitude": "141.313748",
             "Date First Acq": "10/25/78",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4402,7 +4549,8 @@
             "Longitude": "18.400496",
             "Date First Acq": "11/19/10",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4421,7 +4569,8 @@
             "Longitude": "126.977845",
             "Date First Acq": "10/1/62",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4440,7 +4589,8 @@
             "Longitude": "121.446934",
             "Date First Acq": "7/1/83",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, Chinese]", "Funding" : 10000
+            "Languages": "[English, Chinese]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4457,7 +4607,8 @@
             "Longitude": "123.42647",
             "Date First Acq": "1/15/84",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Chinese]", "Funding" : 10000
+            "Languages": "[English, Chinese]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4476,7 +4627,8 @@
             "Longitude": "103.820462",
             "Date First Acq": "3/28/96",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Singaporean]", "Funding" : 10000
+            "Languages": "[English, Singaporean]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4494,7 +4646,8 @@
             "Longitude": "21.426591",
             "Date First Acq": "3/31/09",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4511,7 +4664,8 @@
             "Longitude": "23.312183",
             "Date First Acq": "12/14/04",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Bulgarian]", "Funding" : 10000
+            "Languages": "[English, Bulgarian]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4531,14 +4685,16 @@
             "Longitude": "-61.7488",
             "Date First Acq": "7/8/87",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Bureau": "EUR",
             "Country": "Russia",
             "Post": "St. Petersburg",
             "Property_Name": "No Current Consulate Space",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4557,7 +4713,8 @@
             "Longitude": "18.105431",
             "Date First Acq": "6/2/54",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4576,7 +4733,8 @@
             "Longitude": "7.761423",
             "Date First Acq": "1/1/52",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4594,7 +4752,8 @@
             "Longitude": "112.648181",
             "Date First Acq": "3/7/12",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 171000000
+            "Languages": "[English, French]", "Funding" : 171000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4612,7 +4771,8 @@
             "Longitude": "178.439636",
             "Date First Acq": "6/3/11",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4632,7 +4792,8 @@
             "Longitude": "151.209217",
             "Date First Acq": "10/18/93",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4650,7 +4811,8 @@
             "Longitude": "24.751646",
             "Date First Acq": "11/19/91",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4669,7 +4831,8 @@
             "Longitude": "69.272967",
             "Date First Acq": "12/15/05",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4687,7 +4850,8 @@
             "Longitude": "44.776046",
             "Date First Acq": "10/24/05",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4706,7 +4870,8 @@
             "Longitude": "-87.189657",
             "Date First Acq": "6/1/55",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 181000000
+            "Languages": "[English, French]", "Funding" : 181000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4723,7 +4888,8 @@
             "Longitude": "34.76693",
             "Date First Acq": "2/21/57",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 5678710000
+            "Languages": "[English, French]", "Funding" : 5678710000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4742,7 +4908,8 @@
             "Longitude": "22.942627",
             "Date First Acq": "10/30/99",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4761,7 +4928,8 @@
             "Longitude": "-116.95245",
             "Date First Acq": "6/30/10",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Spanish]", "Funding" : 10000
+            "Languages": "[English, Spanish]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4778,7 +4946,8 @@
             "Longitude": "19.826828",
             "Date First Acq": "1/1/27",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Russian]", "Funding" : 10000
+            "Languages": "[English, Russian]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4795,7 +4964,8 @@
             "Longitude": "139.74335",
             "Date First Acq": "9/7/76",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Japanese]", "Funding" : 10000
+            "Languages": "[English, Japanese]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4813,7 +4983,8 @@
             "Longitude": "-79.38664",
             "Date First Acq": "1/1/51",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4833,7 +5004,8 @@
             "Longitude": "13.19",
             "Date First Acq": "10/13/11",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4853,7 +5025,8 @@
             "Date First Acq": "11/12/02",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French, Arabic]", 
-            "Funding" : 194000000
+            "Funding" : 194000000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4872,7 +5045,8 @@
             "Longitude": "106.929827",
             "Date First Acq": "2/8/91",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, Mongolian]", "Funding" : 10000
+            "Languages": "[English, Mongolian]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4889,7 +5063,8 @@
             "Longitude": "-73.563415",
             "Date First Acq": "11/1/96",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4908,7 +5083,8 @@
             "Longitude": "6.137444",
             "Date First Acq": "1/1/80",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4925,7 +5101,8 @@
             "Longitude": "14.514106",
             "Date First Acq": "5/25/11",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4944,7 +5121,8 @@
             "Longitude": "-123.120303",
             "Date First Acq": "4/5/90",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4963,7 +5141,8 @@
             "Longitude": "16.356668",
             "Date First Acq": "7/3/47",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -4982,7 +5161,8 @@
             "Longitude": "16.420631",
             "Date First Acq": "12/1/00",
             "Funding Agency": "MULTIPLE",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5000,7 +5180,8 @@
             "Longitude": "102.640169",
             "Date First Acq": "10/28/14",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5019,7 +5200,8 @@
             "Longitude": "25.270393",
             "Date First Acq": "3/1/92",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5038,7 +5220,8 @@
             "Longitude": "131.9093",
             "Date First Acq": "12/1/94",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, Russian]", "Funding" : 10000
+            "Languages": "[English, Russian]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5057,7 +5240,8 @@
             "Longitude": "21.023203",
             "Date First Acq": "8/18/63",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, Polish, Russian]", "Funding" : 10000
+            "Languages": "[English, Polish, Russian]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5075,7 +5259,8 @@
             "Longitude": "174.778774",
             "Date First Acq": "12/8/77",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English]", "Funding" : 10000
+            "Languages": "[English]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5092,7 +5277,8 @@
             "Longitude": "17.086853",
             "Date First Acq": "7/5/89",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French, German]", "Funding" : 10000
+            "Languages": "[English, French, German]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5111,7 +5297,8 @@
             "Longitude": "-97.138615",
             "Date First Acq": "8/1/01",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5130,7 +5317,8 @@
             "Longitude": "114.15537",
             "Date First Acq": "1/1/08",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5149,7 +5337,8 @@
             "Longitude": "11.499179",
             "Date First Acq": "1/1/05",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5166,7 +5355,8 @@
             "Longitude": "60.610115",
             "Date First Acq": "7/30/95",
             "Funding Agency": "STATE-ICASS",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5183,7 +5373,8 @@
             "Longitude": "44.482992",
             "Date First Acq": "5/2/05",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         },
         {
             "Status": "Active",
@@ -5202,6 +5393,7 @@
             "Longitude": "16.00346",
             "Date First Acq": "1/1/03",
             "Funding Agency": "STATE-OBO PROGRAM",
-            "Languages": "[English, French]", "Funding" : 10000
+            "Languages": "[English, French]", "Funding" : 10000,
+            "Air" : 0
         }
     ]

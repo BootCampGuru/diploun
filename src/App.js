@@ -77,6 +77,7 @@ class App extends Component {
     show_advisory: false,
     defaultActiveKey: 'home',
     show_aid: false,
+    show_air: true,
     time_line: true,
     embassy_data: embassies,
     bilateral_amount: 2000,
@@ -110,11 +111,6 @@ class App extends Component {
 
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
-    for(var j = 0; j < this.state.embassy_data.length; j++)
-    {
-      promises.push('https://api.waqi.info/feed/' + this.state.embassy_data[j].Country + '/?token=15e1bd345dd701c91b0b608289d134794cb0199c')
-    }
-
     let filesPromise = Promise.resolve([]);
     filesPromise = Promise.all(this.state.embassy_data.map(data =>
 
@@ -122,6 +118,14 @@ class App extends Component {
       .then(blob => blob.json())
       .then(data => {
         //this.setState({ current_air: data.data.aqi});
+
+        const elementsIndex = this.state.embassy_data.findIndex(element => element.Country === data.Country )
+        let newArray = [...this.state.embassy_data]
+        newArray[elementsIndex] = {...newArray[elementsIndex], Air: data.data.aqi}
+        this.setState({
+          embassy_data: newArray,
+          });
+
         console.log(data.data.aqi)
       })
       .catch(e => {
@@ -518,6 +522,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
    
     this.setState({show_aid: event.target.checked});
   }
+
+  onAirChanged = (event) => {
+   
+    this.setState({show_air: event.target.checked});
+  }
   
   render(){
   let items = this.state.data
@@ -598,7 +607,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 }
 
 {
-  this.state.show_aid ?
+  this.state.show_air ?
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   fillColor="red" 
