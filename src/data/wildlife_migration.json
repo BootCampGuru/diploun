@@ -4,5 +4,5 @@
     {"type":"Feature","score":3,"id":"GHN","properties":{"name":"Ghana"},"geometry" : {"type": "LineString", "coordinates":[[-16.841525,13.151394],[110.339188,18.678395]]}},
     {"type":"Feature","score":3,"id":"NGR","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[110.339188,18.678395]]}},
     {"type":"Feature","score":3,"id":"NG1","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[21.022055,105.81907]]}},
-    {"type":"Feature","score":3,"id":"NG1","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[-24.65411,25.908739],[21.022055,105.81907]]}}
+    {"type":"Feature","score":3,"id":"NG1","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[-6.772587,39.26689],[21.022055,105.81907]]}}
 ]
