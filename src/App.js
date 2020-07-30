@@ -397,13 +397,13 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   getAirColor = (score) => {
 
-    return score > 0 && score < 25 ? '#800026' :
+    return score > 0 && score < 25 ? 'green' :
     score > 25 && score < 50 ? '#BD0026' :
     score > 50 && score < 75 ? '#E31A1C' :
     score > 75 && score < 100 ? '#FC4E2A' :
     score > 100 && score < 125  ? '#FD8D3C' :
     score > 125  && score < 150 ? '#FEB24C' :
-    score > 150 ? '#FED976' :
+    score > 150 ? 'red' :
                       '#FFEDA0'; 
   }
   
@@ -633,7 +633,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   //fillColor={each.Air > -1 ? 'green' : 'red'}
                   fillColor = {this.getAirColor(each.Air)}
-                  radius={each.Air != null ? parseInt(each.Air) * 10000 : 10000}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
+                  radius={each.Air != null ? parseInt(each.Air) * 100000 : 100000}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
 }
         </Marker> 
         }
