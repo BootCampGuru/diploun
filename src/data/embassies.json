@@ -751,7 +751,8 @@
             "Funding": 20000,
             "Hours" : "8:30 A.M. to 4:00 PM",
             "Travel_Advisory" : "Do Not Travel",
-            "Notes" : "The U.S. Embassy in Berlin is proud to have a chancery in the city center, on Pariser Platz, next to the iconic Brandenburg Gate."
+            "Notes" : "The U.S. Embassy in Berlin is proud to have a chancery in the city center, on Pariser Platz, next to the iconic Brandenburg Gate.",
+            "Air" : 20
         },
         {
             "Status": "Active",
