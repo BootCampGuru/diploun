@@ -13,7 +13,7 @@
     "type": "Feature",
     "properties": {
         "name": "Busch Field",
-        "show_on_map": false
+        "show_on_map": true
     },
     "geometry": {
         "type": "Point",

@@ -554,6 +554,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   let items = this.state.data
   //let embassy_items = this.state.embassy_data
   let map_items = this.state.world_map
+  let map_wildlifedata = this.state.wildlifedata
 
 
   const position=[this.state.location.lat, this.state.location.lng]
@@ -591,7 +592,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
           this.state.show_advisory ? 
 
-          this.state.wildlifedata.map((each,index) => {
+          map_wildlifedata.map((each,index) => {
             return <GeoJSON  key={index} data={each} />
           })
           : ''
