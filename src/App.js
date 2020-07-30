@@ -1,4 +1,4 @@
-import React,{Component,SVGComponent} from 'react';
+import React,{Component} from 'react';
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import L from 'leaflet';
@@ -107,6 +107,7 @@ class App extends Component {
 
   componentDidMount(){
 
+    /*
     let promises=[];
 
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
@@ -143,6 +144,7 @@ class App extends Component {
       //console.log(results);
     });
 
+    */
 
      var filter_history = allcountries.filter(function (pilot) {
       return parseInt(pilot.fiscal_year) === 2000;
@@ -559,8 +561,8 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label htmlFor="travel">Travel Advisory</label> </span>
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
                 <label for="aid">U.S. Aid</label></span> 
-                 <span className="boxes"><Input onChange={this.onAirChanged} id="air" value="air" checked type="checkbox"/> 
-                 <label for="aid">Air Quality</label></span> 
+                 <span className="boxes"><Input onChange={this.onAirChanged} id="air" value="air" checked={this.state.show_air} type="checkbox"/> 
+                 <label for="air">Air Quality</label></span> 
                  <span style={{textAlign: 'center'}}><b>
                  <i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
      <Row>
@@ -609,16 +611,16 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   fillColor="green" 
-                  radius={each.Funding > 100000000 ? 500000 : 1000}/> : ''
+                  radius={each.Funding > 100000000 ? 500000 : 1000}>Test</Circle> : ''
 }
 
 {
   this.state.show_air ?
-  <SVGComponent center={{lat:each.Latitude, lng: each.Longitude}} height="90" width="90">
+  
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   fillColor={each.Air > -1 ? 'green' : 'red'}
-                  radius={each.Air > -1 ? 500000 : 10000}/> </SVGComponent>: ''
+                  radius={each.Air > -1 ? 500000 : 10000}/> : ''
 }
         </Marker> 
         }
