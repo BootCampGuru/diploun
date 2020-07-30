@@ -22,6 +22,7 @@ import Header from './components/Header';
 import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import RangeSlider from 'react-bootstrap-range-slider';
 import allcountries from './data/all_countries.json'
+import wildlife from './data/wildlife.json'
 
 const googleMapsClient = require('@google/maps').createClient({
   key: 'AIzaSyAbOXMF2QD78gnzLRhd-XS-51Q_UIWR4h4',
@@ -74,6 +75,7 @@ class App extends Component {
     current_weather: 50,
     current_air:45,
     data:data,
+    wildlifedata: wildlife,
     show_advisory: false,
     defaultActiveKey: 'home',
     show_aid: false,
@@ -397,14 +399,14 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   getAirColor = (score) => {
 
-    return score > 0 && score < 25 ? 'green' :
-    score > 25 && score < 50 ? 'blue' :
+    return score > 0 && score < 25 ? '#61BA9E' :
+    score > 25 && score < 50 ? '#2A473E' :
     score > 50 && score < 75 ? '#E31A1C' :
     score > 75 && score < 100 ? '#FC4E2A' :
     score > 100 && score < 125  ? '#FD8D3C' :
     score > 125  && score < 150 ? '#FEB24C' :
-    score > 150 ? 'red' :
-                      '#FFEDA0'; 
+    score > 150 ? 'Red' :
+                      'Brown'; 
   }
   
   getColor = (score) => {
@@ -575,7 +577,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label for="aid">U.S. Aid</label></span> 
                  <span className="boxes"><Input onChange={this.onAirChanged} id="air" value="air" checked={this.state.show_air} type="checkbox"/> 
                  <label for="air">Air Quality</label></span> 
-                 <span style={{textAlign: 'center'}}><b>
+                 <span style={{textAlign: 'center'}}><b><br/>
                  <i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
      <Row>
      <Col sm={{ size: 8, offset: 1 }}>
@@ -585,7 +587,15 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        
+        {
+
+          this.state.show_advisory ? 
+
+          this.state.wildlifedata.map((each,index) => {
+            return <GeoJSON  key={index} data={each} />
+          })
+          : ''
+        }
   
         {
           this.state.show_advisory ?
@@ -633,7 +643,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   //fillColor={each.Air > -1 ? 'green' : 'red'}
                   fillColor = {this.getAirColor(each.Air)}
-                  radius={each.Air != null ? parseInt(each.Air) * 5000 : 10000}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
+                  radius={each.Air != null ? parseInt(each.Air) * 2000 : 10000}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
 }
         </Marker> 
         }
