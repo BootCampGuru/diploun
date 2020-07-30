@@ -675,7 +675,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
           
         this.state.tip_data.map((each, index) => {
 
-         return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} />
+         return <GeoJSON  key={index} data={each} style={this.getTipColor(each.score)} />
         }) 
 
         : ''
@@ -686,7 +686,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
           
         map_items.map((each, index) => {
 
-         return <GeoJSON  key={index} data={each} style={this.getTipColor(each.score)} />
+         return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} />
         }) 
 
         : ''
