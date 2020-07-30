@@ -121,12 +121,18 @@ class App extends Component {
 
         const elementsIndex = this.state.embassy_data.findIndex(element => element.Country === data.Country )
         let newArray = [...this.state.embassy_data]
-        newArray[elementsIndex] = {...newArray[elementsIndex], Air: data.data.aqi}
+        var airQuality = 0;
+        if(data.data.aqi !== 'undefined')
+        {
+          airQuality = data.data.aqi;
+        }
+        console.log(airQuality);
+        newArray[elementsIndex] = {...newArray[elementsIndex], Air: airQuality}
         this.setState({
           embassy_data: newArray,
           });
 
-        console.log(data.data.aqi)
+       // console.log(data.data.aqi)
       })
       .catch(e => {
         console.log(e);
