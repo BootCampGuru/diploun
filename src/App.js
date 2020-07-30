@@ -394,6 +394,18 @@ searchLanguageSubmit = (event) => {
 return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   }
+
+  getAirColor = (score) => {
+
+    return score > 0 && score < 25 ? '#800026' :
+    score > 25 && score < 50 ? '#BD0026' :
+    score > 50 && score < 75 ? '#E31A1C' :
+    score > 75 && score < 100 ? '#FC4E2A' :
+    score > 100 && score < 125  ? '#FD8D3C' :
+    score > 125  && score < 150 ? '#FEB24C' :
+    score > 150 ? '#FED976' :
+                      '#FFEDA0'; 
+  }
   
   getColor = (score) => {
    /* return d > 1000 ? '#800026' :
@@ -619,8 +631,9 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
-                  fillColor={each.Air > -1 ? 'green' : 'red'}
-                  radius={each.Air > -1 ? 500000 : 10000}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
+                  //fillColor={each.Air > -1 ? 'green' : 'red'}
+                  fillColor = {this.getAirColor(each.Air)}
+                  radius={parseInt(each.Air) * 1000}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
 }
         </Marker> 
         }
