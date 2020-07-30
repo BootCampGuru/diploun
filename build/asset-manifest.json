@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/diploun/static/css/main.58e8cb2a.chunk.css",
-    "main.js": "/diploun/static/js/main.1783aa20.chunk.js",
-    "main.js.map": "/diploun/static/js/main.1783aa20.chunk.js.map",
+    "main.js": "/diploun/static/js/main.be5f602d.chunk.js",
+    "main.js.map": "/diploun/static/js/main.be5f602d.chunk.js.map",
     "runtime-main.js": "/diploun/static/js/runtime-main.5f3dfea0.js",
     "runtime-main.js.map": "/diploun/static/js/runtime-main.5f3dfea0.js.map",
     "static/css/2.8e6c8c35.chunk.css": "/diploun/static/css/2.8e6c8c35.chunk.css",
     "static/js/2.0ef7b3f5.chunk.js": "/diploun/static/js/2.0ef7b3f5.chunk.js",
     "static/js/2.0ef7b3f5.chunk.js.map": "/diploun/static/js/2.0ef7b3f5.chunk.js.map",
     "index.html": "/diploun/index.html",
-    "precache-manifest.7eb25e5f1e2cefcaed221a6459c5f33c.js": "/diploun/precache-manifest.7eb25e5f1e2cefcaed221a6459c5f33c.js",
+    "precache-manifest.3580d7e6b98f83973ce1fbe86f56a2c7.js": "/diploun/precache-manifest.3580d7e6b98f83973ce1fbe86f56a2c7.js",
     "service-worker.js": "/diploun/service-worker.js",
     "static/css/2.8e6c8c35.chunk.css.map": "/diploun/static/css/2.8e6c8c35.chunk.css.map",
     "static/css/main.58e8cb2a.chunk.css.map": "/diploun/static/css/main.58e8cb2a.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.8e6c8c35.chunk.css",
     "static/js/2.0ef7b3f5.chunk.js",
     "static/css/main.58e8cb2a.chunk.css",
-    "static/js/main.1783aa20.chunk.js"
+    "static/js/main.be5f602d.chunk.js"
   ]
 }
