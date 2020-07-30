@@ -1,2 +1,4 @@
-
-    {"type":"Feature","score":3,"id":"TSP","properties":{"name":"Tesp"},"geometry" : {"type": "LineString", "coordinates":[[32.759375,-9.230599],[31.521001,-29.257387]]}}
+[
+    {"type":"Feature","score":3,"id":"TSP","properties":{"name":"Tesp"},"geometry" : {"type": "LineString", "coordinates":[[32.759375,-9.230599],[31.521001,-29.257387]]}},
+    {"type":"Feature","score":3,"id":"TSP","properties":{"name":"Tesp"},"geometry" : {"type": "LineString", "coordinates":[[110.339188,18.678395],[31.521001,-29.257387]]}}
+]
