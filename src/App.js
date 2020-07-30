@@ -23,6 +23,7 @@ import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import RangeSlider from 'react-bootstrap-range-slider';
 import allcountries from './data/all_countries.json'
 import wildlife from './data/wildlife.json'
+import wildlife_migration from './data/wildlife_migration.json'
 import migration from './data/migration.json'
 import tip from './data/tip.json'
 import worldGeoJSON from 'geojson-world-map';
@@ -79,6 +80,7 @@ class App extends Component {
     current_air:45,
     data:data,
     wildlifedata: wildlife,
+    wildlifemigrationdata: wildlife_migration,
     migrationdata: migration,
     show_advisory: false,
     show_wildlife: false,
@@ -658,6 +660,17 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
           }) 
           : ''
         }
+
+             {
+
+              this.state.show_wildlife ? 
+
+              this.state.wildlifemigrationdata.map((each, index) => {
+              return <GeoJSON key={index} data={each} />
+              }) 
+              : ''
+              }
+        
 
         {
 
