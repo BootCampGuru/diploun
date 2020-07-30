@@ -3,6 +3,6 @@
     {"type":"Feature","score":3,"id":"ZAF","properties":{"name":"SouthAfrica"},"geometry" : {"type": "LineString", "coordinates":[[31.521001,-29.257387],[110.339188,18.678395]]}},
     {"type":"Feature","score":3,"id":"GHN","properties":{"name":"Ghana"},"geometry" : {"type": "LineString", "coordinates":[[-16.841525,13.151394],[110.339188,18.678395]]}},
     {"type":"Feature","score":3,"id":"NGR","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[110.339188,18.678395]]}},
-    {"type":"Feature","score":3,"id":"NG1","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[21.022055,105.81907]]}},
-    {"type":"Feature","score":3,"id":"NG1","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[33.903711,-0.95],[21.022055,105.81907]]}}
+    {"type":"Feature","score":3,"id":"BWA","properties":{"name":"Botswana"},"geometry" : {"type": "LineString", "coordinates":[[25.649163,-18.536026],[21.022055,105.81907]]}},
+    {"type":"Feature","score":3,"id":"TZA","properties":{"name":"Tanzania"},"geometry" : {"type": "LineString", "coordinates":[[33.903711,-0.95],[110.339188,18.678395]]}}
 ]
