@@ -618,7 +618,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
         this.state.show_wildlife ? 
         
-        map_wildlifedata.map((each, index) => {
+        map_migrationdata.map((each, index) => {
         return <GeoJSON key={index} data={each} />
         }) 
         : ''
