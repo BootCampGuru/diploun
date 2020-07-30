@@ -614,10 +614,10 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
 {
   this.state.show_air ?
-  <SVGComponent height="90" width="90">
+  <SVGComponent center={{lat:each.Latitude, lng: each.Longitude}} height="90" width="90">
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
-                  text={each.Air} fillColor={each.Air > -1 ? 'green' : 'red'}
+                  fillColor={each.Air > -1 ? 'green' : 'red'}
                   radius={each.Air > -1 ? 500000 : 10000}/> </SVGComponent>: ''
 }
         </Marker> 
