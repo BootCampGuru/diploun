@@ -609,7 +609,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
       
           map_wildlifedata.map((each, index) => {
 
-        return <GeoJSON icon={myIcon}  key={index} data={each} style={this.getColor(each.score)} />
+        return <GeoJSON  key={index} data={each} />
           }) 
           : ''
         }
