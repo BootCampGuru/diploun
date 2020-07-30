@@ -407,9 +407,38 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   getTipColor = (score) => {
 
-    return score === 1 ? 'Green' :
-    score === 2 ? 'Yellow' :
-    score === 3 ? 'Orange' : 'Red'; 
+                      var  style = {
+                        fillColor: '#F28F3B',
+                        weight: 2,
+                        opacity: 1,
+                        color: 'white',
+                        dashArray: '3',
+                        fillOpacity: 0.5
+                    }
+               
+                  score = parseInt(score);
+                    if(score === 1 )
+                    {
+                      style.fillColor = 'Green';
+                    }
+                    else if(score === 2)
+                    {
+                      style.fillColor = 'Yellow';
+                    }
+                    else if(score === 2.5)
+                    {
+                      style.fillColor = 'Orange';
+                    }
+                    else if(score === 3)
+                    {
+                      style.fillColor = 'Orange';
+                    }
+                    else
+                    {
+                      style.fillColor = 'Blue';
+                    }
+
+            return style;
   }
 
   getAirColor = (score) => {
@@ -625,7 +654,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
       
           map_wildlifedata.map((each, index) => {
 
-        return <GeoJSON  key={index} data={each} />
+        return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} />
           }) 
           : ''
         }
@@ -657,7 +686,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
           
         map_items.map((each, index) => {
 
-         return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} />
+         return <GeoJSON  key={index} data={each} style={this.getTipColor(each.score)} />
         }) 
 
         : ''
