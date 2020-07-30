@@ -23,6 +23,7 @@ import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import RangeSlider from 'react-bootstrap-range-slider';
 import allcountries from './data/all_countries.json'
 import wildlife from './data/wildlife.json'
+import migration from './data/migration.json'
 import worldGeoJSON from 'geojson-world-map';
 
 const googleMapsClient = require('@google/maps').createClient({
@@ -77,6 +78,7 @@ class App extends Component {
     current_air:45,
     data:data,
     wildlifedata: wildlife,
+    migrationdata: migration,
     show_advisory: false,
     show_wildlife: false,
     show_person: false,
@@ -563,6 +565,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   //let embassy_items = this.state.embassy_data
   let map_items = this.state.world_map
   let map_wildlifedata = this.state.wildlifedata
+  let map_migrationdata = this.state.migrationdata
 
   
   const position=[this.state.location.lat, this.state.location.lng]
@@ -610,6 +613,18 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
           }) 
           : ''
         }
+
+        {
+
+        this.state.show_wildlife ? 
+
+        map_migrationdata.map((each, index) => {
+
+        return <GeoJSON key={index} data={each} style={this.getColor(each.score)} />
+        }) 
+        : ''
+      }
+
   
         {
           this.state.show_advisory ?
