@@ -553,7 +553,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label htmlFor="travel">Travel Advisory</label> </span>
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
                 <label for="aid">U.S. Aid</label></span> 
-                 <span className="boxes"><Input onChange={this.onAirChanged} id="air" value="air" type="checkbox"/> 
+                 <span className="boxes"><Input onChange={this.onAirChanged} id="air" value="air" checked type="checkbox"/> 
                  <label for="aid">Air Quality</label></span> 
                  <span style={{textAlign: 'center'}}><b>
                  <i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
@@ -611,7 +611,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   label={each.Air} fillColor="red" 
-                  radius={each.Air > 50 ? 500000 : 10000}/> : ''
+                  radius={each.Air > -1 ? 500000 : 10000}/> : ''
 }
         </Marker> 
         }
