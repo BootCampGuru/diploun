@@ -24,6 +24,7 @@ import RangeSlider from 'react-bootstrap-range-slider';
 import allcountries from './data/all_countries.json'
 import wildlife from './data/wildlife.json'
 import migration from './data/migration.json'
+import tip from './data/tip.json'
 import worldGeoJSON from 'geojson-world-map';
 
 const googleMapsClient = require('@google/maps').createClient({
@@ -81,12 +82,14 @@ class App extends Component {
     migrationdata: migration,
     show_advisory: false,
     show_wildlife: false,
+    show_tiplife:false,
     show_person: false,
     defaultActiveKey: 'home',
     show_aid: false,
     show_air: true,
     time_line: true,
     embassy_data: embassies,
+    tip_data: tip,
     bilateral_amount: 2000,
     multilateral_amount: 200,
     travel_data: travel,
@@ -402,6 +405,13 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   }
 
+  getTipColor = (score) => {
+
+    return score === 1 ? 'Green' :
+    score === 2 ? 'Yellow' :
+    score === 3 ? 'Orange' : 'Red'; 
+  }
+
   getAirColor = (score) => {
 
     return score > 0 && score < 25 ? '#61BA9E' :
@@ -550,6 +560,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     this.setState({show_wildlife: event.target.checked});
   }
 
+  onTipLifeChanged= (event) => {
+   
+    this.setState({show_tiplife: event.target.checked});
+  }
+
   onAidChanged = (event) => {
    
     this.setState({show_aid: event.target.checked});
@@ -591,7 +606,8 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                  <label for="air">Air Quality</label></span> 
                  <span className="boxes"><Input  onChange={this.onWildLifeChanged} id="wildlife" value="Wild Life" type="checkbox" />
                 <label htmlFor="wildlife">Wild Life</label> </span>
-
+                <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" type="checkbox" />
+                <label htmlFor="tiplife">Trafficking in Person</label> </span>
                  <br/>
                  <span style={{textAlign: 'center', padding: '5px'}}><b>
                  <i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a rel="noopener noreferrer" target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
@@ -616,7 +632,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
         {
 
-        this.state.show_wildlife ? 
+        this.state.show_tiplife ? 
         
         map_migrationdata.map((each, index) => {
         return <GeoJSON key={index} data={each} />
@@ -624,6 +640,17 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         : ''
       }
 
+      {
+          this.state.show_tiplife ?
+          
+          
+        this.state.tip_data.map((each, index) => {
+
+         return <GeoJSON  key={index} data={each} style={this.getTipColor(parseInt(each.score))} />
+        }) 
+
+        : ''
+        }
   
         {
           this.state.show_advisory ?
