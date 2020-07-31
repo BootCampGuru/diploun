@@ -102,6 +102,9 @@
   border-width: 2px;
   border-style: solid;
   padding:10px;
-  background-image: url("/diploun/images/background.jpg");
+}
+
+body{
+  background-image: url("/diploun/images/background_state.jpg");
 }
 
