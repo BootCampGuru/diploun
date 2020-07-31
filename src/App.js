@@ -666,7 +666,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
               this.state.show_wildlife ? 
 
               this.state.wildlifemigrationdata.map((each, index) => {
-              return <GeoJSON key={index} data={each} />
+              return <GeoJSON key={index} data={each} style={{color: 'Black'}} />
               }) 
               : ''
               }
