@@ -3,5 +3,7 @@
     {"type":"Feature","score":3,"id":"GHN","properties":{"name":"Ghana"},"geometry" : {"type": "LineString", "coordinates":[[1.060122,5.928837],[110.339188,18.678395]]}},
     {"type":"Feature","score":3,"id":"NGR","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[110.339188,18.678395]]}},
     {"type":"Feature","score":3,"id":"NGI","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[77.837451,35.49401]]}},
-    {"type":"Feature","score":3,"id":"NGV","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[108.05018,21.55238]]}}
+    {"type":"Feature","score":3,"id":"NGV","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[108.05018,21.55238]]}},
+    {"type":"Feature","score":4,"id":"BTC","properties":{"name":"Botswana"},"geometry" : {"type": "LineString", "coordinates":[[25.649163,-18.536026],[110.339188,18.678395]]}},
+    {"type":"Feature","score":4,"id":"KNC","properties":{"name":"Kenya"},"geometry" : {"type": "LineString", "coordinates":[[40.993,-0.85829],[110.339188,18.678395]]}}
 ]

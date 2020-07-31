@@ -443,6 +443,24 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
             return style;
   }
 
+  getWildColor = (score) => {
+
+    score = parseInt(score);
+
+    if(score === 3)
+    {
+      return 'Red';
+    }
+    else if(score === 4)
+    {
+      return 'Green';
+    }
+    else
+    {
+      return 'Brown';
+    }
+  }
+
   getAirColor = (score) => {
 
     return score > 0 && score < 25 ? '#61BA9E' :
@@ -666,7 +684,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
               this.state.show_wildlife ? 
 
               this.state.wildlifemigrationdata.map((each, index) => {
-              return <GeoJSON key={index} data={each} style={{color: 'Black'}} />
+              return <GeoJSON key={index} data={each} style={{color: this.getWildColor(each.score)}} />
               }) 
               : ''
               }
