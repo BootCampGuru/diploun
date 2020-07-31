@@ -742,7 +742,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         //console.log(each.Longitude)
         if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
-        return <Marker key={index} position={position} icon={each.Property_Name === 'CONSULATE' ? mySecondIcon : myIcon}>
+        return <Marker key={index} position={position} icon={parseInt(each.Air) > 180 ? mySecondIcon : myIcon}>
               <Popup><br /> 
                   <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
                   <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
