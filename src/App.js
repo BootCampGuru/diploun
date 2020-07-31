@@ -668,11 +668,30 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" type="checkbox" />
                 <label htmlFor="tiplife">Trafficking in Person</label> </span>
             </Col>   </Row>
+
+    
                <Row>
                <Col sm={{ size: 11, offset: 1 }}>
                  <span style={{textAlign: 'center', padding: '5px'}}><b>
                  <i>Number of U.S. Embassies {this.state.embassy_data.length},<a rel="noopener noreferrer" target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>Travel</a> Advisory.</i></b></span>
             </Col></Row>
+            <Row>
+
+{
+this.state.show_tiplife ?
+<Col sm={{ size: 10, offset: 1  }}>
+<div className="map-box">
+<b>Tier Placements</b><hr/>
+Tier 1 - [Green]&nbsp
+Tier 2 - [Yellow]&nbsp
+Tier 2.5 - [Orange]&nbsp
+Tier 3 - [Red]&nbsp
+Tier 4 - [Blue]&nbsp
+</div>
+</Col> : ''
+}
+
+</Row>
             <Row>
             {
           this.state.show_advisory ?
@@ -720,19 +739,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
           </Col> : ''
           }
 
-          {
-            this.state.show_tiplife ?
-          <Col sm={{ size: 2, offset: 1  }}>
-          <div className="map-box">
-          <b>Tier Placements</b><br/>
-            Tier 1 - [Green]<br/>
-            Tier 2 - [Yellow]<br/>
-            Tier 2.5 - [Orange]<br/>
-            Tier 3 - [Red]<br/>
-            Tier 4 - [Blue]
-            </div>
-          </Col> : ''
-          }
+        
             </Row>
      <Row>
      <Col sm={{ size: 8, offset: 1 }}>
