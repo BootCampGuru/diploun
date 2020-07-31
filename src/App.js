@@ -75,7 +75,7 @@ class App extends Component {
     all_diplomacy_data:[
       
     ],
-    zoom: 2,
+    zoom: 1,
     current_weather: 50,
     current_air:45,
     data:data,
@@ -646,7 +646,19 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     <div className="App">
   <Header>
     </Header>
-      <h3><img alt='state logo' src="./images/logo.png" /></h3>
+    <Row>
+    <Col sm={{ size: 2, offset: 1 }}>
+    <h3>
+      <img alt='state logo' src="./images/logo.png" />
+      </h3>
+    </Col>
+    <Col sm={{ size: 6, offset: 1 }}>
+    <div  style={{textAlign: 'center', padding: '15px'}}>
+    <i>The United States Department of State (DOS),commonly referred to as the State Department, is a federal executive department responsible for carrying out U.S. foreign policy and international relations. There are {this.state.embassy_data.length} Missions around thd World</i>
+    </div>
+    </Col>
+    </Row>
+  
             <Form className="form"  onSubmit={this.formSubmitted}> 
                 <Input className="input"  onChange={this.onChanged} type="text" name="search" id="search" placeholder="Type your Country..." />
                 <Button onClick={this.searchSubmit} color="info" disabled={!this.state.haveUsersLocation}>Search</Button>       
@@ -673,25 +685,25 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
             <Row>
             {
           this.state.show_advisory ?
-        <Col sm={{ size: 11, offset: 1 }}>
-        <span style={{textAlign: 'center', padding: '5px'}}><b>
+        <Col sm={{ size: 10, offset: 1 }}>
+        <span style={{textAlign: 'center', padding: '5px'}}>
         <div className="map-box">
             Level 1: Exercise Normal Precautions[Blue]
             Level 2: Exercise Increased Caution[Yellow] 
             Level 3: Reconsider Travel[Orange] 
             Level 4: Do Not Travel[Red] 
             </div>
-            <i><a rel="noopener noreferrer" target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>Travel</a> Advisory.</i></b></span>
-
+        </span>
         </Col> : ''
             }
             </Row>
             <Row>
             {
               this.state.show_aid ?
-        <Col sm={{ size: 11, offset: 1 }}>
-        <span style={{textAlign: 'center', padding: '5px'}}><b>
-            <i> Bigger Circles represent over 100 Million U.S. Dollar Aid. </i></b></span>
+        <Col sm={{ size: 10, offset: 1 }}>
+        <span style={{textAlign: 'center', padding: '5px'}}>
+        <div className="map-box">
+            <i> Bigger Circles represent over 100 Million U.S. Dollar Aid. </i></div></span>
 
         </Col>  : ''
             }
@@ -702,13 +714,13 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 this.state.show_tiplife ?
 <Col sm={{ size: 10, offset: 1  }}>
 <div className="map-box">
-<b>Tier Placements</b><hr/>
+<span style={{textAlign: 'center', padding: '5px'}}>
 Tier 1 - [Green]
 Tier 2 - [Yellow]
 Tier 2.5 - [Orange]
 Tier 3 - [Red]
 Tier 4 - [Blue]
-</div>
+</span></div>
 </Col> : ''
 }
 
@@ -717,27 +729,29 @@ Tier 4 - [Blue]
 <Row>
             {
       this.state.show_air ?
-      <Col sm={{ size: 2, offset: 1  }}>
+      <Col sm={{ size: 11, offset: 1  }}>
+      <span style={{textAlign: 'center', padding: '5px'}}>
       <div className="map-box">
-            Under 50: Good <br/>
-            50 - 100:  Moderate<br/>
-            100 - 150: Average <br/>
-            Over 150: Unhealthy <br/>
-            </div>
+            Under 50: Good, 
+            50 - 100:  Moderate,
+            100 - 150: Average, 
+            Over 150: Unhealthy 
+           </div> </span>
           </Col> : ''
 
             }
-
-
+</Row>
+<Row>
           {
           this.state.show_wildlife ? 
-          <Col sm={{ size: 2, offset: 1  }}>
+          <Col sm={{ size: 11, offset: 1  }}>
+          <span style={{textAlign: 'center', padding: '5px'}}>
             <div className="map-box">
-           Orange: Rosewood <br/>
-            Green:  Elephant Tasks<br/>
-            Red: Pangolin Scales <br/>
-            Black: Rhino Horns <br/>
-            </div>
+            Orange: Rosewood 
+            Green:  Elephant Tasks
+            Red: Pangolin Scales 
+            Black: Rhino Horns 
+            </div> </span>
           </Col> : ''
           }
 </Row>
