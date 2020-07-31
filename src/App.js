@@ -854,7 +854,7 @@ Tier 4 - [Blue]
       </Map>
       </Col>
       
-      <Col sm={{ size: 3}}>
+      <Col sm={{ size: 2}}>
 
 <div>
 
