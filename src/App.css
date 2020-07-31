@@ -108,3 +108,10 @@ body{
   background-image: url("/diploun/images/background_state.jpg");
 }
 
+.bodybackground
+{
+  background-image: url("/images/background_state.jpg");
+  background-color: #cccccc;
+
+}
+
