@@ -88,7 +88,7 @@ class App extends Component {
     show_person: false,
     defaultActiveKey: 'home',
     show_aid: false,
-    show_air: true,
+    show_air: false,
     time_line: true,
     embassy_data: embassies,
     tip_data: tip,
@@ -655,6 +655,8 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <Button onClick={this.resetSubmit} color="info" disabled={!this.state.haveUsersLocation}>Reset</Button> 
      
            </Form><br/>
+        <Row>
+        <Col sm={{ size: 8, offset: 1 }}>
              <span className="boxes"><Input  onChange={this.onTravelChanged} id="travel" value="Travel" type="checkbox" />
                 <label htmlFor="travel">Travel Advisory</label> </span>
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
@@ -665,9 +667,12 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label htmlFor="wildlife">Trafficking in Wild Life</label> </span>
                 <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" type="checkbox" />
                 <label htmlFor="tiplife">Trafficking in Person</label> </span>
-                 <br/>
+            </Col>   </Row>
+               <Row>
+               <Col sm={{ size: 8, offset: 1 }}>
                  <span style={{textAlign: 'center', padding: '5px'}}><b>
                  <i>Number of U.S. Embassies {this.state.embassy_data.length}, Circles represent over 100 Million U.S. Dollar Aid. Red regions represent <a rel="noopener noreferrer" target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>No Travel</a> Advisory.</i></b></span>
+            </Col></Row>
      <Row>
      <Col sm={{ size: 8, offset: 1 }}>
      
