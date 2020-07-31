@@ -652,9 +652,9 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
       <img alt='state logo' src="./images/logo.png" />
       </h3>
     </Col>
-    <Col sm={{ size: 6, offset: 1 }}>
-    <div  style={{textAlign: 'center', padding: '15px'}}>
-    <i><h2>The United States Department of State (DOS),commonly referred to as the State Department, is a federal executive department responsible for carrying out U.S. foreign policy and international relations. There are {this.state.embassy_data.length} Missions around thd World</h2></i>
+    <Col sm={{ size: 5, offset: 1 }}>
+    <div  style={{textAlign: 'center', padding: '5px'}}>
+    <i><h3>The United States Department of State (DOS),commonly referred to as the State Department, is a federal executive department responsible for carrying out U.S. foreign policy and international relations. There are {this.state.embassy_data.length} Missions around thd World</h3></i>
     </div>
     </Col>
     </Row>
@@ -703,7 +703,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         <Col sm={{ size: 10, offset: 1 }}>
         <span style={{textAlign: 'center', padding: '5px'}}>
         <div className="map-box">
-            <i> Bigger Circles represent over 100 Million U.S. Dollar Aid. </i></div></span>
+            <i> Big Circles represent over 100 Million U.S. Dollar Aid, Medium Circles between 1 to 100 Million in Aid </i></div></span>
 
         </Col>  : ''
             }
@@ -713,14 +713,14 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 {
 this.state.show_tiplife ?
 <Col sm={{ size: 10, offset: 1  }}>
-<div className="map-box">
 <span style={{textAlign: 'center', padding: '5px'}}>
+<div className="map-box">
 Tier 1 - [Green]
 Tier 2 - [Yellow]
 Tier 2.5 - [Orange]
 Tier 3 - [Red]
 Tier 4 - [Blue]
-</span></div>
+</div></span>
 </Col> : ''
 }
 
@@ -757,7 +757,7 @@ Tier 4 - [Blue]
 </Row>
 
      <Row>
-     <Col sm={{ size: 8, offset: 1 }}>
+     <Col sm={{ size: 10, offset: 1 }}>
  
       <Map id="map" className="map" center={position} zoom={this.state.zoom}>
         <TileLayer noWrap="true"
@@ -853,7 +853,10 @@ Tier 4 - [Blue]
   
       </Map>
       </Col>
-      <Col sm={{ size: 3}}>
+
+      </Row>
+      <Row>
+      <Col sm={{ size: 6}}>
 
 <div>
 
