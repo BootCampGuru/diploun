@@ -724,12 +724,12 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
             this.state.show_tiplife ?
           <Col sm={{ size: 2, offset: 1  }}>
           <div className="map-box">
-          <b>Tier Placements</b>
-            Tier 1[Green]: Meets TVPA's Minimum Standards <br/>
-            Tier 2[Yellow]:  Do not fully meet TVPA's Minimum Standards<br/>
-            Tier 2.5[Orange]:  Do not fully meet TVPA's Minimum Standards<br/>
-            Tier 3[Red]: Not making Significant efforts <br/>
-            Tier 4[Blue]: Special Cases
+          <b>Tier Placements</b><br/>
+            Tier 1 - [Green]<br/>
+            Tier 2 - [Yellow]<br/>
+            Tier 2.5 - [Orange]<br/>
+            Tier 3 - [Red]<br/>
+            Tier 4 - [Blue]
             </div>
           </Col> : ''
           }
