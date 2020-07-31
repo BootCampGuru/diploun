@@ -111,6 +111,9 @@ class App extends Component {
     rangevalue:2009,
     financerangevalue: 2000,
     setValue: 1779,
+    timerOn: false,
+    timerStart: 0,
+    timerTime: 0,
     userMessage: {
       message: ''
     }
@@ -118,6 +121,36 @@ class App extends Component {
 
 
   componentDidMount(){
+
+
+    this.timer = setInterval(() => {
+
+      var counter = this.state.value;
+
+      if(counter === 2020)
+      {
+        counter = 1789
+      }
+      this.setState({
+
+        value:  parseInt(counter) + 1
+      });
+
+      
+
+      var filter_history = embassyhistorydata.filter(function (pilot) {
+        return parseInt(pilot.year) < parseInt(counter);
+      });
+  
+      var filter_not_history = embassyhistorydata.filter(function (pilot) {
+        return parseInt(pilot.year) < parseInt(counter) && pilot.event !== "closure" ;
+      });
+      //console.log(filter_history);
+      this.setState({embassyhistorynotclosure: filter_not_history})
+      this.setState({embassyhistory: filter_history});
+
+
+    }, 90);
 
     /*
     let promises=[];
@@ -599,7 +632,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     });
 
     var filter_not_history = embassyhistorydata.filter(function (pilot) {
-      return parseInt(pilot.year) < parseInt(event.target.value) && pilot.event != "closure" ;
+      return parseInt(pilot.year) < parseInt(event.target.value) && pilot.event !== "closure" ;
     });
     //console.log(filter_history);
     this.setState({embassyhistorynotclosure: filter_not_history})
@@ -719,7 +752,7 @@ Tier 1 - [Green]
 Tier 2 - [Yellow]
 Tier 2.5 - [Orange]
 Tier 3 - [Red]
-Tier 4 - [Blue]
+Special Cases- [Blue]
 </div></span>
 </Col> : ''
 }
@@ -757,7 +790,7 @@ Tier 4 - [Blue]
 </Row>
 
      <Row>
-     <Col sm={{ size: 8, offset: 1 }}>
+     <Col sm={{ size: 7, offset: 1 }}>
  
       <Map id="map" className="map" center={position} zoom={this.state.zoom}>
         <TileLayer noWrap="true"
@@ -833,7 +866,7 @@ Tier 4 - [Blue]
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   fillColor="green" 
-                  radius={each.Funding > 100000000 ? 500000 : 1000}>Test</Circle> : ''
+                  radius={each.Funding > 100000000 ? 500000 : 1000}></Circle> : ''
 }
 
 {
@@ -854,7 +887,7 @@ Tier 4 - [Blue]
       </Map>
       </Col>
       
-      <Col sm={{ size: 2}}>
+      <Col sm={{ size: 3}}>
 
 <div>
 
