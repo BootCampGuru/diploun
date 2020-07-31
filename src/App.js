@@ -455,9 +455,17 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     {
       return 'Green';
     }
+    else if(score === 5)
+    {
+      return 'Black';
+    }
+    else if(score === 6)
+    {
+      return 'Yellow';
+    }
     else
     {
-      return 'Brown';
+      return 'Orange';
     }
   }
 
