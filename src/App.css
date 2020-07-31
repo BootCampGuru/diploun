@@ -94,3 +94,13 @@
   height:100%;
 }
 
+.map-box{
+  background-color: azure;
+  color:black;
+  border-radius: 5px;
+  border-color:black;
+  border-width: 2px;
+  border-style: solid;
+  padding:10px;
+}
+
