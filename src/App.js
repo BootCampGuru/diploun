@@ -887,7 +887,7 @@ Special Cases- [Blue]
       </Map>
       </Col>
       
-      <Col sm={{ size: 3}}>
+      <Col sm={{ size: 4}}>
 
 <div>
 
@@ -913,7 +913,7 @@ Special Cases- [Blue]
 </Tab>
 <Tab eventKey="timeline" title="Timeline">
 <Row>
-<Map id="map_history" className="map_history" center={position} zoom={2}>
+<Map id="map_history" className="map_history" center={position} zoom={1}>
      <TileLayer 
        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> devs'
        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
