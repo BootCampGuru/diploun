@@ -433,7 +433,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                     }
                     else if(score === 3)
                     {
-                      style.fillColor = 'Orange';
+                      style.fillColor = 'Red';
                     }
                     else
                     {
@@ -724,10 +724,12 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
             this.state.show_tiplife ?
           <Col sm={{ size: 2, offset: 1  }}>
           <div className="map-box">
-           Tier 1: Good <br/>
-            Tier 2:  Moderate<br/>
-            Tier 3: Average <br/>
-            Tier 4: Unhealthy <br/>
+          <b>Tier Placements</b>
+            Tier 1[Green]: Meets TVPA's Minimum Standards <br/>
+            Tier 2[Yellow]:  Do not fully meet TVPA's Minimum Standards<br/>
+            Tier 2.5[Orange]:  Do not fully meet TVPA's Minimum Standards<br/>
+            Tier 3[Red]: Not making Significant efforts <br/>
+            Tier 4[Blue]: Special Cases
             </div>
           </Col> : ''
           }
