@@ -122,6 +122,79 @@ class App extends Component {
 
   componentDidMount(){
 
+    var counter = 1;
+    this.showcasetimer = setInterval(() => {
+
+      this.setState({
+
+        show_advisory: false
+      });
+      this.setState({
+
+        show_wildlife: false
+      });
+
+      this.setState({
+
+        show_tiplife: false
+      });
+
+      this.setState({
+
+        show_air: false
+      });
+      this.setState({
+
+        show_aid: false
+      });
+      
+      
+
+      if(counter === 1)
+      {
+        this.setState({
+
+          show_advisory: true
+        });
+      }
+      else if(counter === 2)
+      {
+
+        this.setState({
+
+          show_aid:  true
+        });
+      }
+      else if(counter === 3)
+      {
+        this.setState({
+
+          show_air:  true
+        });
+      }
+      else if(counter === 4)
+      {
+        this.setState({
+
+          show_wildlife: true
+        });
+      }
+      else if(counter === 5)
+      {
+        this.setState({
+
+          show_tiplife: true
+        });
+      }
+      
+      counter = counter + 1;
+      if(counter > 5)
+      {
+        counter = 1;
+      }
+
+    }, 6000);
+
 
     this.timer = setInterval(() => {
 
@@ -687,7 +760,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     </Col>
     <Col sm={{ size: 6, offset: 1 }}>
     <div  style={{textAlign: 'center', padding: '25px'}}>
-    <i><h4>The United States Department of State (DOS),commonly referred to as the State Department, is a federal executive department responsible for carrying out U.S. foreign policy and international relations. There are {this.state.embassy_data.length} Missions around thd World</h4></i>
+    <i><h4>The United States Department of State (DOS) has {this.state.embassy_data.length} Missions around thd World</h4></i>
     </div>
     </Col>
     </Row>
@@ -702,15 +775,15 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
            </Form><br/>
         <Row>
         <Col sm={{ size: 11, offset: 1 }}>
-             <span className="boxes"><Input  onChange={this.onTravelChanged} id="travel" value="Travel" type="checkbox" />
+             <span className="boxes"><Input  onChange={this.onTravelChanged} id="travel" checked={this.state.show_advisory} value="Travel" type="checkbox" />
                 <label htmlFor="travel">Travel Advisory</label> </span>
-                <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" type="checkbox"/> 
+                <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" checked={this.state.show_aid} type="checkbox"/> 
                 <label for="aid">U.S. Aid</label></span> 
                  <span className="boxes"><Input onChange={this.onAirChanged} id="air" value="air" checked={this.state.show_air} type="checkbox"/> 
                  <label for="air">Air Quality</label></span> 
-                 <span className="boxes"><Input  onChange={this.onWildLifeChanged} id="wildlife" value="Wild Life" type="checkbox" />
+                 <span className="boxes"><Input  onChange={this.onWildLifeChanged} id="wildlife" value="Wild Life" checked={this.state.show_wildlife} type="checkbox" />
                 <label htmlFor="wildlife">Trafficking in Wild Life</label> </span>
-                <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" type="checkbox" />
+                <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" checked={this.state.show_tiplife} type="checkbox" />
                 <label htmlFor="tiplife">Trafficking in Person</label> </span>
             </Col></Row>
 
@@ -762,7 +835,7 @@ Special Cases- [Blue]
 <Row>
             {
       this.state.show_air ?
-      <Col sm={{ size: 11, offset: 1  }}>
+      <Col sm={{ size: 10, offset: 1  }}>
       <span style={{textAlign: 'center', padding: '5px'}}>
       <div className="map-box">
             Under 50: Good, 
@@ -777,7 +850,7 @@ Special Cases- [Blue]
 <Row>
           {
           this.state.show_wildlife ? 
-          <Col sm={{ size: 11, offset: 1  }}>
+          <Col sm={{ size: 10, offset: 1  }}>
           <span style={{textAlign: 'center', padding: '5px'}}>
             <div className="map-box">
             Orange: Rosewood 
