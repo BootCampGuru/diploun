@@ -652,9 +652,9 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
       <img alt='state logo' src="./images/logo.png" />
       </h3>
     </Col>
-    <Col sm={{ size: 6 }}>
+    <Col sm={{ size: 6, offset: 1 }}>
     <div  style={{textAlign: 'center', padding: '5px'}}>
-    <i><h3>The United States Department of State (DOS),commonly referred to as the State Department, is a federal executive department responsible for carrying out U.S. foreign policy and international relations. There are {this.state.embassy_data.length} Missions around thd World</h3></i>
+    <i><h4>The United States Department of State (DOS),commonly referred to as the State Department, is a federal executive department responsible for carrying out U.S. foreign policy and international relations. There are {this.state.embassy_data.length} Missions around thd World</h4></i>
     </div>
     </Col>
     </Row>
