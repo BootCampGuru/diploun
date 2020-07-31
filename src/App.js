@@ -647,14 +647,14 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   <Header>
     </Header>
     <Row>
-    <Col sm={{ size: 2, offset: 1 }}>
+    <Col sm={{ size: 4, offset: 1 }}>
     <h3>
       <img alt='state logo' src="./images/logo.png" />
       </h3>
     </Col>
     <Col sm={{ size: 6, offset: 1 }}>
     <div  style={{textAlign: 'center', padding: '15px'}}>
-    <i>The United States Department of State (DOS),commonly referred to as the State Department, is a federal executive department responsible for carrying out U.S. foreign policy and international relations. There are {this.state.embassy_data.length} Missions around thd World</i>
+    <i><h2>The United States Department of State (DOS),commonly referred to as the State Department, is a federal executive department responsible for carrying out U.S. foreign policy and international relations. There are {this.state.embassy_data.length} Missions around thd World</h2></i>
     </div>
     </Col>
     </Row>
