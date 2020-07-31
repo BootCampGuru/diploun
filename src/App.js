@@ -150,7 +150,7 @@ class App extends Component {
       this.setState({embassyhistory: filter_history});
 
 
-    }, 90);
+    }, 1000);
 
     /*
     let promises=[];
