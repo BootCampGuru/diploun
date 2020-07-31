@@ -667,14 +667,35 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label htmlFor="wildlife">Trafficking in Wild Life</label> </span>
                 <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" type="checkbox" />
                 <label htmlFor="tiplife">Trafficking in Person</label> </span>
-            </Col>   </Row>
+            </Col></Row>
 
     
-               <Row>
-               <Col sm={{ size: 11, offset: 1 }}>
-                 <span style={{textAlign: 'center', padding: '5px'}}><b>
-                 <i>Number of U.S. Embassies {this.state.embassy_data.length},<a rel="noopener noreferrer" target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>Travel</a> Advisory.</i></b></span>
-            </Col></Row>
+            <Row>
+            {
+          this.state.show_advisory ?
+        <Col sm={{ size: 11, offset: 1 }}>
+        <span style={{textAlign: 'center', padding: '5px'}}><b>
+        <div className="map-box">
+            Level 1: Exercise Normal Precautions[Blue]
+            Level 2: Exercise Increased Caution[Yellow] 
+            Level 3: Reconsider Travel[Orange] 
+            Level 4: Do Not Travel[Red] 
+            </div>
+            <i><a rel="noopener noreferrer" target='_blank' href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/'>Travel</a> Advisory.</i></b></span>
+
+        </Col> : ''
+            }
+            </Row>
+            <Row>
+            {
+              this.state.show_aid ?
+        <Col sm={{ size: 11, offset: 1 }}>
+        <span style={{textAlign: 'center', padding: '5px'}}><b>
+            <i> Bigger Circles represent over 100 Million U.S. Dollar Aid. </i></b></span>
+
+        </Col>  : ''
+            }
+        </Row>
             <Row>
 
 {
@@ -682,37 +703,18 @@ this.state.show_tiplife ?
 <Col sm={{ size: 10, offset: 1  }}>
 <div className="map-box">
 <b>Tier Placements</b><hr/>
-Tier 1 - [Green]&nbsp
-Tier 2 - [Yellow]&nbsp
-Tier 2.5 - [Orange]&nbsp
-Tier 3 - [Red]&nbsp
-Tier 4 - [Blue]&nbsp
+Tier 1 - [Green]
+Tier 2 - [Yellow]
+Tier 2.5 - [Orange]
+Tier 3 - [Red]
+Tier 4 - [Blue]
 </div>
 </Col> : ''
 }
 
 </Row>
-            <Row>
-            {
-          this.state.show_advisory ?
-            <Col sm={{ size: 2, offset: 1  }}>
-            <div className="map-box">
-            Level 1: Exercise Normal Precautions[Blue] <br/>
-            Level 2: Exercise Increased Caution[Yellow] <br/>
-            Level 3: Reconsider Travel[Orange] <br/>
-            Level 4: Do Not Travel[Red] <br/>
-            </div>
-      </Col> : ''
-            }
-            {
-  this.state.show_aid ?
-      <Col sm={{ size: 2, offset: 1  }}>
-            <div className="map-box">
-            Bigger Circles represent over 100 Million U.S. Dollar Aid.  <br/>
-            </div>
-      </Col> : ''
-            }
-
+ 
+<Row>
             {
       this.state.show_air ?
       <Col sm={{ size: 2, offset: 1  }}>
@@ -738,9 +740,8 @@ Tier 4 - [Blue]&nbsp
             </div>
           </Col> : ''
           }
+</Row>
 
-        
-            </Row>
      <Row>
      <Col sm={{ size: 8, offset: 1 }}>
  
