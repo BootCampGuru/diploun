@@ -647,12 +647,12 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   <Header>
     </Header>
     <Row>
-    <Col sm={{ size: 4, offset: 1 }}>
+    <Col sm={{ size: 3, offset: 1 }}>
     <h3>
       <img alt='state logo' src="./images/logo.png" />
       </h3>
     </Col>
-    <Col sm={{ size: 5, offset: 1 }}>
+    <Col sm={{ size: 6 }}>
     <div  style={{textAlign: 'center', padding: '5px'}}>
     <i><h3>The United States Department of State (DOS),commonly referred to as the State Department, is a federal executive department responsible for carrying out U.S. foreign policy and international relations. There are {this.state.embassy_data.length} Missions around thd World</h3></i>
     </div>
@@ -757,7 +757,7 @@ Tier 4 - [Blue]
 </Row>
 
      <Row>
-     <Col sm={{ size: 10, offset: 1 }}>
+     <Col sm={{ size: 8, offset: 1 }}>
  
       <Map id="map" className="map" center={position} zoom={this.state.zoom}>
         <TileLayer noWrap="true"
@@ -853,10 +853,8 @@ Tier 4 - [Blue]
   
       </Map>
       </Col>
-
-      </Row>
-      <Row>
-      <Col sm={{ size: 6}}>
+      
+      <Col sm={{ size: 3}}>
 
 <div>
 
