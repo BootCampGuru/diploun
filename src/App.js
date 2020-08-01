@@ -68,10 +68,6 @@ class App extends Component {
     lat: 51.505,
     lng: -0.09,
     },
-    centrallocation: {
-      lat: 0.483435,
-      lng: 9.394791,
-    },
     diplomacy_data : [
       { key: 'Bi-Lateral', data: 20000 },
       { key: 'Multi-Lateral', data: 1000 }
@@ -674,8 +670,8 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   {
     this.setState({
       location: {
-        lat: this.state.centrallocation.lat,
-        lng: this.state.centrallocation.lon,
+        lat: 0.483435,
+        lng: 9.394791,
       },
       haveUsersLocation: true,
       zoom: 2,
