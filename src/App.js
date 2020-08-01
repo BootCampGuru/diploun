@@ -122,80 +122,7 @@ class App extends Component {
 
   componentDidMount(){
 
-    var counter = 1;
-    this.showcasetimer = setInterval(() => {
-
-      this.setState({
-
-        show_advisory: false
-      });
-      this.setState({
-
-        show_wildlife: false
-      });
-
-      this.setState({
-
-        show_tiplife: false
-      });
-
-      this.setState({
-
-        show_air: false
-      });
-      this.setState({
-
-        show_aid: false
-      });
-      
-      
-
-      if(counter === 1)
-      {
-        this.setState({
-
-          show_advisory: true
-        });
-      }
-      else if(counter === 2)
-      {
-
-        this.setState({
-
-          show_aid:  true
-        });
-      }
-      else if(counter === 3)
-      {
-        this.setState({
-
-          show_air:  true
-        });
-      }
-      else if(counter === 4)
-      {
-        this.setState({
-
-          show_wildlife: true
-        });
-      }
-      else if(counter === 5)
-      {
-        this.setState({
-
-          show_tiplife: true
-        });
-      }
-      
-      counter = counter + 1;
-      if(counter > 5)
-      {
-        counter = 1;
-      }
-
-    }, 6000);
-
-
+    
     this.timer = setInterval(() => {
 
       var counter = this.state.value;
@@ -737,6 +664,83 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
    
     this.setState({show_air: event.target.checked});
   }
+
+  playShow = (event) =>
+  {
+    var counter = 1;
+    this.showcasetimer = setInterval(() => {
+
+      this.setState({
+
+        show_advisory: false
+      });
+      this.setState({
+
+        show_wildlife: false
+      });
+
+      this.setState({
+
+        show_tiplife: false
+      });
+
+      this.setState({
+
+        show_air: false
+      });
+      this.setState({
+
+        show_aid: false
+      });
+      
+      
+
+      if(counter === 1)
+      {
+        this.setState({
+
+          show_advisory: true
+        });
+      }
+      else if(counter === 2)
+      {
+
+        this.setState({
+
+          show_aid:  true
+        });
+      }
+      else if(counter === 3)
+      {
+        this.setState({
+
+          show_air:  true
+        });
+      }
+      else if(counter === 4)
+      {
+        this.setState({
+
+          show_wildlife: true
+        });
+      }
+      else if(counter === 5)
+      {
+        this.setState({
+
+          show_tiplife: true
+        });
+      }
+      
+      counter = counter + 1;
+      if(counter > 5)
+      {
+        counter = 1;
+      }
+
+    }, 6000);
+
+  }
   
   render(){
   let items = this.state.data
@@ -785,6 +789,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label htmlFor="wildlife">Trafficking in Wild Life</label> </span>
                 <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" checked={this.state.show_tiplife} type="checkbox" />
                 <label htmlFor="tiplife">Trafficking in Person</label> </span>
+
+                <span className="boxes"><button type="button" onClick={this.playShow}>
+              <img alt="play" src="./images/play.png"></img>
+                </button>
+                </span>
             </Col></Row>
 
     
