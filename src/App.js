@@ -75,7 +75,7 @@ class App extends Component {
     all_diplomacy_data:[
       
     ],
-    zoom: 1,
+    zoom: 2,
     current_weather: 50,
     current_air:45,
     data:data,
@@ -211,7 +211,7 @@ class App extends Component {
           lng: position.coords.longitude,
         },
         haveUsersLocation: true,
-        zoom: 1,
+        zoom: 2,
 
       });
 
@@ -227,7 +227,7 @@ class App extends Component {
           lng: location.longitude,
         },
         haveUsersLocation: true,
-        zoom: 3,
+        zoom: 2,
       });
     })
       }
@@ -269,7 +269,7 @@ class App extends Component {
         lng: response.json.results[0].geometry.location.lng,
       },
       haveUsersLocation: true,
-      zoom: 3,
+      zoom: 2,
     });
 
   })
