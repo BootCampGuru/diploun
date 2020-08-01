@@ -670,8 +670,8 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   {
     this.setState({
       location: {
-        lat: 0.483435,
-        lng: 9.394791,
+        lat: 8.500288,
+        lng: 4.771983,
       },
       haveUsersLocation: true,
       zoom: 2,
