@@ -799,9 +799,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <span className="boxes"><button type="button" onClick={this.stopShow}>
               <img width='25px' alt="stop" src="./images/stop.jpg"></img>
                 </button>
-                </span>
-
-                <span className="boxes"><button type="button" onClick={this.playShow}>
+                <button type="button" onClick={this.playShow}>
               <img width='25px' alt="play" src="./images/play.png"></img>
                 </button>
                 </span>
@@ -940,7 +938,7 @@ Special Cases- [Blue]
         //console.log(each.Longitude)
         if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
-        return <Marker key={index} position={position} icon={parseInt(each.Air) > 180 ? mySecondIcon : myIcon}>
+        return <Marker key={index} position={position} icon={parseInt(each.Air) > 180 ? myIcon : myIcon}>
               <Popup><br /> 
                   <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
                   <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
