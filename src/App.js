@@ -231,7 +231,7 @@ class App extends Component {
           lng: location.longitude,
         },
         haveUsersLocation: true,
-        zoom: 1,
+        zoom: 3,
       });
     })
       }
@@ -670,6 +670,18 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     this.setState({show_air: event.target.checked});
   }
 
+  centerMap = (event) =>
+  {
+    this.setState({
+      location: {
+        lat: this.state.centrallocation.lat,
+        lng: this.state.centrallocation.lon,
+      },
+      haveUsersLocation: true,
+      zoom: 2,
+    });
+  }
+
   stopShow = (event) =>
   {
     clearTimeout(this.showcasetimer);
@@ -800,7 +812,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" checked={this.state.show_tiplife} type="checkbox" />
                 <label htmlFor="tiplife">Trafficking in Person</label> </span>
 
-                <span className="boxes"><button type="button" onClick={this.stopShow}>
+                <span className="boxes">
+                <button type="button" onClick={this.centerMap}>
+              <img width='25px' alt="center" src="./images/center.png"></img>
+                </button>
+                <button type="button" onClick={this.stopShow}>
               <img width='25px' alt="stop" src="./images/stop.jpg"></img>
                 </button>
                 <button type="button" onClick={this.playShow}>
