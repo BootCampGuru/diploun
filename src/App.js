@@ -68,6 +68,10 @@ class App extends Component {
     lat: 51.505,
     lng: -0.09,
     },
+    centrallocation: {
+      lat: 0.483435,
+      lng: 9.394791,
+    },
     diplomacy_data : [
       { key: 'Bi-Lateral', data: 20000 },
       { key: 'Multi-Lateral', data: 1000 }
@@ -211,7 +215,7 @@ class App extends Component {
           lng: position.coords.longitude,
         },
         haveUsersLocation: true,
-        zoom: 3,
+        zoom: 1,
 
       });
 
@@ -227,7 +231,7 @@ class App extends Component {
           lng: location.longitude,
         },
         haveUsersLocation: true,
-        zoom: 3,
+        zoom: 1,
       });
     })
       }
