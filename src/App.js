@@ -119,6 +119,7 @@ class App extends Component {
     }
   }
 
+ 
 
   componentDidMount(){
 
@@ -665,6 +666,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     this.setState({show_air: event.target.checked});
   }
 
+  stopShow = (event) =>
+  {
+    clearTimeout(this.showcasetimer);
+  }
+
   playShow = (event) =>
   {
     var counter = 1;
@@ -738,7 +744,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         counter = 1;
       }
 
-    }, 6000);
+    }, 3000);
 
   }
   
@@ -789,6 +795,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label htmlFor="wildlife">Trafficking in Wild Life</label> </span>
                 <span className="boxes"><Input  onChange={this.onTipLifeChanged} id="tiplife" value="Tip" checked={this.state.show_tiplife} type="checkbox" />
                 <label htmlFor="tiplife">Trafficking in Person</label> </span>
+
+                <span className="boxes"><button type="button" onClick={this.stopShow}>
+              <img width='25px' alt="stop" src="./images/stop.jpg"></img>
+                </button>
+                </span>
 
                 <span className="boxes"><button type="button" onClick={this.playShow}>
               <img width='25px' alt="play" src="./images/play.png"></img>
