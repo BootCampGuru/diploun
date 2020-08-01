@@ -791,7 +791,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                 <label htmlFor="tiplife">Trafficking in Person</label> </span>
 
                 <span className="boxes"><button type="button" onClick={this.playShow}>
-              <img alt="play" src="./images/play.png"></img>
+              <img width='25px' alt="play" src="./images/play.png"></img>
                 </button>
                 </span>
             </Col></Row>
