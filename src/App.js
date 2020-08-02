@@ -520,8 +520,18 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                       'Brown'; 
   }
   getAidRadius = (value) => {
-    var radius = 1000000;
 
+    var radius = 1000000;
+    
+    value = parseInt(value);
+    if(value >= 1000000 && value < 100000000)
+    {
+      radius = 800000;
+    }
+    else if(value < 1000000)
+    {
+      radius = 400000;
+    }
     return radius;
   }
 
@@ -1003,8 +1013,8 @@ Special Cases- [Blue]
   this.state.show_aid ?
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
-                  fillColor={this.getAidCircle(each.Funding)} Tooltip={each.Funding}
-                  radius={this.getAidRadius(each.Funding)}></Circle> : ''
+                  fillColor={this.getAidCircle(each.Funding)} 
+                  radius={this.getAidRadius(each.Funding)}><Tooltip>{each.Funding}</Tooltip></Circle> : ''
 }
 
 {
