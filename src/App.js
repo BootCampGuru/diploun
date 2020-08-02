@@ -883,7 +883,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         <Col sm={{ size: 10, offset: 1 }}>
         <span style={{textAlign: 'center', padding: '5px'}}>
         <div className="map-box">
-            <i> Big Circles represent over 100 Million U.S. Dollar Aid, Medium Circles between 1 to 100 Million in Aid </i></div></span>
+            <i>Countries receiving over 100 Million Dollars in Aid </i></div></span>
 
         </Col>  : ''
             }
