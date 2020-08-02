@@ -544,7 +544,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   if(value >= 100000000)
   {
-    color = 'green'
+    color = 'red'
   }
   else if(value >= 1000000 && value < 100000000)
   {
@@ -895,10 +895,10 @@ this.state.show_tiplife ?
 <Col sm={{ size: 10, offset: 1  }}>
 <span style={{textAlign: 'center', padding: '5px'}}>
 <div className="map-box">
-<span style={{color:'green'}}>Tier 1</span>
-<span style={{color:'yellow'}}>Tier 2</span>
-<span style={{color:'orange'}}>Tier 3</span>
-<span style={{color:'red'}}>Tier 4</span>
+<span style={{color:'green'}}>Tier 1</span>   
+<span style={{color:'yellow'}}>Tier 2</span>   
+<span style={{color:'orange'}}>Tier 3</span>   
+<span style={{color:'red'}}>Tier 4</span>   
 <span style={{color:'blue'}}>Special Cases</span>
 </div></span>
 </Col> : ''
