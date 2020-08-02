@@ -526,11 +526,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     value = parseInt(value);
     if(value >= 1000000 && value < 100000000)
     {
-      radius = 800000;
+      radius = 400000;
     }
     else if(value < 1000000)
     {
-      radius = 400000;
+      radius = 1000;
     }
     return radius;
   }
