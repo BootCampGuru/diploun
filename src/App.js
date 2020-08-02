@@ -1003,7 +1003,7 @@ Special Cases- [Blue]
   this.state.show_aid ?
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
-                  fillColor={this.getAidCircle(each.Funding)} 
+                  fillColor={this.getAidCircle(each.Funding)} Tooltip={each.Funding}
                   radius={this.getAidRadius(each.Funding)}></Circle> : ''
 }
 

@@ -335,7 +335,7 @@
             "Date First Acq": "3/25/10",
             "Funding Agency": "STATE-OBO PROGRAM",
             "Languages": "[English, French]", 
-            "Funding": 20000,
+            "Funding": 691000000,
             "Image": "./images/Embassy_Madagascar.jpg",
             "Staff_Image":"./images/madagascar_comoros.jpg",
             "Staff_Name" : "Michael Peter Pelletier",
@@ -2372,7 +2372,8 @@
             "Image":"./images/profile.jpg",
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
-            "Languages": "[English, French]", "Funding" : 10000,
+            "Languages": "[English, French, Cuban]", 
+            "Funding" : 74000000,
             "Air" : 0
         },
         {
@@ -2506,7 +2507,8 @@
             "Image":"./images/pakistan_islamabad.jpg",
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
-            "Languages": "[English, Urdu]", "Funding": 972000000,
+            "Languages": "[English, Urdu]", 
+            "Funding": 1400000000,
             "Air" : 0
         },
         {
@@ -3751,7 +3753,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]",
-            "Funding": 158710000,
+            "Funding": 571000000,
             "Air" : 0
         },
         {
