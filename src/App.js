@@ -47,6 +47,11 @@ iconAnchor: [12.5, 41],
 popupAnchor: [0, -41]
 });
 
+var divIcon = L.divIcon({
+  className : 'div-icon',
+  html: '<span>test</span>'
+})
+
 var mySecondIcon = L.icon({
   iconUrl: './images/star.png',
   iconSize: [25,41],
@@ -514,7 +519,56 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     score > 150 ? 'Red' :
                       'Brown'; 
   }
-  
+  getAidRadius = (value) => {
+    var radius = 500000;
+
+    value = parseInt(value);
+    if(value > 100000000)
+    {
+      radius = 5000000;
+    }
+    else if(value > 1000000 && value < 100000000)
+    {
+      radius = 500000;
+    }
+    else
+    {
+      radius = 50000;
+    }
+
+    return radius;
+  }
+
+  getAidCircle = (value) => 
+  {
+
+    var  style = {
+      fillColor: '#F28F3B',
+      weight: 2,
+      opacity: 1,
+      color: 'white',
+      dashArray: '3',
+      fillOpacity: 0.5
+  }
+  value = parseInt(value);
+
+  if(value > 100000000)
+  {
+    style.fillColor = 'Green';
+  }
+  else if(value > 1000000 && value < 100000000)
+  {
+    style.fillColor = 'blue';
+  }
+  else
+  {
+    style.fillColor = 'red';
+  }
+
+  return style
+
+  }
+
   getColor = (score) => {
    /* return d > 1000 ? '#800026' :
            d > 500  ? '#BD0026' :
@@ -954,7 +1008,7 @@ Special Cases- [Blue]
         //console.log(each.Longitude)
         if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
-        return <Marker key={index} position={position} DivIcon={'<h1>Test</h1>'} icon={parseInt(each.Air) > 180 ? myIcon : myIcon}>
+        return <Marker key={index} position={position}  icon={parseInt(each.Air) > 180 ? myIcon : myIcon}>
               <Popup><br /> 
                   <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
                   <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
@@ -972,8 +1026,8 @@ Special Cases- [Blue]
   this.state.show_aid ?
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
-                  fillColor="green" 
-                  radius={each.Funding > 100000000 ? 500000 : 1000}></Circle> : ''
+                  style={this.getAidCircle(each.Funding)} 
+                  radius={this.getAidRadius(each.Funding)}></Circle> : ''
 }
 
 {

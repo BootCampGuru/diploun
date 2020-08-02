@@ -11,5 +11,5 @@
     {"type":"Feature","score":6,"id":"UGC","properties":{"name":"Uganda"},"geometry" : {"type": "LineString", "coordinates":[[31.86617,-1.02736],[36.913127,41.335358]]}},
     {"type":"Feature","score":7,"id":"MDU","properties":{"name":"Madagascar"},"geometry" : {"type": "LineString", "coordinates":[[49.543519,-12.469833],[-161.908897,70.33333]]}},
     {"type":"Feature","score":7,"id":"INU","properties":{"name":"India"},"geometry" : {"type": "LineString", "coordinates":[[77.837451,35.49401],[-161.908897,70.33333]]}},
-    {"type":"Feature","score":7,"id":"INU","properties":{"name":"India"},"geometry" : {"type": "LineString", "coordinates":[[77.837451,35.49401],[-161.908897,70.33333]]}}
+    {"type":"Feature","score":7,"id":"INS","properties":{"name":"India"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[-161.908897,70.33333]]}}
 ]
