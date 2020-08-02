@@ -895,11 +895,12 @@ this.state.show_tiplife ?
 <Col sm={{ size: 10, offset: 1  }}>
 <span style={{textAlign: 'center', padding: '5px'}}>
 <div className="map-box">
-<span style={{color:'green'}}>Tier 1</span>   
-<span style={{color:'yellow'}}>Tier 2</span>   
-<span style={{color:'orange'}}>Tier 3</span>   
-<span style={{color:'red'}}>Tier 4</span>   
-<span style={{color:'blue'}}>Special Cases</span>
+<h1>
+<span style={{color:'green', padding: '10px;'}}>Tier 1</span>   
+<span style={{color:'yellow', padding: '10px;'}}>Tier 2</span>   
+<span style={{color:'orange', padding: '10px;'}}>Tier 3</span>   
+<span style={{color:'red', padding: '10px;'}}>Tier 4</span>   
+<span style={{color:'blue', padding: '10px;'}}>Special Cases</span></h1>
 </div></span>
 </Col> : ''
 }
