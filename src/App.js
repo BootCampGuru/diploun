@@ -1017,8 +1017,8 @@ Special Cases- [Blue]
   this.state.show_aid ?
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
-                  style={this.getAidCircle(each.Funding)} 
-                  fillColor={this.getAidRadius(each.Funding)}></Circle> : ''
+                  fillColor={this.getAidCircle(each.Funding)} 
+                  radius={this.getAidRadius(each.Funding)}></Circle> : ''
 }
 
 {
