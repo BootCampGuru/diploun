@@ -887,10 +887,10 @@ Special Cases- [Blue]
           <Col sm={{ size: 10, offset: 1  }}>
           <span style={{textAlign: 'center', padding: '5px'}}>
             <div className="map-box">
-            Orange: Rosewood 
+            Red: Rosewood 
             Green:  Elephant Tasks
-            Red: Pangolin Scales 
             Black: Rhino Horns 
+            Orange: Reptiles
             </div> </span>
           </Col> : ''
           }
