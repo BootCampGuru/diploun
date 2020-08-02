@@ -525,15 +525,15 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     value = parseInt(value);
     if(value > 100000000)
     {
-      radius = 500000;
+      radius = 1000000;
     }
     else if(value > 1000000 && value < 100000000)
     {
-      radius = 50000;
+      radius = 100000;
     }
     else
     {
-      radius = 5000;
+      radius = 10000;
     }
 
     return radius;
@@ -542,17 +542,17 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   getAidCircle = (value) => 
   {
 
-    var color = 'Red';
+    var color = 'red';
 
   value = parseInt(value);
 
-  if(value > 100000000)
+  if(value >= 100000000)
   {
-    color = 'Green'
+    color = 'green'
   }
-  else if(value > 1000000 && value < 100000000)
+  else if(value >= 1000000 && value < 100000000)
   {
-    color = 'Blue';
+    color = 'blue';
   }
 
 
