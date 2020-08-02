@@ -526,7 +526,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     value = parseInt(value);
     if(value >= 1000000 && value < 100000000)
     {
-      radius = 400000;
+      radius = 100000;
     }
     else if(value < 1000000)
     {
@@ -1013,7 +1013,7 @@ Special Cases- [Blue]
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   fillColor={this.getAidCircle(each.Funding)} 
-                  radius={this.getAidRadius(each.Funding)}><Tooltip>{each.Post + ':' + each.Funding}</Tooltip></Circle> : ''
+                  radius={this.getAidRadius(each.Funding)}><Tooltip>{each.Country + ':' + each.Funding}</Tooltip></Circle> : ''
 }
 
 {
