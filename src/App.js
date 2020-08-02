@@ -521,7 +521,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   }
   getAidRadius = (value) => {
 
-    var radius = 1000000;
+    var radius = 800000;
 
     value = parseInt(value);
     if(value >= 1000000 && value < 100000000)
@@ -530,7 +530,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     }
     else if(value < 1000000)
     {
-      radius = 1000;
+      radius = 10000;
     }
     return radius;
   }
