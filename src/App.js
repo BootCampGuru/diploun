@@ -1068,7 +1068,7 @@ this.state.show_tiplife ?
                   
                   fillOpacity = {1}
                ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> 
-               <text textAnchor="middle" x="10" y="15">{each.Air}</text> 
+               <text textAnchor="middle">{each.Air}</text> 
                </Circle>
                 </div>: ''
 }
