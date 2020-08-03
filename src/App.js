@@ -7,7 +7,7 @@ import { BarChart } from "reaviz";
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import {Form, Input, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row, Col} from 'reactstrap'
-import { Map, TileLayer, Marker, Popup,GeoJSON,Circle,Tooltip, Text } from 'react-leaflet'
+import { Map, TileLayer, Marker, Popup,GeoJSON,Circle,Tooltip } from 'react-leaflet'
 import './App.css';
 import data from './data/diplomacy.json'
 import embassies from './data/embassies.json'
@@ -1068,7 +1068,7 @@ this.state.show_tiplife ?
                   
                   fillOpacity = {1}
                ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> </Circle>
-                <Text textAnchor="middle" x="250" y="55">{each.Air}</Text> </div>: ''
+                <text textAnchor="middle" x="250" y="55">{each.Air}</text> </div>: ''
 }
         </Marker> 
         }
