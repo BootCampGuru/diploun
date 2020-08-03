@@ -3733,7 +3733,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding": 32950993,
-            "Air" : 0
+            "Air" : 200
         },
         {
             "Status": "Active",
@@ -4076,7 +4076,7 @@
             "Staff_Name" : "",
             "Languages": "[English, French, Burmese]", 
             "Funding" : 10000,
-            "Air" : 1700000000
+            "Air" : 170
         },
         {
             "Status": "Active",

@@ -510,21 +510,21 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   getAirRadius = (score) => {
 
-    return score > 0 && score < 25 ? 100 :
-    score > 25 && score < 50 ? 1000 :
-    score > 50 && score < 75 ? 1000 :
-    score > 75 && score < 100 ? 1000 :
-    score > 100 && score < 125  ? 10000 :
+    return score > 0 && score < 25 ? 10000 :
+    score > 25 && score < 50 ? 10000:
+    score > 50 && score < 75 ? 10000 :
+    score > 75 && score < 100 ? 10000 :
+    score > 100 && score < 125  ? 100000 :
     score > 125  && score < 150 ? 1000000 :
-    score > 150 ? 1000000:
+    score > 150 ? 5000000:
                       1000;
   }
 
   getAirColor = (score) => {
 
-    return score > 0 && score < 25 ? '#61BA9E' :
-    score > 25 && score < 50 ? '#2A473E' :
-    score > 50 && score < 75 ? '#E31A1C' :
+    return score > 0 && score < 25 ? 'Green' :
+    score > 25 && score < 50 ? 'Green' :
+    score > 50 && score < 75 ? 'Green' :
     score > 75 && score < 100 ? '#FC4E2A' :
     score > 100 && score < 125  ? '#FD8D3C' :
     score > 125  && score < 150 ? '#FEB24C' :
@@ -1036,7 +1036,7 @@ this.state.show_tiplife ?
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   //fillColor={each.Air > -1 ? 'green' : 'red'}
                   fillColor = {this.getAirColor(each.Air)}
-                  radius={this.getAirRadius(each.Air)}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
+                  radius={this.getAirRadius(each.Air)}><Tooltip>{each.Country + ':' + each.Air}</Tooltip> </Circle> : ''
 }
         </Marker> 
         }
