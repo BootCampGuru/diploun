@@ -510,9 +510,9 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   getAirRadius = (score) => {
 
-    return score <= 50 ? 2000 : score > 50 && score <= 100 ? 40000 :
-    score > 100 && score <= 150 ? 80000:
-    score > 150 ? 160000 :
+    return score <= 50 ? 20000 : score > 50 && score <= 100 ? 400000 :
+    score > 100 && score <= 150 ? 800000:
+    score > 150 ? 1600000 :
                       2000;
   }
 
