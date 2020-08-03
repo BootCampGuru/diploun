@@ -135,7 +135,7 @@
             "Staff_Name" : "",
             "Languages": "[English, French, Arabic]", 
             "Funding": 447000000,
-            "Air" : 0
+            "Air" : 42
         },
         {
             "Status": "Active",
@@ -387,7 +387,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, Russian]", "Funding": 20000,
-            "Air" : 0
+            "Air" : 70
         },
         {
             "Status": "Active",
@@ -652,7 +652,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, Russian]", "Funding": 20000,
-            "Air" : 0
+            "Air" : 70
         },
         {
             "Status": "Active",
@@ -1202,7 +1202,7 @@
             "Staff_Name" : "",
             "Languages": "[English, Spanish]", 
             "Funding" : 71000000,
-            "Air" : 0
+            "Air" : 24
         },
         {
             "Status": "Active",
@@ -1246,7 +1246,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 20
         },
         {
             "Status": "Active",
@@ -1268,7 +1268,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French, Arabic]", "Funding" : 1678710000,
-            "Air" : 0
+            "Air" : 60
         },
         {
             "Status": "Active",
@@ -1425,7 +1425,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, Hindi]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 60
         },
         {
             "Status": "Active",
@@ -1712,7 +1712,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, Bengali]", "Funding" : 183000000,
-            "Air" : 61
+            "Air" : 161
         },
         {
             "Status": "Active",
@@ -2851,7 +2851,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, Hindi, Bengali]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 70
         },
         {
             "Status": "Active",
@@ -2965,7 +2965,8 @@
             "Image":"./images/profile.jpg",
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
-            "Languages": "[English, French]", "Funding" : 10000,
+            "Languages": "[English, French]",
+            "Funding" : 10000,
             "Air" : 452
         },
         {
@@ -2988,7 +2989,7 @@
             "Staff_Name" : "",
             "Languages": "[English, French]", 
             "Funding" : 507000000,
-            "Air" : 20
+            "Air" : 24
         },
         {
             "Status": "Active",
@@ -3011,7 +3012,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 57
         },
         {
             "Status": "Active",
@@ -3057,7 +3058,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 122
         },
         {
             "Status": "Active",
@@ -3846,7 +3847,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 70
         },
         {
             "Status": "Active",
@@ -3890,7 +3891,7 @@
             "Staff_Name" : "",
             "Languages": "[English, Hindi]", 
             "Funding" : 10000,
-            "Air" : 0
+            "Air" : 65
         },
         {
             "Status": "Active",
@@ -4122,7 +4123,7 @@
             "Staff_Name" : "",
             "Languages": "[English, Hindi]", 
             "Funding" : 10000,
-            "Air" : 0
+            "Air" : 60
         },
         {
             "Status": "Active",
@@ -4662,7 +4663,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, Portueguese]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 68
         },
         {
             "Status": "Active",
@@ -5390,7 +5391,7 @@
             "Post": "St. Petersburg",
             "Property_Name": "No Current Consulate Space",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 67
         },
         {
             "Status": "Active",
@@ -5413,7 +5414,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 29
         },
         {
             "Status": "Active",
@@ -5436,7 +5437,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 37
         },
         {
             "Status": "Active",
@@ -5549,7 +5550,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 74
         },
         {
             "Status": "Active",
@@ -5683,7 +5684,7 @@
             "Staff_Name" : "",
             "Languages": "[English, Russian]", 
             "Funding" : 343000000,
-            "Air" : 0
+            "Air" : 77
         },
         {
             "Status": "Active",
@@ -5976,7 +5977,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 42
         },
         {
             "Status": "Active",
@@ -5999,7 +6000,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, Russian]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 70
         },
         {
             "Status": "Active",
@@ -6022,7 +6023,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, Polish, Russian]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 70
         },
         {
             "Status": "Active",
@@ -6156,7 +6157,7 @@
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
             "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Air" : 80
         },
         {
             "Status": "Active",

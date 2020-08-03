@@ -7,7 +7,7 @@ import { BarChart } from "reaviz";
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import {Form, Input, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row, Col} from 'reactstrap'
-import { Map, TileLayer, Marker, Popup,GeoJSON,Circle,Tooltip } from 'react-leaflet'
+import { Map, TileLayer, Marker, Popup,GeoJSON,Circle,Tooltip, Text } from 'react-leaflet'
 import './App.css';
 import data from './data/diplomacy.json'
 import embassies from './data/embassies.json'
@@ -857,7 +857,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     <Row>
     <Col sm={{ size: 3, offset: 1 }}>
     <h3>
-      <img alt='state logo' src="./images/logo.png" />
+      <img class="img-responsive" alt='state logo' src="./images/logo.png" />
       </h3>
     </Col>
     <Col sm={{ size: 6, offset: 1 }}>
@@ -953,11 +953,12 @@ this.state.show_tiplife ?
       <Col sm={{ size: 10, offset: 1  }}>
       <span style={{textAlign: 'center', padding: '5px'}}>
       <div className="map-box">
-            Under 50: Good, 
-            50 - 100:  Moderate,
-            100 - 150: Average, 
-            Over 150: Unhealthy 
-           </div> </span>
+      <h2><i>
+      <span style={{color:'green', marginLeft: '10px;'}}>Under 50</span>
+<span style={{color:'yellow', marginLeft: '10px;'}}>50 - 100</span>   
+<span style={{color:'orange', marginLeft: '10px;'}}>100 - 150</span>   
+<span style={{color:'red', marginLeft: '10px;'}}>Over 100</span>  
+</i></h2>  </div> </span>
           </Col> : ''
 
             }
@@ -1060,12 +1061,14 @@ this.state.show_tiplife ?
 {
   this.state.show_air ?
   
-        <Circle 
+      <div> <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   fillColor = {this.getAirColor(each.Air)}
                   radius={this.getAirRadius(each.Air)}
+                  
                   fillOpacity = {1}
-               ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> </Circle> : ''
+               ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> </Circle>
+                <Text textAnchor="middle" x="250" y="55">{each.Air}</Text> </div>: ''
 }
         </Marker> 
         }
