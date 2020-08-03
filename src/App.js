@@ -596,22 +596,22 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   var greenIcon = L.divIcon({
     className : 'div-green-icon',
-    html: '<span style="color: yellow; background-color: black; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
+    html: '<div style="padding:5px; border-color:black; border-style:solid; border-width:2px;"><span style="color: white; background-color: green; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span></div>'
   })
 
   var yellowIcon = L.divIcon({
     className : 'div-yellow-icon',
-    html: '<span style="color: yellow; background-color: black; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
+    html: '<div style="padding:5px; border-color:black; border-style:solid; border-width:2px;"><span style="color: black; background-color: yellow; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span></div>'
   })
 
   var orangeIcon = L.divIcon({
     className : 'div-orange-icon',
-    html: '<span style="color: yellow; background-color: black; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/pollution.png"/></span>'
+    html: '<span style="color: black; background-color: orange; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/pollution.png"/></span>'
   })
 
   var redIcon = L.divIcon({
     className : 'div-red-icon',
-    html: '<span style="color: yellow; background-color: black; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/radioactive.png"/></span>'
+    html: '<span style="color: white; background-color: red; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/radioactive.png"/></span>'
   })
 
   var emptyIcon = L.divIcon({
