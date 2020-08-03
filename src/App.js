@@ -596,22 +596,22 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   var greenIcon = L.divIcon({
     className : 'div-green-icon',
-    html: '<span style="color: green; background-color: black; font-size: 12px;padding:10px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
+    html: '<span style="color: green; background-color: black; font-size: 12px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
   })
 
   var yellowIcon = L.divIcon({
     className : 'div-yellow-icon',
-    html: '<span style="color: yellow; background-color: black; font-size: 12px;padding:10px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
+    html: '<span style="color: yellow; background-color: black; font-size: 12px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
   })
 
   var orangeIcon = L.divIcon({
     className : 'div-orange-icon',
-    html: '<span style="color: orange; background-color: blue; font-size: 12px;padding:10px;">' + score + '<img width="25px" src="/diploun/images/pollution.png"/></span>'
+    html: '<span style="color: orange; background-color: blue; font-size: 12px;">' + score + '<img width="25px" src="/diploun/images/pollution.png"/></span>'
   })
 
   var redIcon = L.divIcon({
     className : 'div-red-icon',
-    html: '<span style="color: red; background-color: black; font-size: 12px;padding:10px">' + score + '<img width="25px" src="/diploun/images/radioactive.png"/></span>'
+    html: '<span style="color: red; background-color: black; font-size: 12px;">' + score + '<img width="25px" src="/diploun/images/radioactive.png"/></span>'
   })
 
   var emptyIcon = L.divIcon({
@@ -1101,20 +1101,7 @@ this.state.show_tiplife ?
                   radius={this.getAidRadius(each.Funding)}><Tooltip>{each.Country + ':' + each.Funding}</Tooltip></Circle> : ''
 }
 
-{
-  this.state.show_air ?
-  
-      <div> <Circle 
-                  center={{lat:each.Latitude, lng: each.Longitude}}
-                  fillColor = {this.getAirColor(each.Air)}
-                  radius={this.getAirRadius(each.Air)}
-                  
-                  fillOpacity = {1}
-               ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> 
-               <text position={{lat:each.Latitude, lng: each.Longitude}} textAnchor="middle">{each.Air}</text> 
-               </Circle>
-                </div>: ''
-}
+
         </Marker> 
         }
       })
