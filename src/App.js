@@ -613,10 +613,17 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     className : 'div-red-icon',
     html: '<span>' + score + '</span>'
   })
-  return score >0 && score <= 50 ? greenIcon : score > 50 && score <= 100 ? yellowIcon :
+
+  var emptyIcon = L.divIcon({
+    className : 'div-red-icon',
+    html: '<span></span>'
+  })
+
+
+  return score > 0 && score <= 50 ? greenIcon : score > 50 && score <= 100 ? yellowIcon :
   score > 100 && score <= 150 ? orangeIcon :
   score > 150 ? redIcon :
-  '';
+  emptyIcon;
 
  }
 
