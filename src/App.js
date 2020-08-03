@@ -596,12 +596,12 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   var greenIcon = L.divIcon({
     className : 'div-green-icon',
-    html: '<div style="padding:5px; border-color:black; border-style:solid; border-width:2px;"><span style="color: white; background-color: green; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span></div>'
+    html: '<span style="color: white; background-color: green; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
   })
 
   var yellowIcon = L.divIcon({
     className : 'div-yellow-icon',
-    html: '<div style="padding:5px; border-color:black; border-style:solid; border-width:2px;"><span style="color: black; background-color: yellow; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span></div>'
+    html: '<span style="color: black; background-color: yellow; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
   })
 
   var orangeIcon = L.divIcon({
