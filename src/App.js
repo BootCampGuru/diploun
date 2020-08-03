@@ -41,7 +41,7 @@ var myGoogleIcon = L.icon({
   });
 
 var myIcon = L.icon({
-iconUrl: './images/building_icon.png',
+iconUrl: './images/dot.gif',
 iconSize: [25,41],
 iconAnchor: [12.5, 41],
 popupAnchor: [0, -41]
@@ -895,12 +895,12 @@ this.state.show_tiplife ?
 <Col sm={{ size: 10, offset: 1  }}>
 <span style={{textAlign: 'center', padding: '5px'}}>
 <div className="map-box">
-<h1>
-<span style={{color:'green', padding: '10px;'}}>Tier 1</span>   
-<span style={{color:'yellow', padding: '10px;'}}>Tier 2</span>   
-<span style={{color:'orange', padding: '10px;'}}>Tier 3</span>   
-<span style={{color:'red', padding: '10px;'}}>Tier 4</span>   
-<span style={{color:'blue', padding: '10px;'}}>Special Cases</span></h1>
+<h2><i>
+<span style={{color:'green', marginLeft: '10px;'}}>Tier 1</span>
+<span style={{color:'yellow', marginLeft: '10px;'}}>Tier 2</span>   
+<span style={{color:'orange', marginLeft: '10px;'}}>Tier 3</span>   
+<span style={{color:'red', marginLeft: '10px;'}}>Tier 4</span>   
+<span style={{color:'blue', marginLeft: '10px;'}}>Special Cases</span></i></h2>
 </div></span>
 </Col> : ''
 }
