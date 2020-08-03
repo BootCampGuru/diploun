@@ -591,6 +591,9 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
  
  getDivIcon = (score) =>
  {
+
+  score = parseInt(score);
+
   var greenIcon = L.divIcon({
     className : 'div-green-icon',
     html: '<span>' + score + '</span>'
@@ -1058,7 +1061,7 @@ this.state.show_tiplife ?
           this.state.embassy_data.map((each, index) => {
           if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
-        return <Marker key={index} position={position}  icon={this.getDivIcon(each.score)}>
+        return <Marker key={index} position={position}  icon={this.getDivIcon(each.Air)}>
       </Marker>
       }}): ''
         }
