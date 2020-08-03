@@ -94,28 +94,24 @@
   height:100%;
 }
 .div-green-icon{
-  color:green;
+  color:black;
   background-color:black;
-  border-color: white;
-  border-width: 1px;
-  border-style: solid;
-  padding: 5px;
   font-size: 12px;
 }
 
 .div-orange-icon{
-  color:orange;
-  font-size: 10px;
+  color: black;
+  font-size: 12px;
 }
 
 .div-yellow-icon{
-  color:yellow;
-  font-size: 10px;
+  color:black;
+  font-size: 12px;
 }
 
 .div-red-icon{
-  color:red;
-  font-size: 10px;
+  color:black;
+  font-size: 12px;
 }
 .map-box{
   background-color: white;
