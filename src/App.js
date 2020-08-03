@@ -41,7 +41,7 @@ var myGoogleIcon = L.icon({
   });
 
 var myIcon = L.icon({
-iconUrl: 'http://maps.google.com/mapfiles/ms/icons/blue.png',
+iconUrl: './images/blue.png',
 iconSize: [25,41],
 iconAnchor: [12.5, 41],
 popupAnchor: [0, -41]
