@@ -519,7 +519,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     score > 150 ? 5000000:
                       1000;
   }
-
+/*
   getAirColor = (score) => {
 
     return score > 0 && score < 25 ? 'Green' :
@@ -531,6 +531,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     score > 150 ? 'Red' :
                       'Brown'; 
   }
+  */
   getAidRadius = (value) => {
 
     var radius = 800000;
@@ -1006,7 +1007,7 @@ this.state.show_tiplife ?
       
           map_wildlifedata.map((each, index) => {
 
-        return <GeoJSON  key={index} data={each} style={this.getAirColor(each.score)} />
+        return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} />
           }) 
           : ''
         }
@@ -1078,7 +1079,7 @@ this.state.show_tiplife ?
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   //fillColor={each.Air > -1 ? 'green' : 'red'}
-                  style={this.getColor(each.score)}
+                  style={this.getAirColor(each.score)}
                ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> </Circle> : ''
 }
         </Marker> 
