@@ -508,6 +508,18 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     }
   }
 
+  getAirRadius = (score) => {
+
+    return score > 0 && score < 25 ? 100 :
+    score > 25 && score < 50 ? 1000 :
+    score > 50 && score < 75 ? 1000 :
+    score > 75 && score < 100 ? 1000 :
+    score > 100 && score < 125  ? 10000 :
+    score > 125  && score < 150 ? 1000000 :
+    score > 150 ? 1000000:
+                      1000;
+  }
+
   getAirColor = (score) => {
 
     return score > 0 && score < 25 ? '#61BA9E' :
@@ -1024,7 +1036,7 @@ this.state.show_tiplife ?
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   //fillColor={each.Air > -1 ? 'green' : 'red'}
                   fillColor = {this.getAirColor(each.Air)}
-                  radius={each.Air != null ? parseInt(each.Air) * 2000 : 10000}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
+                  radius={this.getAirRadius(each.Air)}><Tooltip>{each.Air}</Tooltip> </Circle> : ''
 }
         </Marker> 
         }

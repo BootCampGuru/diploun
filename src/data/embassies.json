@@ -2461,8 +2461,9 @@
             "Image":"./images/profile.jpg",
             "Staff_Image": "./images/germany_dusseldorf.jpg",
             "Staff_Name" : "",
-            "Languages": "[English, French]", "Funding" : 10000,
-            "Air" : 0
+            "Languages": "[English, French]", 
+            "Funding" : 10000,
+            "Air" : 23
         },
         {
             "Status": "Active",
