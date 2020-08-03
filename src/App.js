@@ -1068,7 +1068,7 @@ this.state.show_tiplife ?
                   
                   fillOpacity = {1}
                ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> 
-               <text center={{lat:each.Latitude, lng: each.Longitude}} textAnchor="middle">{each.Air}</text> 
+               <text position={{lat:each.Latitude, lng: each.Longitude}} textAnchor="middle">{each.Air}</text> 
                </Circle>
                 </div>: ''
 }
