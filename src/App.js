@@ -567,6 +567,49 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   }
 
+
+  getAirColor = (score) => {
+    /* return d > 1000 ? '#800026' :
+            d > 500  ? '#BD0026' :
+            d > 200  ? '#E31A1C' :
+            d > 100  ? '#FC4E2A' :
+            d > 50   ? '#FD8D3C' :
+            d > 20   ? '#FEB24C' :
+            d > 10   ? '#FED976' :
+                       '#FFEDA0'; */
+ 
+           
+           var  style = {
+                         fillColor: '#F28F3B',
+                         weight: 3,
+                         opacity: 1,
+                         color: 'white',
+                         dashArray: '3',
+                         fillOpacity: 1
+                     }
+                   //console.log(score);
+                   score = parseInt(score);
+                     if(score <= 50 )
+                     {
+                       style.fillColor = 'Green';
+                     }
+                     else if(score > 50 && score <=150)
+                     {
+                       style.fillColor = 'Yellow';
+                     }
+                     else if(score > 150 && score <=300)
+                     {
+                       style.fillColor = 'Orange';
+                     }
+                     else
+                     {
+                       style.fillColor = 'Red';
+                     }
+ 
+             return style;
+ }
+ 
+
   getColor = (score) => {
    /* return d > 1000 ? '#800026' :
            d > 500  ? '#BD0026' :
@@ -963,7 +1006,7 @@ this.state.show_tiplife ?
       
           map_wildlifedata.map((each, index) => {
 
-        return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} />
+        return <GeoJSON  key={index} data={each} style={this.getAirColor(each.score)} />
           }) 
           : ''
         }
@@ -1035,8 +1078,8 @@ this.state.show_tiplife ?
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   //fillColor={each.Air > -1 ? 'green' : 'red'}
-                  fillColor = {this.getAirColor(each.Air)}
-                  radius={this.getAirRadius(each.Air)}><Tooltip>{each.Country + ':' + each.Air}</Tooltip> </Circle> : ''
+                  style={this.getColor(each.score)}
+               ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> </Circle> : ''
 }
         </Marker> 
         }
