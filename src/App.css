@@ -93,8 +93,24 @@
   margin:5px;
   height:100%;
 }
-.div-icon{
+.div-green-icon{
+  color:green;
+  background-color:black;
+}
+
+.div-orange-icon{
+  color:orange;
+  background-color:black;
+}
+
+.div-yellow-icon{
+  color:yellow;
+  background-color:black;
+}
+
+.div-red-icon{
   color:red;
+  background-color:black;
 }
 .map-box{
   background-color: white;

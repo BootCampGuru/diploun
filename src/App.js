@@ -593,6 +593,33 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
              return style;
  }
  
+ getDivIcon = (score) =>
+ {
+  var greenIcon = L.divIcon({
+    className : 'div-green-icon',
+    html: '<span>' + score + '</span>'
+  })
+
+  var yellowIcon = L.divIcon({
+    className : 'div-yellow-icon',
+    html: '<span>' + score + '</span>'
+  })
+
+  var orangeIcon = L.divIcon({
+    className : 'div-orange-icon',
+    html: '<span>' + score + '</span>'
+  })
+
+  var redIcon = L.divIcon({
+    className : 'div-red-icon',
+    html: '<span>' + score + '</span>'
+  })
+  return score <= 50 ? greenIcon : score > 50 && score <= 100 ? yellowIcon :
+  score > 100 && score <= 150 ? orangeIcon :
+  score > 150 ? redIcon :
+  greenIcon;
+
+ }
 
   getColor = (score) => {
 
@@ -1035,7 +1062,7 @@ this.state.show_tiplife ?
           this.state.embassy_data.map((each, index) => {
           if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
-        return <Marker key={index} position={position}  icon={divIcon}>
+        return <Marker key={index} position={position}  icon={this.getDivIcon(each.score)}>
       </Marker>
       }}): ''
         }
