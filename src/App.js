@@ -736,6 +736,14 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   onAirChanged = (event) => {
    
     this.setState({show_air: event.target.checked});
+    this.setState({
+      location: {
+        lat: 8.500288,
+        lng: 4.771983,
+      },
+      haveUsersLocation: true,
+      zoom: 2,
+    });
   }
 
   centerMap = (event) =>
