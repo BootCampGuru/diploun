@@ -93,7 +93,9 @@
   margin:5px;
   height:100%;
 }
-
+.div-icon{
+  color:red;
+}
 .map-box{
   background-color: white;
   color:black;

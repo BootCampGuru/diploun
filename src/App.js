@@ -1030,13 +1030,23 @@ this.state.show_tiplife ?
         : ''
         }
 
+        {
+          this.state.haveUsersLocation ?
+          this.state.embassy_data.map((each, index) => {
+          if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
+        var position=[each.Latitude, each.Longitude]
+        return <Marker key={index} position={position}  icon={divIcon}>
+      </Marker>
+      }}): ''
+        }
+
         {this.state.haveUsersLocation ?
 
            this.state.embassy_data.map((each, index) => {
         //console.log(each.Longitude)
         if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
-        return <Marker key={index} position={position}  icon={parseInt(each.Air) > 180 ? myIcon : divIcon}>
+        return <Marker key={index} position={position}  icon={parseInt(each.Air) > 180 ? myIcon : myIcon}>
               <Popup><br /> 
                   <img alt="pic" style={{width:"150px"}} src={each.Staff_Image} /><br/>
                   <a target='_blank' href='{each.Staff_Url}' ><b>{each.Staff_Name}</b></a><br/>
