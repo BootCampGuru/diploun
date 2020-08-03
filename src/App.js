@@ -510,28 +510,20 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   getAirRadius = (score) => {
 
-    return score > 0 && score < 25 ? 10000 :
-    score > 25 && score < 50 ? 10000:
-    score > 50 && score < 75 ? 10000 :
-    score > 75 && score < 100 ? 10000 :
-    score > 100 && score < 125  ? 100000 :
-    score > 125  && score < 150 ? 1000000 :
-    score > 150 ? 5000000:
-                      1000;
+    return score <= 50 ? 200 : score > 50 && score <= 100 ? 400 :
+    score > 100 && score <= 150 ? 800:
+    score > 150 ? 1600 :
+                      2000;
   }
-/*
+
   getAirColor = (score) => {
 
-    return score > 0 && score < 25 ? 'Green' :
-    score > 25 && score < 50 ? 'Green' :
-    score > 50 && score < 75 ? 'Green' :
-    score > 75 && score < 100 ? '#FC4E2A' :
-    score > 100 && score < 125  ? '#FD8D3C' :
-    score > 125  && score < 150 ? '#FEB24C' :
+  return score <= 50 ? 'Green' : score > 50 && score <= 100 ? 'Yellow' :
+    score > 100 && score <= 150 ? 'Orange' :
     score > 150 ? 'Red' :
-                      'Brown'; 
+                      'Green';
   }
-  */
+  
   getAidRadius = (value) => {
 
     var radius = 800000;
@@ -569,16 +561,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   }
 
 
-  getAirColor = (score) => {
-    /* return d > 1000 ? '#800026' :
-            d > 500  ? '#BD0026' :
-            d > 200  ? '#E31A1C' :
-            d > 100  ? '#FC4E2A' :
-            d > 50   ? '#FD8D3C' :
-            d > 20   ? '#FEB24C' :
-            d > 10   ? '#FED976' :
-                       '#FFEDA0'; */
- 
+  getAirColorStyle = (score) => {
            
            var  style = {
                          fillColor: '#F28F3B',
@@ -612,14 +595,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
  
 
   getColor = (score) => {
-   /* return d > 1000 ? '#800026' :
-           d > 500  ? '#BD0026' :
-           d > 200  ? '#E31A1C' :
-           d > 100  ? '#FC4E2A' :
-           d > 50   ? '#FD8D3C' :
-           d > 20   ? '#FEB24C' :
-           d > 10   ? '#FED976' :
-                      '#FFEDA0'; */
+
 
           
           var  style = {
@@ -1078,8 +1054,9 @@ this.state.show_tiplife ?
   
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
-                  //fillColor={each.Air > -1 ? 'green' : 'red'}
-                  style={this.getAirColor(each.score)}
+                  fillColor = {this.getAirColor(each.Air)}
+                  radius={this.getAirRadius(each.Air)}
+                  fillOpacity = {1}
                ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> </Circle> : ''
 }
         </Marker> 
