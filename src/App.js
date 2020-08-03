@@ -47,10 +47,6 @@ iconAnchor: [12.5, 41],
 popupAnchor: [0, -41]
 });
 
-var divIcon = L.divIcon({
-  className : 'div-icon',
-  html: '<span>test</span>'
-})
 
 var mySecondIcon = L.icon({
   iconUrl: './images/star.png',
