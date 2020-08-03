@@ -1067,8 +1067,10 @@ this.state.show_tiplife ?
                   radius={this.getAirRadius(each.Air)}
                   
                   fillOpacity = {1}
-               ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> </Circle>
-                <text textAnchor="middle" x="250" y="55">{each.Air}</text> </div>: ''
+               ><Tooltip>{each.Country + ':' + each.Air}</Tooltip> 
+               <text textAnchor="middle" x="10" y="15">{each.Air}</text> 
+               </Circle>
+                </div>: ''
 }
         </Marker> 
         }
