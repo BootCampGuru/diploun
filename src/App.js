@@ -41,7 +41,7 @@ var myGoogleIcon = L.icon({
   });
 
 var myIcon = L.icon({
-iconUrl: './images/dot.png',
+iconUrl: './images/circle.svg',
 iconSize: [25,41],
 iconAnchor: [12.5, 41],
 popupAnchor: [0, -41]
