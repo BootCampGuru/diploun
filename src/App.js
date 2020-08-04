@@ -1115,7 +1115,7 @@ this.state.show_tiplife ?
               this.state.show_wildlife ? 
 
               this.state.wildlifemigrationdata.map((each, index) => {
-              return <GeoJSON key={index} data={each} style={{color: this.getWildColor(each.score)}} />
+              return <GeoJSON  key={index} data={each} style={{color: this.getWildColor(each.score)}} />
               }) 
               : ''
               }
@@ -1137,7 +1137,7 @@ this.state.show_tiplife ?
           
         map_items.map((each, index) => {
 
-         return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} />
+         return <GeoJSON Tooltip={each.Country + ':' + each.Funding}  key={index} data={each} style={this.getColor(each.score)} />
         }) 
 
         : ''
@@ -1148,7 +1148,7 @@ this.state.show_tiplife ?
           this.state.embassy_data.map((each, index) => {
           if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
-        return <Marker key={index} position={position}  icon={this.getDivIcon(each.Air)}>
+        return <Marker key={index} position={position} Tooltip={each.Country + ':' + each.Funding}  icon={this.getDivIcon(each.Air)}>
       </Marker>
       }}): ''
         }
