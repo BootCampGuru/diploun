@@ -504,7 +504,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     }
     else if(score === 5)
     {
-      return 'Black';
+      return 'White';
     }
     else if(score === 6)
     {
@@ -637,8 +637,8 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   return score === 3 ? greenIcon : score === 4 ? yellowIcon :
   score === 5 ? orangeIcon :
-  score === 6 ? redIcon :
-  score === 7 ? blackIcon :
+  score === 6 ? blackIcon :
+  score === 7 ? redIcon :
   emptyIcon;
  }
  
@@ -812,7 +812,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   onWildLifeChanged= (event) => {
    
     this.setState({show_wildlife: event.target.checked});
-    this.setState({zoom: 4});
+    this.setState({zoom: 3});
   }
 
   onTipLifeChanged= (event) => {
