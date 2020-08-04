@@ -242,10 +242,20 @@ class App extends Component {
     this.setState({embassyhistory: filter_history});
 
     var filter_not_history = embassyhistorydata.filter(function (pilot) {
-      return parseInt(pilot.year) < 1780 && pilot.event != "closure" ;
+      return parseInt(pilot.year) < 1780 && pilot.event !== "closure" ;
     });
   
     this.setState({embassyhistorynotclosure: filter_not_history})
+
+
+    this.setState({
+      location: {
+        lat: 8.500288,
+        lng: 4.771983,
+      },
+      haveUsersLocation: true,
+      zoom: 2,
+    });
 
   }
 
@@ -546,7 +556,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   if(value >= 100000000)
   {
-    color = 'red'
+    color = 'green'
   }
   else if(value >= 1000000 && value < 100000000)
   {
@@ -795,6 +805,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   onWildLifeChanged= (event) => {
    
     this.setState({show_wildlife: event.target.checked});
+    this.setState({zoom: 5});
   }
 
   onTipLifeChanged= (event) => {
