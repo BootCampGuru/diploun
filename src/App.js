@@ -589,6 +589,41 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
  
              return style;
  }
+
+ getWildlifeIcon = (score) =>
+ {
+  score = parseInt(score);
+  var greenIcon = L.divIcon({
+    className : 'div-green-icon',
+    html: '<span style="color: white; background-color: green; font-size: 14px;">Rhino Horns<img width="16px" src="/diploun/images/rhino.png"/></span>'
+  })
+
+  var yellowIcon = L.divIcon({
+    className : 'div-yellow-icon',
+    html: '<span style="color: black; background-color: yellow; font-size: 14px;">' + score + '<img width="16px" src="/diploun/images/cloudy.png"/></span>'
+  })
+
+  var orangeIcon = L.divIcon({
+    className : 'div-orange-icon',
+    html: '<span style="color: black; background-color: orange; font-size: 14px;">' + score + '<img width="16px" src="/diploun/images/pollution.png"/></span>'
+  })
+
+  var redIcon = L.divIcon({
+    className : 'div-red-icon',
+    html: '<span style="color: white; background-color: red; font-size: 14px;">' + score + '<img width="16px" src="/diploun/images/radioactive.png"/></span>'
+  })
+
+  var emptyIcon = L.divIcon({
+    className : 'div-red-icon',
+    html: '<span></span>'
+  })
+
+
+  return score === 3 ? greenIcon : score === 4 ? yellowIcon :
+  score === 5 ? orangeIcon :
+  score === 6 ? redIcon :
+  emptyIcon;
+ }
  
  getDivIcon = (score) =>
  {
@@ -962,12 +997,12 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 </Row>: ''
             }
             
-            <Row>
+            <Row style={{textAlign: 'center', padding: '5px', backgroundColor: 'Black'}}>
             {
               this.state.show_aid ?
         <Col sm={{ size: 10, offset: 1 }}>
-        <span style={{textAlign: 'center', padding: '5px'}}>
-        <div className="map-box">
+        <span style={{textAlign: 'center', padding: '5px', color: 'White'}}>
+        <div>
             <i>Countries receiving over 100 Million Dollars in Aid </i></div></span>
 
         </Col>  : ''
@@ -990,7 +1025,7 @@ this.state.show_tiplife ?
 <span style={{color:'red', marginLeft: '10px;'}}>Tier 4</span>  
 </Col>
 <Col sm={{ size: 2  }}>
-<span style={{color:'red', marginLeft: '10px;'}}>Special Cases</span>  
+<span style={{color:'blue', marginLeft: '10px;'}}>Special Cases</span>  
 </Col>
 </Row> : ''
 }
@@ -1026,7 +1061,7 @@ this.state.show_tiplife ?
 <span style={{color:'yellow', marginLeft: '10px;'}}>Elephant Tasks</span>  
 </Col> 
 <Col sm={{ size: 2}}>
-<span style={{color:'Green', marginLeft: '10px;'}}>Rhino Horns</span>   
+<span style={{color:'Brown', marginLeft: '10px;'}}>Rhino Horns</span>   
 </Col>
 <Col sm={{ size: 2  }}>
 <span style={{color:'orange', marginLeft: '10px;'}}>Reptiles</span>  
@@ -1093,6 +1128,17 @@ this.state.show_tiplife ?
           if (isNaN(each.Longitude) === false && isNaN(each.Latitude) === false) {
         var position=[each.Latitude, each.Longitude]
         return <Marker key={index} position={position}  icon={this.getDivIcon(each.Air)}>
+      </Marker>
+      }}): ''
+        }
+
+
+        {
+          this.state.show_wildlife ?
+          this.state.wildlifemigrationdata.map((each, index) => {
+          if (isNaN(each.geometry.coordinates[0]) === false && isNaN(each.geometry.coordinates[1]) === false) {
+        var position=[each.geometry.coordinates[0], each.geometry.coordinates[1]]
+        return <Marker key={index} position={position}  icon={this.getWildlifeIcon(each.score)}>
       </Marker>
       }}): ''
         }
