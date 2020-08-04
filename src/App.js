@@ -1136,14 +1136,15 @@ this.state.show_tiplife ?
         {
           this.state.show_wildlife ?
           this.state.wildlifemigrationdata.map((each, index) => {
-          if (isNaN(each.geometry.coordinates[0]) === false && isNaN(each.geometry.coordinates[1]) === false) {
-        var position=[each.geometry.coordinates[0], each.geometry.coordinates[1]]
+          if (isNaN(each.geometry.coordinates[0][0]) === false && isNaN(each.geometry.coordinates[0][1]) === false) {
+        var position=[each.geometry.coordinates[0][0], each.geometry.coordinates[0][1]]
         return <Marker key={index} position={position}  icon={this.getWildlifeIcon(each.score)}>
       </Marker>
       }}): ''
         }
 
-        {this.state.show_embassies ?
+        {
+          this.state.show_embassies ?
 
            this.state.embassy_data.map((each, index) => {
         //console.log(each.Longitude)
