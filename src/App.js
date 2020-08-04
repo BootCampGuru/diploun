@@ -205,7 +205,7 @@ class App extends Component {
       };
       //console.log(rows);
       this.setState({all_diplomacy_data: rows});
-
+/*
     navigator.geolocation.getCurrentPosition((position) => {
       this.setState({
         location: {
@@ -234,7 +234,8 @@ class App extends Component {
     })
       }
     );
-
+      */
+     
     var filter_history = this.state.embassyhistory.filter(function (pilot) {
       return pilot.year === "1779";
     });
@@ -805,7 +806,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   onWildLifeChanged= (event) => {
    
     this.setState({show_wildlife: event.target.checked});
-    this.setState({zoom: 5});
+    this.setState({zoom: 4});
   }
 
   onTipLifeChanged= (event) => {
