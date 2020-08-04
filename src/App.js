@@ -605,7 +605,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   var orangeIcon = L.divIcon({
     className : 'div-orange-icon',
-    html: '<span style="color: black; background-color: orange; font-size: 14px;">Rosewood Trees<img width="16px" src="/diploun/images/rosewood.png"/></span>'
+    html: '<span style="color: black; background-color: orange; font-size: 14px;">Rosewood Trees<img width="16px" src="/diploun/images/rosewood.jpg"/></span>'
   })
 
   var redIcon = L.divIcon({
