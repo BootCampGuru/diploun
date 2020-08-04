@@ -1137,7 +1137,11 @@ this.state.show_tiplife ?
           
         map_items.map((each, index) => {
 
-         return <GeoJSON Tooltip={each.Country + ':' + each.Funding}  key={index} data={each} style={this.getColor(each.score)} />
+         return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} >
+         <Popup><br /> 
+          {each.Country}<br />  
+          </Popup>
+         </GeoJSON>
         }) 
 
         : ''
