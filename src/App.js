@@ -87,6 +87,7 @@ class App extends Component {
     show_wildlife: false,
     show_tiplife:false,
     show_person: false,
+    show_embassies: true,
     defaultActiveKey: 'home',
     show_aid: false,
     show_air: false,
@@ -596,22 +597,22 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   var greenIcon = L.divIcon({
     className : 'div-green-icon',
-    html: '<span style="color: white; background-color: green; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
+    html: '<span style="color: white; background-color: green; font-size: 14px;">' + score + '<img width="16px" src="/diploun/images/sunny.png"/></span>'
   })
 
   var yellowIcon = L.divIcon({
     className : 'div-yellow-icon',
-    html: '<span style="color: black; background-color: yellow; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/sunny.jpg"/></span>'
+    html: '<span style="color: black; background-color: yellow; font-size: 14px;">' + score + '<img width="16px" src="/diploun/images/cloudy.png"/></span>'
   })
 
   var orangeIcon = L.divIcon({
     className : 'div-orange-icon',
-    html: '<span style="color: black; background-color: orange; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/pollution.png"/></span>'
+    html: '<span style="color: black; background-color: orange; font-size: 14px;">' + score + '<img width="16px" src="/diploun/images/pollution.png"/></span>'
   })
 
   var redIcon = L.divIcon({
     className : 'div-red-icon',
-    html: '<span style="color: white; background-color: red; font-size: 14px;">' + score + '<img width="25px" src="/diploun/images/radioactive.png"/></span>'
+    html: '<span style="color: white; background-color: red; font-size: 14px;">' + score + '<img width="16px" src="/diploun/images/radioactive.png"/></span>'
   })
 
   var emptyIcon = L.divIcon({
@@ -750,6 +751,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
    
     this.setState({show_advisory: event.target.checked});
   }
+  onEmbassyChanged= (event) => {
+   
+    this.setState({show_embassies: event.target.checked});
+  }
+
 
   onWildLifeChanged= (event) => {
    
@@ -890,7 +896,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     <Row>
     <Col sm={{ size: 3, offset: 1 }}>
     <h3>
-      <img class="img-responsive" alt='state logo' src="./images/logo.png" />
+      <img class="img-fluid" alt='state logo' src="./images/logo.png" />
       </h3>
     </Col>
     <Col sm={{ size: 6, offset: 1 }}>
@@ -910,6 +916,8 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
            </Form><br/>
         <Row>
         <Col sm={{ size: 11, offset: 1 }}>
+        <span className="boxes"><Input  onChange={this.onEmbassyChanged} id="travel" checked={this.state.show_embassies} value="embassies" type="checkbox" />
+                <label htmlFor="embassies">Show Embassies</label> </span>
              <span className="boxes"><Input  onChange={this.onTravelChanged} id="travel" checked={this.state.show_advisory} value="Travel" type="checkbox" />
                 <label htmlFor="travel">Travel Advisory</label> </span>
                 <span className="boxes"><Input onChange={this.onAidChanged} id="aid" value="Aid" checked={this.state.show_aid} type="checkbox"/> 
@@ -987,10 +995,18 @@ this.state.show_tiplife ?
       <span style={{textAlign: 'center', padding: '5px'}}>
       <div className="map-box">
       <h2><i>
-      <span style={{color:'green', marginLeft: '10px;'}}>Under 50</span>
-<span style={{color:'yellow', marginLeft: '10px;'}}>50 - 100</span>   
-<span style={{color:'orange', marginLeft: '10px;'}}>100 - 150</span>   
-<span style={{color:'red', marginLeft: '10px;'}}>Over 100</span>  
+      <Col sm={{ size: 2, offset: 1  }}>
+      <span style={{color:'green', marginLeft: '10px;'}}>Healthy</span>
+      </Col>
+      <Col sm={{ size: 2, offset: 1  }}>
+<span style={{color:'yellow', marginLeft: '10px;'}}>Moderate</span>  
+</Col> 
+<Col sm={{ size: 2, offset: 1  }}>
+<span style={{color:'orange', marginLeft: '10px;'}}>Very Unhealthy</span>   
+</Col>
+<Col sm={{ size: 2, offset: 1  }}>
+<span style={{color:'red', marginLeft: '10px;'}}>Hazardous</span>  
+</Col>
 </i></h2>  </div> </span>
           </Col> : ''
 
@@ -1073,7 +1089,7 @@ this.state.show_tiplife ?
       }}): ''
         }
 
-        {this.state.haveUsersLocation ?
+        {this.state.show_embassies ?
 
            this.state.embassy_data.map((each, index) => {
         //console.log(each.Longitude)
