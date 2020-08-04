@@ -1136,8 +1136,8 @@ this.state.show_tiplife ?
         {
           this.state.show_wildlife ?
           this.state.wildlifemigrationdata.map((each, index) => {
-          if (isNaN(each.geometry.coordinates[0][0]) === false && isNaN(each.geometry.coordinates[0][1]) === false) {
-        var position=[each.geometry.coordinates[0][0], each.geometry.coordinates[0][1]]
+          if (isNaN(each.lat) === false && isNaN(each.lon) === false) {
+        var position=[each.lat, each.lon]
         return <Marker key={index} position={position}  icon={this.getWildlifeIcon(each.score)}>
       </Marker>
       }}): ''
