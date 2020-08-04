@@ -605,12 +605,12 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
 
   var orangeIcon = L.divIcon({
     className : 'div-orange-icon',
-    html: '<span style="color: black; background-color: orange; font-size: 14px;">' + score + '<img width="16px" src="/diploun/images/pollution.png"/></span>'
+    html: '<span style="color: black; background-color: orange; font-size: 14px;">Rosewood Trees<img width="16px" src="/diploun/images/rosewood.png"/></span>'
   })
 
   var redIcon = L.divIcon({
     className : 'div-red-icon',
-    html: '<span style="color: white; background-color: red; font-size: 14px;">' + score + '<img width="16px" src="/diploun/images/radioactive.png"/></span>'
+    html: '<span style="color: white; background-color: red; font-size: 14px;">Reptiles<img width="16px" src="/diploun/images/reptiles.png"/></span>'
   })
 
   var emptyIcon = L.divIcon({
