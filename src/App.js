@@ -988,14 +988,12 @@ this.state.show_tiplife ?
 
 </Row>
  
-<Row>
+
             {
       this.state.show_air ?
    
-      <span style={{textAlign: 'center', padding: '5px'}}>
-      <div className="map-box">
-      <h3><i>
-      <Col sm={{ size: 2 }}>
+      <Row style={{textAlign: 'center', padding: '5px'}}>
+      <Col sm={{ size: 2, offset: 1 }}>
       <span style={{color:'green', marginLeft: '10px;'}}>Healthy</span>
       </Col>
       <Col sm={{ size: 2}}>
@@ -1007,11 +1005,11 @@ this.state.show_tiplife ?
 <Col sm={{ size: 2  }}>
 <span style={{color:'red', marginLeft: '10px;'}}>Hazardous</span>  
 </Col>
-</i></h3>  </div> </span>
+</Row>
          : ''
 
             }
-</Row>
+
 <Row>
           {
           this.state.show_wildlife ? 
