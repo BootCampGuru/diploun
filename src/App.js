@@ -1139,7 +1139,7 @@ this.state.show_tiplife ?
 
          return <GeoJSON  key={index} data={each} style={this.getColor(each.score)} >
          <Popup><br /> 
-          {each.Country}<br />  
+          {each.name}<br />  
           </Popup>
          </GeoJSON>
         }) 
