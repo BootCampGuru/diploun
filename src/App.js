@@ -915,7 +915,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
      
            </Form><br/>
         <Row>
-        <Col sm={{ size: 11, offset: 1 }}>
+        <Col sm={{ size: 12 }}>
         <span className="boxes"><Input  onChange={this.onEmbassyChanged} id="travel" checked={this.state.show_embassies} value="embassies" type="checkbox" />
                 <label htmlFor="embassies">Show Embassies</label> </span>
              <span className="boxes"><Input  onChange={this.onTravelChanged} id="travel" checked={this.state.show_advisory} value="Travel" type="checkbox" />
@@ -991,24 +991,24 @@ this.state.show_tiplife ?
 <Row>
             {
       this.state.show_air ?
-      <Col sm={{ size: 10, offset: 1  }}>
+   
       <span style={{textAlign: 'center', padding: '5px'}}>
       <div className="map-box">
-      <h2><i>
-      <Col sm={{ size: 2, offset: 1  }}>
+      <h3><i>
+      <Col sm={{ size: 2 }}>
       <span style={{color:'green', marginLeft: '10px;'}}>Healthy</span>
       </Col>
-      <Col sm={{ size: 2, offset: 1  }}>
+      <Col sm={{ size: 2}}>
 <span style={{color:'yellow', marginLeft: '10px;'}}>Moderate</span>  
 </Col> 
-<Col sm={{ size: 2, offset: 1  }}>
+<Col sm={{ size: 2}}>
 <span style={{color:'orange', marginLeft: '10px;'}}>Very Unhealthy</span>   
 </Col>
-<Col sm={{ size: 2, offset: 1  }}>
+<Col sm={{ size: 2  }}>
 <span style={{color:'red', marginLeft: '10px;'}}>Hazardous</span>  
 </Col>
-</i></h2>  </div> </span>
-          </Col> : ''
+</i></h3>  </div> </span>
+         : ''
 
             }
 </Row>
