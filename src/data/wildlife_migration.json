@@ -1,8 +1,8 @@
 [
     {"type":"Feature","score":3,"lat":31.325561, "lon": -29.401978, "id":"ZAF","properties":{"name":"SouthAfrica"},"geometry" : {"type": "LineString", "coordinates":[[31.325561,-29.401978],[110.339188,18.678395]]}},
     {"type":"Feature","score":3,"lat":1.060122, "lon": 5.928837,"id":"GHN","properties":{"name":"Ghana"},"geometry" : {"type": "LineString", "coordinates":[[1.060122,5.928837],[110.339188,18.678395]]}},
-    {"type":"Feature","score":3,"lat":31.325561, "lon": -29.401978,"id":"NGR","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[110.339188,18.678395]]}},
-    {"type":"Feature","score":3,"lat":31.325561, "lon": -29.401978,"id":"NGI","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[77.837451,35.49401]]}},
+    {"type":"Feature","score":3,"lat":8.500288, "lon": 4.771983,"id":"NGR","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[110.339188,18.678395]]}},
+    {"type":"Feature","score":3,"lat":8.500288, "lon": 4.771983,"id":"NGI","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[77.837451,35.49401]]}},
     {"type":"Feature","score":3,"lat":31.325561, "lon": -29.401978,"id":"NGV","properties":{"name":"Nigeria"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[108.05018,21.55238]]}},
     {"type":"Feature","score":4,"lat":31.325561, "lon": -29.401978,"id":"BTC","properties":{"name":"Botswana"},"geometry" : {"type": "LineString", "coordinates":[[25.649163,-18.536026],[110.339188,18.678395]]}},
     {"type":"Feature","score":4,"lat":31.325561, "lon": -29.401978,"id":"KNC","properties":{"name":"Kenya"},"geometry" : {"type": "LineString", "coordinates":[[40.993,-0.85829],[110.339188,18.678395]]}},
@@ -10,6 +10,6 @@
     {"type":"Feature","score":5,"lat":31.325561, "lon": -29.401978,"id":"SFC","properties":{"name":"Namibia"},"geometry" : {"type": "LineString", "coordinates":[[16.344977,-28.576705],[110.339188,18.678395]]}},
     {"type":"Feature","score":6,"lat":31.325561, "lon": -29.401978,"id":"UGC","properties":{"name":"Uganda"},"geometry" : {"type": "LineString", "coordinates":[[31.86617,-1.02736],[36.913127,41.335358]]}},
     {"type":"Feature","score":7,"lat":31.325561, "lon": -29.401978,"id":"MDU","properties":{"name":"Madagascar"},"geometry" : {"type": "LineString", "coordinates":[[49.543519,-12.469833],[-161.908897,70.33333]]}},
-    {"type":"Feature","score":7,"lat":31.325561, "lon": -29.401978,"id":"INU","properties":{"name":"India"},"geometry" : {"type": "LineString", "coordinates":[[77.837451,35.49401],[-161.908897,70.33333]]}},
-    {"type":"Feature","score":7,"lat":31.325561, "lon": -29.401978,"id":"INS","properties":{"name":"India"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[-161.908897,70.33333]]}}
+    {"type":"Feature","score":7,"lat":77.837451, "lon": 35.49401,"id":"INU","properties":{"name":"India"},"geometry" : {"type": "LineString", "coordinates":[[77.837451,35.49401],[-161.908897,70.33333]]}},
+    {"type":"Feature","score":7,"lat":8.500288, "lon": 4.771983,"id":"INS","properties":{"name":"India"},"geometry" : {"type": "LineString", "coordinates":[[8.500288,4.771983],[-161.908897,70.33333]]}}
 ]
