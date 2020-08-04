@@ -644,7 +644,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
                   score = parseInt(score);
                     if(score <= 2 )
                     {
-                      style.fillColor = 'Blue';
+                      style.fillColor = 'Green';
                     }
                     else if(score > 2 && score <=3)
                     {
@@ -943,21 +943,25 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
             </Col></Row>
 
     
-            <Row>
+        
             {
           this.state.show_advisory ?
-        <Col sm={{ size: 10, offset: 1 }}>
-        <span style={{textAlign: 'center', padding: '5px'}}>
-        <div className="map-box">
-            Level 1: Exercise Normal Precautions[Blue]
-            Level 2: Exercise Increased Caution[Yellow] 
-            Level 3: Reconsider Travel[Orange] 
-            Level 4: Do Not Travel[Red] 
-            </div>
-        </span>
-        </Col> : ''
+          <Row style={{textAlign: 'center', padding: '5px'}}>
+      <Col sm={{ size: 3, offset: 1 }}>
+      <span style={{color:'green', marginLeft: '10px;'}}>Exercise Normal Precautions</span>
+      </Col>
+      <Col sm={{ size: 3}}>
+<span style={{color:'yellow', marginLeft: '10px;'}}> Exercise Increased Caution</span>  
+</Col> 
+<Col sm={{ size: 2}}>
+<span style={{color:'orange', marginLeft: '10px;'}}>Reconsider Travel</span>   
+</Col>
+<Col sm={{ size: 2  }}>
+<span style={{color:'red', marginLeft: '10px;'}}>: Do Not Travel</span>  
+</Col>
+</Row>: ''
             }
-            </Row>
+            
             <Row>
             {
               this.state.show_aid ?
