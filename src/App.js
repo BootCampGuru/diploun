@@ -1019,7 +1019,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
             {
               this.state.show_aid ?
         <Col sm={{ size: 10, offset: 1 }}>
-        <span style={{textAlign: 'center', padding: '5px', color: 'White'}}>
+        <span style={{textAlign: 'center', color: 'White'}}>
         <div>
             <i>Countries receiving over 100 Million Dollars in Aid </i></div></span>
 
