@@ -1150,7 +1150,7 @@ this.state.show_tiplife ?
         var position=[each.Latitude, each.Longitude]
         return <Marker key={index} position={position}  icon={this.getDivIcon(each.Air)}>
          <Popup><br /> 
-          {each.event} in {each.country}<br />  
+          {each.Country}<br />  
           </Popup>
       </Marker>
       }}): ''
