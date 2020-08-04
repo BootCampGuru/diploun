@@ -1169,6 +1169,7 @@ this.state.show_tiplife ?
         <Circle 
                   center={{lat:each.Latitude, lng: each.Longitude}}
                   fillColor={this.getAidCircle(each.Funding)} 
+                  fillOpacity = {1}
                   radius={this.getAidRadius(each.Funding)}><Tooltip>{each.Country + ':' + each.Funding}</Tooltip></Circle> : ''
 }
 
