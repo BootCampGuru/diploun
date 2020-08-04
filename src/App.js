@@ -235,7 +235,7 @@ class App extends Component {
       }
     );
       */
-     
+
     var filter_history = this.state.embassyhistory.filter(function (pilot) {
       return pilot.year === "1779";
     });
@@ -624,6 +624,11 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
     html: '<span style="color: white; background-color: red; font-size: 14px;">Reptiles<img width="16px" src="/diploun/images/reptiles.png"/></span>'
   })
 
+  var blackIcon = L.divIcon({
+    className : 'div-red-icon',
+    html: '<span style="color: white; background-color: red; font-size: 14px;">Pangolin<img width="16px" src="/diploun/images/pangolin.jpg"/></span>'
+  })
+
   var emptyIcon = L.divIcon({
     className : 'div-red-icon',
     html: '<span></span>'
@@ -633,6 +638,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
   return score === 3 ? greenIcon : score === 4 ? yellowIcon :
   score === 5 ? orangeIcon :
   score === 6 ? redIcon :
+  score === 7 ? blackIcon :
   emptyIcon;
  }
  
@@ -1077,6 +1083,9 @@ this.state.show_tiplife ?
 </Col>
 <Col sm={{ size: 2  }}>
 <span style={{color:'orange', marginLeft: '10px;'}}>Reptiles</span>  
+</Col>
+<Col sm={{ size: 2  }}>
+<span style={{color:'white', marginLeft: '10px;'}}>Pangolin Scales</span>  
 </Col>
 </Row> : ''
 
