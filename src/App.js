@@ -946,7 +946,7 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         
             {
           this.state.show_advisory ?
-          <Row style={{textAlign: 'center', padding: '5px', backgroundColor: 'Azure'}}>
+          <Row style={{textAlign: 'center', padding: '5px', backgroundColor: 'Black'}}>
       <Col sm={{ size: 3, offset: 1 }}>
       <span style={{color:'green', marginLeft: '10px;'}}>Exercise Normal Precautions</span>
       </Col>
@@ -973,11 +973,10 @@ return <GeoJSON  key='my-geojson' data={this.state.world_map} />
         </Col>  : ''
             }
         </Row>
-            <Row>
-
+          
 {
 this.state.show_tiplife ?
-<Row style={{textAlign: 'center', padding: '5px', backgroundColor: 'Azure'}}>
+<Row style={{textAlign: 'center', padding: '5px', backgroundColor: 'Black'}}>
       <Col sm={{ size: 2, offset: 1 }}>
       <span style={{color:'green', marginLeft: '10px;'}}>Tier 1</span>
       </Col>
@@ -996,13 +995,10 @@ this.state.show_tiplife ?
 </Row> : ''
 }
 
-</Row>
- 
-
             {
       this.state.show_air ?
    
-      <Row style={{textAlign: 'center', padding: '5px'}}>
+      <Row style={{textAlign: 'center', padding: '5px', backgroundColor: 'Black'}}>
       <Col sm={{ size: 2, offset: 1 }}>
       <span style={{color:'green', marginLeft: '10px;'}}>Healthy</span>
       </Col>
@@ -1020,20 +1016,24 @@ this.state.show_tiplife ?
 
             }
 
-<Row>
           {
           this.state.show_wildlife ? 
-          <Col sm={{ size: 10, offset: 1  }}>
-          <span style={{textAlign: 'center', padding: '5px'}}>
-            <div className="map-box">
-            Red: Rosewood 
-            Green:  Elephant Tasks
-            Black: Rhino Horns 
-            Orange: Reptiles
-            </div> </span>
-          </Col> : ''
+          <Row style={{textAlign: 'center', padding: '5px', backgroundColor: 'Black'}}>
+      <Col sm={{ size: 2, offset: 1 }}>
+      <span style={{color:'green', marginLeft: '10px;'}}>Rosewood Trees</span>
+      </Col>
+      <Col sm={{ size: 2}}>
+<span style={{color:'yellow', marginLeft: '10px;'}}>Elephant Tasks</span>  
+</Col> 
+<Col sm={{ size: 2}}>
+<span style={{color:'Green', marginLeft: '10px;'}}>Rhino Horns</span>   
+</Col>
+<Col sm={{ size: 2  }}>
+<span style={{color:'orange', marginLeft: '10px;'}}>Reptiles</span>  
+</Col>
+</Row> : ''
+
           }
-</Row>
 
      <Row>
      <Col sm={{ size: 7, offset: 1 }}>
