@@ -1,8 +1,16 @@
 # diploun
 U.S. Diplomacy application
+
+
 clone the application
+
+
 run npm install
+
+
 npm run start
+
+
 npm run deploy[if deploy to github pages]
 
 Diploun – Diplomacy through interactivity
