@@ -29,7 +29,7 @@ import tip from './data/tip.json'
 import worldGeoJSON from 'geojson-world-map';
 
 const googleMapsClient = require('@google/maps').createClient({
-  key: 'AIzaSyAbOXMF2QD78gnzLRhd-XS-51Q_UIWR4h4',
+  key: 'add key here',
   Promise: Promise
 });
 
@@ -163,7 +163,7 @@ class App extends Component {
     let filesPromise = Promise.resolve([]);
     filesPromise = Promise.all(this.state.embassy_data.map(data =>
 
-      fetch(proxyUrl + 'https://api.waqi.info/feed/' + data.Country + '/?token=15e1bd345dd701c91b0b608289d134794cb0199c')
+      fetch(proxyUrl + 'https://api.waqi.info/feed/' + data.Country + '/?token=apitoken')
       .then(blob => blob.json())
       .then(data => {
         //this.setState({ current_air: data.data.aqi});
